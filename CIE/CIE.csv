@@ -17,9 +17,109 @@ SubjectCode,Subject,Series,Component,MaxRawMark,A,B,C,D,E
 9680,Arabic A Level,june-2025,52,40,34,30,26,22,19
 8680,Arabic Language AS Level,june-2025,22,70,38,32,26,20,14
 8680,Arabic Language AS Level,june-2025,32,40,29,25,21,17,13
-9479,Art & Design,june-2025,100,01,75,65,55,45,35
-9479,Art & Design,june-2025,100,02,72,62,52,42,32
-9479,Art & Design,june-2025,100,03,75,65,55,45,35
+9479,Art & Design,june-2025,01,100,75,65,55,45,35
+9479,Art & Design,june-2025,02,100,72,62,52,42,32
+9479,Art & Design,june-2025,03,100,75,65,55,45,35
+
+9584,Biblical Studies,june-2025,,,,,,,
+
+9700,Biology,june-2025,,,,,,,
+
+9609,Business,june-2025,,,,,,,
+
+9980,Cambridge International Project,june-2025,,,,,,,
+
+9701,Chemistry,june-2025,,,,,,,
+
+9868,Chinese Language and Literature A Level,june-2025,,,,,,,
+
+8238,Chinese Language AS Level,june-2025,,,,,,,
+
+9618,Computer Science,june-2025,,,,,,,
+
+9705,Design and Technology,june-2025,,,,,,,
+
+9481,Design Media & Design,june-2025,,,,,,,
+
+9482,Drama,june-2025,,,,,,,
+
+9708,Economics,june-2025,,,,,,,
+
+8021,English General Paper AS Level,june-2025,,,,,,,
+
+9093,English Lanuage A Level,june-2025,,,,,,,
+
+8291,Environmental Management AS Level,june-2025,,,,,,,
+
+9898,French Language and Literature A Level,june-2025,,,,,,,
+
+8028,French Language AS Level,june-2025,,,,,,,
+
+9231,Further Mathematics A Level,june-2025,,,,,,,
+
+9696,Geography,june-2025,,,,,,,
+
+9897,German Language & Literature,june-2025,,,,,,,
+
+8027,German Language,june-2025,,,,,,,
+
+9239,Global Perspectives & Research,june-2025,,,,,,,
+
+9487,Hinduism,june-2025,,,,,,,
+
+9489,History,june-2025,,,,,,,
+
+9627,Information Technology,june-2025,,,,,,,
+
+9488,Islamic Studies,june-2025,,,,,,,
+
+8695,Language and Literature in English AS Level,june-2025,,,,,,,
+
+9084,Law,june-2025,,,,,,,
+
+9695,Literature in English,june-2025,,,,,,,
+
+9693,Marine Science,june-2025,,,,,,,
+
+9709,Mathematics,june-2025,,,,,,,
+
+9607,Media Studies,june-2025,,,,,,,
+
+9483,Music,june-2025,,,,,,,
+
+9702,Physics,june-2025,,,,,,,
+
+9718,Portuguese A Level,june-2025,,,,,,,
+
+8684,Portuguese Language AS Level,june-2025,,,,,,,
+
+9990,Psychology,june-2025,,,,,,,
+
+9699,Sociology,june-2025,,,,,,,
+
+9844,Spanish Language and Literature A Level,june-2025,,,,,,,
+
+8022,Spanish Language AS Level,june-2025,,,,,,,
+
+8386,Sport & Physical Education AS Level,june-2025,,,,,,,
+
+9689,Tamil A Level,june-2025,,,,,,,
+
+8689,Tamil Language AS Level,june-2025,,,,,,,
+
+9694,Thinking Skills,june-2025,,,,,,,
+
+9395,Travel and Tourism,june-2025,,,,,,,
+
+9686,Urdu A Level,june-2025,02,70,62,56,50,44,37
+9686,Urdu A Level,june-2025,03,40,32,28,24,20,17
+9686,Urdu A Level,june-2025,04,75,56,50,45,41,36
+
+8686,Urdu Language AS Level,june-2025,,,,,,,
+8686,Urdu Language AS Level,june-2025,,,,,,,
+
+
+
 
 
 9706,Accounting,march-2025,12,30,22,18,15,13,11
