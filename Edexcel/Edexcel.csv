@@ -196,9 +196,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2018,Jun,WGN03,Understanding and Spoken Response,40,36.0,33,28,24,20,16,0
 2018,Jun,WGN04,"Research, Understanding and Written Response",90,74.0,66,58,50,42,34,0
 2018,Jun,WHI01,"A - France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2018,Jun,WHI01,"B - Russia in Revolution, 1881-1917",50,,39,34,29,25,21,0
+2018,Jun,WHI01,"C - Germany, 1918-45",50,,39,34,29,25,21,0
+2018,Jun,WHI01,"D - Britain, 1964-90",50,,39,34,29,25,21,0
 2018,Jun,WHI02,"A - India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2018,Jun,WHI02,"B - China, 1900-76",50,,34,31,28,25,22,0
+2018,Jun,WHI02,"C - Russia, 1917-91: From Lenin to Yeltsin",50,,34,31,28,25,22,0
+2018,Jun,WHI02,"D - South Africa, 1948-2014",50,,34,31,28,25,22,0
 2018,Jun,WHI03,"A - The USA, Independence to Civil War,",50,38.0,34,30,27,24,21,0
+2018,Jun,WHI03,"B - The British Experience of Warfare, 1803–1945",50,38.0,34,30,27,24,21,0
+2018,Jun,WHI03,"C - Germany: United, Divided and Reunited,",50,38.0,34,30,27,24,21,0
+2018,Jun,WHI03,"D - Civil Rights and Race Relations in the USA,",50,38.0,34,30,27,24,21,0
 2018,Jun,WHI04,"A - The Making of Modern Europe, 1805–71",50,38.0,34,30,27,24,21,0
+2018,Jun,WHI04,"B - The World in Crisis, 1879–1945",50,38.0,34,30,27,24,21,0
+2018,Jun,WHI04,"C - The World Divided: Superpower Relations,",50,38.0,34,30,27,24,21,0
+2018,Jun,WHI04,"D - The Cold War and Hot War in Asia, 1945–90",50,38.0,34,30,27,24,21,0
 2018,Jun,WIT01,The Information Age,60,,52,47,42,37,33,0
 2018,Jun,WIT02,The Digital Economy,60,,51,46,41,37,33,0
 2018,Jun,WIT03,The Knowledge Worker,90,,66,59,53,47,41,0
@@ -326,9 +338,19 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2019,Jan,WGN03,Understanding and Spoken Response,40,36.0,33,28,24,20,16,0
 2019,Jan,WGN04,"Research, Understanding and Written Response",90,74.0,66,58,50,42,34,0
 2019,Jan,WHI01,"A - France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2019,Jan,WHI01,"B - Russia in Revolution, 1881-1917",50,,39,34,29,25,21,0
+2019,Jan,WHI01,"C - Germany, 1918-45",50,,39,34,29,24,19,0
+2019,Jan,WHI01,"D - Britain, 1964-90",50,,39,34,29,25,21,0
 2019,Jan,WHI02,"A - India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2019,Jan,WHI02,"B - China, 1900-76",50,,34,31,28,25,22,0
+2019,Jan,WHI02,"C - Russia, 1917-91: From Lenin to Yeltsin",50,,34,31,28,25,22,0
+2019,Jan,WHI02,"D - South Africa, 1948-2014",50,,34,31,28,25,22,0
 2019,Jan,WHI03,"A - The USA, Independence to Civil War, 1775–1865",50,38.0,34,30,27,24,21,0
+2019,Jan,WHI03,"B - The British Experience of Warfare, 1803–1945",50,38.0,34,30,27,24,21,0
+2019,Jan,WHI03,"C - Germany: United, Divided and Reunited, 1870–1990",50,38.0,34,30,27,24,21,0
+2019,Jan,WHI03,"D - Civil Rights and Race Relations in the USA, 1865–2009",50,38.0,34,30,27,24,21,0
 2019,Jan,WHI04,"B - The World in Crisis, 1879–1945",50,38.0,34,30,27,24,21,0
+2019,Jan,WHI04,"C - The World Divided: Superpower Relations, 1943–90",50,38.0,34,30,27,24,21,0
 2019,Jan,WMA01,Core Mathematics C12,125,,98,85,72,60,48,0
 2019,Jan,WMA02,Core Mathematics C34,125,107.0,95,83,71,60,49,0
 2019,Jan,WMA11,Pure Mathematics 1,75,,55,47,39,32,25,0
@@ -414,9 +436,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2019,Jun,WGN03,Understanding and Spoken Response,40,36.0,33,28,24,20,16,0
 2019,Jun,WGN04,"Research, Understanding and Written Response",90,72.0,64,56,48,41,34,0
 2019,Jun,WHI01,"A - France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2019,Jun,WHI01,"B - Russia in Revolution, 1881-1917",50,,39,34,29,25,21,0
+2019,Jun,WHI01,"C - Germany, 1918-45",50,,38,33,28,24,20,0
+2019,Jun,WHI01,"D - Britain, 1964-90",50,,39,34,29,25,21,0
 2019,Jun,WHI02,"A - India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2019,Jun,WHI02,"B - China, 1900-76",50,,34,31,28,25,22,0
+2019,Jun,WHI02,"C - Russia, 1917-91: From Lenin to Yeltsin",50,,33,30,27,24,21,0
+2019,Jun,WHI02,"D - South Africa, 1948-2014",50,,34,31,28,25,22,0
 2019,Jun,WHI03,"A - The USA, Independence to Civil War, 1775–1865",50,38.0,34,30,27,24,21,0
+2019,Jun,WHI03,"B - The British Experience of Warfare, 1803–1945",50,38.0,34,30,27,24,21,0
+2019,Jun,WHI03,"C - Germany: United, Divided and Reunited, 1870–1990",50,38.0,34,30,27,24,21,0
+2019,Jun,WHI03,"D - Civil Rights and Race Relations in the USA,",50,38.0,34,30,27,24,21,0
 2019,Jun,WHI04,"A - The Making of Modern Europe, 1805–71",50,38.0,34,30,27,24,21,0
+2019,Jun,WHI04,"B - The World in Crisis, 1879–1945",50,38.0,34,30,27,24,21,0
+2019,Jun,WHI04,"C - The World Divided: Superpower Relations, 1943–90",50,38.0,34,30,27,24,21,0
+2019,Jun,WHI04,"D - The Cold War and Hot War in Asia, 1945–90",50,38.0,34,30,27,24,21,0
 2019,Jun,WIT01,The Information Age,60,,52,47,42,37,33,0
 2019,Jun,WIT02,The Digital Economy,60,,51,46,41,37,33,0
 2019,Jun,WIT03,The Knowledge Worker,90,,67,60,54,48,42,0
@@ -544,11 +578,23 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2020,Jan,WGN03,Understanding and Spoken Response,40,36.0,33,28,24,20,16,0
 2020,Jan,WGN04,"Research, Understanding and Written Response",90,72.0,64,56,48,41,34,0
 2020,Jan,WHI01,"A - France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2020,Jan,WHI01,"B - Russia in Revolution, 1881-1917",50,,39,34,29,25,21,0
+2020,Jan,WHI01,"C - Germany, 1918-45",50,,39,34,29,24,20,0
+2020,Jan,WHI01,"D - Britain, 1964-90",50,,39,34,29,25,21,0
 2020,Jan,WHI02,"A - India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2020,Jan,WHI02,"B - China, 1900-76",50,,34,31,28,25,22,0
+2020,Jan,WHI02,"C - Russia, 1917-91: From Lenin to Yeltsin",50,,34,31,28,25,22,0
+2020,Jan,WHI02,"D - South Africa, 1948-2014",50,,34,31,28,25,22,0
 2020,Jan,WHI03,"A - The USA, Independence to Civil War, 1775–1865",50,38.0,34,30,27,24,21,0
+2020,Jan,WHI03,"B - The British Experience of Warfare, 1803–1945",50,38.0,34,30,27,24,21,0
+2020,Jan,WHI03,"C - Germany: United, Divided and Reunited, 1870–1990",50,38.0,34,30,27,24,21,0
+2020,Jan,WHI03,"D - Civil Rights and Race Relations in the USA, 1865–2009",50,38.0,34,30,27,24,21,0
 2020,Jan,WHI04,"B - The World in Crisis, 1879–1945",50,38.0,34,30,27,24,21,0
+2020,Jan,WHI04,"C - The World Divided: Superpower Relations, 1943–90",50,38.0,34,30,27,24,21,0
+2020,Jan,WHI04,"D - The Cold War and Hot War in Asia, 1945–90",50,38.0,34,30,27,24,21,0
 2020,Jan,WMA01,Core Mathematics C12,125,,88,76,64,52,41,0
 2020,Jan,WMA02,Core Mathematics C34: Paper 01,125,108.0,96,84,72,61,50,0
+2020,Jan,WMA02,Core Mathematics C34: Paper 01C,125,113.0,102,89,76,63,51,0
 2020,Jan,WMA11,Mathematics : Pure Maths P1 (New),75,,55,46,37,29,21,0
 2020,Jan,WMA12,Mathematics : Pure Maths P2 (New),75,,52,46,40,34,28,0
 2020,Jan,WMA13,Mathematics: Pure Maths P3 (New),75,63.0,57,51,45,39,33,0
@@ -620,9 +666,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2021,Jan,WGN03,Understanding and Spoken Response,40,34.0,30,26,22,18,14,0
 2021,Jan,WGN04,"Research, Understanding and Written Response",90,71.0,57,47,37,27,17,0
 2021,Jan,WHI01,"1A - France in Revolution, 1774-99",50,,36,31,26,21,16,0
+2021,Jan,WHI01,"1B - Russia in Revolution, 1881-1917",50,,36,31,26,21,16,0
+2021,Jan,WHI01,"1C - Germany, 1918-45",50,,36,31,26,21,16,0
+2021,Jan,WHI01,"1D - Britain, 1964-90",50,,36,31,26,21,16,0
 2021,Jan,WHI02,"1A - India, 1857-1948: The Raj to Partition",50,,29,25,22,19,16,0
+2021,Jan,WHI02,"1B - China, 1900-76",50,,29,25,22,19,16,0
+2021,Jan,WHI02,"1C - Russia, 1917-91: From Lenin to Yeltsin",50,,29,25,22,19,16,0
+2021,Jan,WHI02,"1D - South Africa, 1948-2014",50,,29,25,22,19,16,0
 2021,Jan,WHI03,"1A - The USA, Independence to Civil War, 1763–1865",50,33.0,29,25,22,19,16,0
+2021,Jan,WHI03,"1B - The British Experience of Warfare, 1803–1945",50,33.0,29,25,22,19,16,0
+2021,Jan,WHI03,"1C - Germany: United, Divided and Reunited, 1870–1990",50,33.0,29,25,22,19,16,0
+2021,Jan,WHI03,"1D - Civil Rights and Race Relations in the USA, 1865–2009",50,33.0,29,25,22,19,16,0
 2021,Jan,WHI04,"1A - The Making of Modern Europe, 1805–71",50,34.0,30,26,22,19,16,0
+2021,Jan,WHI04,"1B - The World in Crisis, 1879–1945",50,34.0,30,26,22,19,16,0
+2021,Jan,WHI04,"1C - The World Divided: Superpower Relations, 1943–90",50,34.0,30,26,22,19,16,0
+2021,Jan,WHI04,"1D - The Cold War and Hot War in Asia, 1945–90",50,34.0,30,26,22,19,16,0
 2021,Jan,WMA11,Mathematics : Pure Maths P1 (New),75,,51,40,30,20,10,0
 2021,Jan,WMA12,Mathematics : Pure Maths P2 (New),75,,55,43,31,20,9,0
 2021,Jan,WMA13,Mathematics: Pure Maths P3 (New),75,64.0,53,42,31,20,9,0
@@ -745,9 +803,20 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2022,Jan,WGN03,Understanding and Spoken Response,40,34.0,29,25,21,18,15,0
 2022,Jan,WGN04,"Research, Understanding and Written Response",90,68.0,51,43,36,29,22,0
 2022,Jan,WHI01,"A - France in Revolution, 1774-99",50,,36,31,26,21,16,0
+2022,Jan,WHI01,"B - Russia in Revolution, 1881-1917",50,,36,31,26,21,16,0
+2022,Jan,WHI01,"C - Germany, 1918-45",50,,36,31,26,21,16,0
+2022,Jan,WHI01,"D - Britain, 1964-90",50,,36,31,26,21,16,0
 2022,Jan,WHI02,"A - India, 1857-1948: The Raj to Partition",50,,29,25,22,19,16,0
+2022,Jan,WHI02,"B - China, 1900-76",50,,29,25,22,19,16,0
+2022,Jan,WHI02,"C - Russia, 1917-91: From Lenin to Yeltsin",50,,29,25,22,19,16,0
+2022,Jan,WHI02,"D - South Africa, 1948-2014",50,,29,25,22,19,16,0
 2022,Jan,WHI03,"A - The USA, Independence to Civil War, 1763–1865",50,32.0,29,26,23,20,17,0
+2022,Jan,WHI03,"B - The British Experience of Warfare, 1803–1945",50,32.0,29,26,23,20,17,0
+2022,Jan,WHI03,"C - Germany: United, Divided and Reunited, 1870–1990",50,32.0,29,26,23,20,17,0
+2022,Jan,WHI03,"D - Civil Rights and Race Relations in the USA, 1865–2009",50,32.0,29,26,23,20,17,0
 2022,Jan,WHI04,"A - The Making of Modern Europe, 1805–71",50,34.0,30,26,23,20,17,0
+2022,Jan,WHI04,"B - The World in Crisis, 1879–1945",50,34.0,30,26,23,20,17,0
+2022,Jan,WHI04,"C - The World Divided: Superpower Relations, 1943–90",50,34.0,30,26,23,20,17,0
 2022,Jan,WMA11,Mathematics: Pure Maths P1,75,,48,39,30,21,12,0
 2022,Jan,WMA12,Mathematics: Pure Maths P2,75,,51,40,29,18,8,0
 2022,Jan,WMA13,Mathematics: Pure Maths P3,75,63.0,50,39,28,18,8,0
@@ -823,9 +892,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2022,Jun,WGN03,Unit 3: Understanding and Spoken Response,40,37.0,33,29,25,21,18,0
 2022,Jun,WGN04,"Unit 4: Research, Understanding and Written Response",90,71.0,64,54,45,36,27,0
 2022,Jun,WHI01,"1A: France in Revolution, 1774-99",50,,38,33,28,23,18,0
+2022,Jun,WHI01,"1B: Russia in Revolution, 1881-1917",50,,38,33,28,23,18,0
+2022,Jun,WHI01,"1C: Germany, 1918-45",50,,38,33,28,24,20,0
+2022,Jun,WHI01,"1D: Britain, 1964-90",50,,38,33,28,23,18,0
 2022,Jun,WHI02,"1A: India, 1857-1948: The Raj to Partition",50,,32,28,25,22,19,0
+2022,Jun,WHI02,"1B: China, 1900-76",50,,31,28,25,22,19,0
+2022,Jun,WHI02,"1C: Russia, 1917-91: From Lenin to Yeltsin",50,,32,28,24,21,18,0
+2022,Jun,WHI02,"1D: South Africa, 1948-2014",50,,31,28,25,22,19,0
 2022,Jun,WHI03,"1A: The USA, Independence to Civil War, 1763-1865",50,35.0,30,27,24,21,19,0
+2022,Jun,WHI03,"1B: The British Experience of Warfare, 1803-1945",50,34.0,31,27,24,21,18,0
+2022,Jun,WHI03,"1C: Germany: United, Divided and Reunited, 1870-1990",50,35.0,31,28,25,22,19,0
+2022,Jun,WHI03,"1D: Civil Rights and Race Relations in the USA,1 865-2009",50,35.0,31,27,24,21,18,0
 2022,Jun,WHI04,"1A: The Making of Modern Europe, 1805-71",50,36.0,32,28,25,22,19,0
+2022,Jun,WHI04,"1B: The World in Crisis, 1879-1945",50,36.0,32,28,24,21,18,0
+2022,Jun,WHI04,"1C: The World Divided: Superpower Relations, 1943-90",50,35.0,31,28,25,22,19,0
+2022,Jun,WHI04,"1D: The Cold War and Hot War in Asia, 1945-90",50,36.0,32,28,25,22,19,0
 2022,Jun,WIT11,Unit 1,80,,45,40,35,31,27,0
 2022,Jun,WIT12,Unit 2,80,,39,33,27,22,17,0
 2022,Jun,WIT13,Unit 3,80,46.0,42,38,34,30,27,0
@@ -940,9 +1021,20 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2023,Jan,WGN03,Unit 3: Understanding and Spoken Response,40,37.0,33,29,25,21,18,0
 2023,Jan,WGN04,"Unit 4: Research, Understanding and Written Response",90,71.0,64,54,45,36,27,0
 2023,Jan,WHI01,"1A: France in Revolution, 1774-99",50,,38,33,28,23,18,0
+2023,Jan,WHI01,"1B: Russia in Revolution, 1881-1917",50,,38,33,28,23,18,0
+2023,Jan,WHI01,"1C: Germany, 1918-45",50,,38,33,28,24,20,0
+2023,Jan,WHI01,"1D: Britain, 1964-90",50,,38,33,28,23,18,0
 2023,Jan,WHI02,"1A: India, 1857-1948: The Raj to Partition",50,,32,28,25,22,19,0
+2023,Jan,WHI02,"1B: China, 1900-76",50,,31,28,25,22,19,0
+2023,Jan,WHI02,"1C: Russia, 1917-91: From Lenin to Yeltsin",50,,32,28,24,21,18,0
+2023,Jan,WHI02,"1D: South Africa, 1948-2014",50,,31,28,25,22,19,0
 2023,Jan,WHI03,"1A: The USA, Independence to Civil War, 1763-1865",50,35.0,30,27,24,21,19,0
+2023,Jan,WHI03,"1B: The British Experience of Warfare, 1803-1945",50,34.0,31,27,24,21,18,0
+2023,Jan,WHI03,"1C: Germany: United, Divided and Reunited,1 870-1990",50,35.0,31,28,25,22,19,0
+2023,Jan,WHI03,"1D: Civil Rights and Race Relations in the USA,1 865-2009",50,35.0,31,27,24,21,18,0
 2023,Jan,WHI04,"1B: The World in Crisis, 1879-1945",50,36.0,32,28,24,21,18,0
+2023,Jan,WHI04,"1C: The World Divided: Superpower Relations, 1943-90",50,35.0,31,28,25,22,19,0
+2023,Jan,WHI04,"1D: The Cold War and Hot War in Asia, 1945-90",50,36.0,32,28,25,22,19,0
 2023,Jan,WMA11,P1: Pure Mathematics 1,75,,41,34,27,21,15,0
 2023,Jan,WMA12,P2: Pure Mathematics 2,75,,47,39,31,24,17,0
 2023,Jan,WMA13,P3: Pure Mathematics 3,75,58.0,45,37,30,23,16,0
@@ -1018,9 +1110,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2023,Jun,WGN03,Unit 3: Understanding and Spoken Response,40,37.0,34,29,24,20,16,0
 2023,Jun,WGN04,"Unit 4: Research, Understanding and Written Response",90,75.0,67,59,52,45,38,0
 2023,Jun,WHI01,"1A: France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2023,Jun,WHI01,"1B: Russia in Revolution, 1881-1917",50,,39,34,30,26,22,0
+2023,Jun,WHI01,"1C: Germany, 1918-45",50,,39,34,29,25,21,0
+2023,Jun,WHI01,"1D: Britain, 1964-90",50,,39,34,29,25,21,0
 2023,Jun,WHI02,"1A: India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2023,Jun,WHI02,"1B: China, 1900-76",50,,35,31,28,25,22,0
+2023,Jun,WHI02,"1C: Russia, 1917-91: From Lenin to Yeltsin",50,,34,30,27,24,21,0
+2023,Jun,WHI02,"1D: South Africa, 1948-2014",50,,34,31,28,25,22,0
 2023,Jun,WHI03,"1A: The USA, Independence to Civil War, 1763-1865",50,38.0,34,30,27,24,21,0
+2023,Jun,WHI03,"1B: The British Experience of Warfare, 1803-1945",50,38.0,34,30,27,24,21,0
+2023,Jun,WHI03,"1C: Germany: United, Divided and Reunited, 1870-1990",50,38.0,34,30,27,24,21,0
+2023,Jun,WHI03,"1D: Civil Rights and Race Relations in the USA, 1865-2009",50,38.0,34,30,27,24,21,0
 2023,Jun,WHI04,"1A: The Making of Modern Europe, 1805-71",50,38.0,34,30,27,24,21,0
+2023,Jun,WHI04,"1B: The World in Crisis, 1879-1945",50,39.0,35,31,27,23,19,0
+2023,Jun,WHI04,"1C: The World Divided: Superpower Relations, 1943-90",50,39.0,35,31,27,23,19,0
+2023,Jun,WHI04,"1D: The Cold War and Hot War in Asia, 1945-90",50,37.0,33,29,26,23,20,0
 2023,Jun,WIT11,Unit 1,80,,52,46,40,34,29,0
 2023,Jun,WIT12,Unit 2,80,,56,48,40,32,24,0
 2023,Jun,WIT13,Unit 3,80,59.0,52,45,39,33,27,0
@@ -1135,9 +1239,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2024,Jan,WGN03,Unit 3: Understanding and Spoken Response,40,37.0,34,29,24,20,16,0
 2024,Jan,WGN04,"Unit 4: Research, Understanding and Written Response",90,74.0,66,59,52,45,38,0
 2024,Jan,WHI01,"1A: France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2024,Jan,WHI01,"1B: Russia in Revolution, 1881-1917",50,,39,34,30,26,22,0
+2024,Jan,WHI01,"1C: Germany, 1918-45",50,,39,34,29,25,21,0
+2024,Jan,WHI01,"1D: Britain, 1964-90",50,,39,34,29,25,21,0
 2024,Jan,WHI02,"1A: India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2024,Jan,WHI02,"1B: China, 1900-76",50,,35,31,28,25,22,0
+2024,Jan,WHI02,"1C: Russia, 1917-91: From Lenin to Yeltsin",50,,34,31,28,25,22,0
+2024,Jan,WHI02,"1D: South Africa, 1948-2014",50,,34,31,28,25,22,0
 2024,Jan,WHI03,"1A: The USA, Independence to Civil War, 1763-1865",50,38.0,34,30,27,24,21,0
+2024,Jan,WHI03,"1B: The British Experience of Warfare, 1803-1945",50,38.0,34,30,27,24,21,0
+2024,Jan,WHI03,"1C: Germany: United, Divided and Reunited,1 870-1990",50,38.0,34,30,27,24,21,0
+2024,Jan,WHI03,"1D: Civil Rights and Race Relations in the USA,1 865-2009",50,38.0,34,30,27,24,21,0
 2024,Jan,WHI04,"1A: The Making of Modern Europe, 1805-71",50,38.0,34,30,27,24,21,0
+2024,Jan,WHI04,"1B: The World in Crisis, 1879-1945",50,39.0,35,31,27,23,19,0
+2024,Jan,WHI04,"1C: The World Divided: Superpower Relations, 1943-90",50,38.0,34,30,26,22,19,0
+2024,Jan,WHI04,"1D: The Cold War and Hot War in Asia, 1945-90",50,37.0,33,29,26,23,20,0
 2024,Jan,WMA11,P1: Pure Mathematics 1,75,,55,48,41,34,28,0
 2024,Jan,WMA12,P2: Pure Mathematics 2,75,,53,46,39,32,25,0
 2024,Jan,WMA13,P3: Pure Mathematics 3,75,68.0,61,54,47,40,34,0
@@ -1178,7 +1294,9 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2024,Jun,WBS14,Unit 4: Global Business,80,54.0,48,42,37,32,27,0
 2024,Jun,WCH11,"Unit 1: Structure, Bonding and Introducttion to Organic Chemistry",80,,57,51,45,39,33,0
 2024,Jun,WCH12,"Unit 2: Energetics, Group Chemistry, Halogenoalkanes and Alcohol",80,,53,46,39,33,27,0
+2024,Jun,WCH12,"Unit 2R: Energetics, Group Chemistry, Halogenoalkanes and Alcohol",80,,60,53,46,40,34,0
 2024,Jun,WCH13,Unit 3: Practical Skills in Chemistry I,50,,30,26,22,18,14,0
+2024,Jun,WCH13,Unit 3R: Practical Skills in Chemistry I,50,,35,30,25,20,16,0
 2024,Jun,WCH14,"Unit 4: Rates, Equilibria and Further Organic Chemistry",90,69.0,63,57,51,45,39,0
 2024,Jun,WCH15,Unit 5: Transition Metals and Organic Nitrogen Chemistry,90,65.0,59,53,47,42,37,0
 2024,Jun,WCH16,Unit 6: Practical Skills in Chemistry II,50,39.0,36,33,30,27,24,0
@@ -1188,13 +1306,19 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2024,Jun,WEC13,Unit 3: Business Behaviour,80,58.0,53,48,43,39,35,0
 2024,Jun,WEC14,Unit 4: Developments in the Global Economy,80,56.0,50,44,38,32,26,0
 2024,Jun,WEN01,Unit 1: Language: Context and Identity,50,,32,28,24,21,18,0
+2024,Jun,WEN01,Unit 1C: Language: Context and Identity,50,,32,28,24,21,18,0
 2024,Jun,WEN02,Unit 2: Language in Transition,50,,38,33,28,23,18,0
+2024,Jun,WEN02,Unit 2C: Language in Transition,50,,38,33,28,23,18,0
 2024,Jun,WEN03,Unit 3: Crafting Language (Writing),50,37.0,33,29,25,22,19,0
 2024,Jun,WEN04,Unit 4: Investigating Language,50,36.0,31,26,21,17,13,0
 2024,Jun,WET01,Unit 1: Post-2000 Poetry and Prose,50,,31,28,25,22,19,0
+2024,Jun,WET01,Unit 1C: Post-2000 Poetry and Prose,50,,31,28,25,22,19,0
 2024,Jun,WET02,Unit 2: Drama,50,,32,28,24,21,18,0
+2024,Jun,WET02,Unit 2C: Drama,50,,32,28,24,21,18,0
 2024,Jun,WET03,Unit 3: Poetry and Prose,50,36.0,32,28,24,20,17,0
+2024,Jun,WET03,Unit 3C: Poetry and Prose,50,36.0,32,28,24,20,17,0
 2024,Jun,WET04,Unit 4: Shakespeare and Pre-1900 Poetry,50,45.0,40,34,28,23,18,0
+2024,Jun,WET04,Unit 4C: Shakespeare and Pre-1900 Poetry,50,45.0,40,34,28,23,18,0
 2024,Jun,WFM01,FP1: Further Pure Mathematics 1,75,,64,57,50,44,38,0
 2024,Jun,WFM02,FP2: Further Pure Mathematics 2,75,71.0,68,60,52,45,38,0
 2024,Jun,WFM03,FP3: Further Pure Mathematics 3,75,61.0,55,49,43,38,33,0
@@ -1213,15 +1337,29 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2024,Jun,WGN03,Unit 3: Understanding and Spoken Response,40,37.0,34,29,24,20,16,0
 2024,Jun,WGN04,"Unit 4: Research, Understanding and Written Response",90,73.0,65,57,50,43,36,0
 2024,Jun,WHI01,"1A: France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2024,Jun,WHI01,"1B: Russia in Revolution, 1881-1917",50,,39,34,30,26,22,0
+2024,Jun,WHI01,"1C: Germany, 1918-45",50,,39,34,29,25,21,0
+2024,Jun,WHI01,"1D: Britain, 1964-90",50,,39,34,29,25,21,0
 2024,Jun,WHI02,"1A: India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2024,Jun,WHI02,"1B: China, 1900-76",50,,35,31,28,25,22,0
+2024,Jun,WHI02,"1C: Russia, 1917-91: From Lenin to Yeltsin",50,,35,31,28,25,22,0
+2024,Jun,WHI02,"1D: South Africa, 1948-2014",50,,34,31,28,25,22,0
 2024,Jun,WHI03,"1A: The USA, Independence to Civil War, 1763-1865",50,38.0,34,30,27,24,21,0
+2024,Jun,WHI03,"1B: The British Experience of Warfare, 1803-1945",50,38.0,34,30,27,24,21,0
+2024,Jun,WHI03,"1C: Germany: United, Divided and Reunited,1 870-1990",50,38.0,34,30,27,24,21,0
+2024,Jun,WHI03,"1D: Civil Rights and Race Relations in the USA,1 865-2009",50,36.0,33,30,27,24,21,0
 2024,Jun,WHI04,"1A: The Making of Modern Europe, 1805-71",50,38.0,34,30,27,24,21,0
+2024,Jun,WHI04,"1B: The World in Crisis, 1879-1945",50,39.0,35,31,27,23,19,0
+2024,Jun,WHI04,"1C: The World Divided: Superpower Relations, 1943-90",50,40.0,36,32,28,24,21,0
+2024,Jun,WHI04,"1D: The Cold War and Hot War in Asia, 1945-90",50,38.0,34,30,27,24,21,0
 2024,Jun,WIT11,Unit 1,80,,45,39,33,28,23,0
 2024,Jun,WIT12,Unit 2,80,,61,53,46,39,32,0
 2024,Jun,WIT13,Unit 3,80,56.0,50,44,38,33,28,0
 2024,Jun,WIT14,Unit 4,80,68.0,61,53,46,39,32,0
 2024,Jun,WMA11,P1: Pure Mathematics 1,75,,55,48,42,36,30,0
+2024,Jun,WMA11,P1: Pure Mathematics 1R,75,,55,48,42,36,30,0
 2024,Jun,WMA12,P2: Pure Mathematics 2,75,,48,42,37,32,27,0
+2024,Jun,WMA12,P2: Pure Mathematics 2R,75,,48,42,37,32,27,0
 2024,Jun,WMA13,P3: Pure Mathematics 3,75,68.0,62,56,50,44,38,0
 2024,Jun,WMA14,P4: Pure Mathematics 4,75,59.0,53,47,41,35,29,0
 2024,Jun,WME01,M1: Mechanics 1,75,,64,56,48,40,33,0
@@ -1307,13 +1445,19 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2025,Jan,WEC13,Unit 3: Business Behaviour,80,60.0,55,50,45,40,35,0
 2025,Jan,WEC14,Unit 4: Developments in the Global Economy,80,58.0,53,48,43,38,33,0
 2025,Jan,WEN01,Unit 1: Language: Context and Identity,50,,33,29,25,21,18,0
+2025,Jan,WEN01,Unit 1C: Language: Context and Identity,50,,33,29,25,21,18,0
 2025,Jan,WEN02,Unit 2: Language in Transition,50,,36,31,26,22,18,0
+2025,Jan,WEN02,Unit 2C: Language in Transition,50,,36,31,26,22,18,0
 2025,Jan,WEN03,Unit 3: Crafting Language (Writing),50,37.0,33,29,25,22,19,0
 2025,Jan,WEN04,Unit 4: Investigating Language,50,36.0,31,26,21,17,13,0
 2025,Jan,WET01,Unit 1: Post-2000 Poetry and Prose,50,,34,30,26,22,18,0
+2025,Jan,WET01,Unit 1C: Post-2000 Poetry and Prose,50,,34,30,26,22,18,0
 2025,Jan,WET02,Unit 2: Drama,50,,32,28,24,20,17,0
+2025,Jan,WET02,Unit 2C: Drama,50,,32,28,24,20,17,0
 2025,Jan,WET03,Unit 3: Poetry and Prose,50,38.0,34,30,26,22,19,0
+2025,Jan,WET03,Unit 3C: Poetry and Prose,50,38.0,34,30,26,22,19,0
 2025,Jan,WET04,Unit 4: Shakespeare and Pre-1900 Poetry,50,43.0,38,33,28,23,18,0
+2025,Jan,WET04,Unit 4C: Shakespeare and Pre-1900 Poetry,50,43.0,38,33,28,23,18,0
 2025,Jan,WFM01,FP1: Further Pure Mathematics 1,75,,64,58,52,46,40,0
 2025,Jan,WFM02,FP2: Further Pure Mathematics 2,75,70.0,66,58,50,43,36,0
 2025,Jan,WFM03,FP3: Further Pure Mathematics 3,75,68.0,62,55,48,42,36,0
@@ -1330,9 +1474,21 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2025,Jan,WGN03,Unit 3: Understanding and Spoken Response,40,37.0,34,29,24,20,16,0
 2025,Jan,WGN04,"Unit 4: Research, Understanding and Written Response",90,73.0,66,59,52,45,38,0
 2025,Jan,WHI01,"1A: France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2025,Jan,WHI01,"1B: Russia in Revolution, 1881-1917",50,,39,34,30,26,22,0
+2025,Jan,WHI01,"1C: Germany, 1918-45",50,,39,34,29,25,21,0
+2025,Jan,WHI01,"1D: Britain, 1964-90",50,,39,34,29,25,21,0
 2025,Jan,WHI02,"1A: India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2025,Jan,WHI02,"1B: China, 1900-76",50,,35,31,28,25,22,0
+2025,Jan,WHI02,"1C: Russia, 1917-91: From Lenin to Yeltsin",50,,34,31,28,25,22,0
+2025,Jan,WHI02,"1D: South Africa, 1948-2014",50,,34,31,28,25,22,0
 2025,Jan,WHI03,"1A: The USA, Independence to Civil War, 1763-1865",50,38.0,34,30,27,24,21,0
+2025,Jan,WHI03,"1B: The British Experience of Warfare, 1803-1945",50,38.0,34,30,27,24,21,0
+2025,Jan,WHI03,"1C: Germany: United, Divided and Reunited,1 870-1990",50,38.0,34,30,27,24,21,0
+2025,Jan,WHI03,"1D: Civil Rights and Race Relations in the USA,1 865-2009",50,38.0,34,30,27,24,21,0
 2025,Jan,WHI04,"1A: The Making of Modern Europe, 1805-71",50,38.0,34,30,27,24,21,0
+2025,Jan,WHI04,"1B: The World in Crisis, 1879-1945",50,39.0,35,31,27,23,19,0
+2025,Jan,WHI04,"1C: The World Divided: Superpower Relations, 1943-90",50,39.0,35,31,27,23,20,0
+2025,Jan,WHI04,"1D: The Cold War and Hot War in Asia, 1945-90",50,37.0,33,29,26,23,20,0
 2025,Jan,WMA11,P1: Pure Mathematics 1,75,,55,48,41,34,27,0
 2025,Jan,WMA12,P2: Pure Mathematics 2,75,,54,47,40,34,28,0
 2025,Jan,WMA13,P3: Pure Mathematics 3,75,65.0,59,53,47,41,36,0
@@ -1376,22 +1532,33 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2025,Jun,WCH13,Unit 3: Practical Skills in Chemistry I,50,,36,31,27,23,19,0
 2025,Jun,WCH14,"Unit 4: Rates, Equilibria and Further Organic Chemistry",90,81.0,72,63,54,46,38,0
 2025,Jun,WCH15,Unit 5: Transition Metals and Organic Nitrogen Chemistry,90,73.0,66,59,52,45,39,0
+2025,Jun,WCH15,Unit 5A: Transition Metals and Organic Nitrogen Chemistry,90,73.0,66,59,52,45,39,0
 2025,Jun,WCH16,Unit 6: Practical Skills in Chemistry II,50,39.0,35,31,27,24,21,0
 2025,Jun,WDM11,Unit 1: Decision Mathematics 1,75,,63,57,51,45,39,0
 2025,Jun,WEC11,Unit 1: Markets in Action,80,,59,53,47,41,36,0
 2025,Jun,WEC12,Unit 2: Macroeconomic Performance and Policy,80,,58,53,48,43,38,0
 2025,Jun,WEC13,Unit 3: Business Behaviour,80,59.0,54,49,44,39,34,0
 2025,Jun,WEC14,Unit 4: Developments in the Global Economy,80,61.0,56,51,46,41,36,0
+2025,Jun,WEC14,Unit 4A: Developments in the Global Economy,80,61.0,55,49,43,38,33,0
 2025,Jun,WEN01,Unit 1: Language: Context and Identity,50,,30,26,22,19,16,0
+2025,Jun,WEN01,Unit 1C: Language: Context and Identity,50,,30,26,22,19,16,0
 2025,Jun,WEN02,Unit 2: Language in Transition,50,,35,30,26,22,18,0
+2025,Jun,WEN02,Unit 2C: Language in Transition,50,,35,30,26,22,18,0
 2025,Jun,WEN03,Unit 3: Crafting Language (Writing),50,35.0,31,27,23,20,17,0
+2025,Jun,WEN03,Unit 3C: Crafting Language (Writing),50,35.0,31,27,23,20,17,0
 2025,Jun,WEN04,Unit 4: Investigating Language,50,39.0,34,29,24,19,15,0
+2025,Jun,WEN04,Unit 4C: Investigating Language,50,39.0,34,29,24,19,15,0
 2025,Jun,WET01,Unit 1: Post-2000 Poetry and Prose,50,,32,28,24,21,18,0
+2025,Jun,WET01,Unit 1C: Post-2000 Poetry and Prose,50,,32,28,24,21,18,0
 2025,Jun,WET02,Unit 2: Drama,50,,33,29,25,21,18,0
+2025,Jun,WET02,Unit 2C: Drama,50,,33,29,25,21,18,0
 2025,Jun,WET03,Unit 3: Poetry and Prose,50,36.0,32,28,24,20,16,0
+2025,Jun,WET03,Unit 3C: Poetry and Prose,50,36.0,32,28,24,20,16,0
 2025,Jun,WET04,Unit 4: Shakespeare and Pre-1900 Poetry,50,41.0,37,33,29,25,21,0
+2025,Jun,WET04,Unit 4C: Shakespeare and Pre-1900 Poetry,50,41.0,37,33,29,25,21,0
 2025,Jun,WFM01,Unit 1: Further Pure Mathematics 1,75,,64,57,50,44,38,0
 2025,Jun,WFM02,Unit 2: Further Pure Mathematics 2,75,71.0,67,59,52,45,38,0
+2025,Jun,WFM02,Unit 2A: Further Pure Mathematics 2,75,69.0,63,55,48,41,34,0
 2025,Jun,WFM03,Unit 3: Further Pure Mathematics 3,75,64.0,58,52,46,40,35,0
 2025,Jun,WFR01,Unit 1: Spoken Expression and Response,40,,30,26,22,19,16,0
 2025,Jun,WFR02,Unit 2: Understanding and Written Response,90,,71,65,59,53,48,0
@@ -1408,19 +1575,36 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2025,Jun,WGN03,Unit 3: Understanding and Spoken Response,40,35.0,31,27,23,19,16,0
 2025,Jun,WGN04,"Unit 4: Research, Understanding and Written Response",90,73.0,65,57,50,43,36,0
 2025,Jun,WHI01,"Unit 1A: France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2025,Jun,WHI01,"Unit 1B: Russia in Revolution, 1881-1917",50,,39,34,30,26,22,0
+2025,Jun,WHI01,"Unit 1C: Germany, 1918-45",50,,39,34,29,25,21,0
+2025,Jun,WHI01,"Unit 1D: Britain, 1964-90",50,,39,34,29,25,21,0
 2025,Jun,WHI02,"Unit 2A: India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2025,Jun,WHI02,"Unit 2B: China, 1900-76",50,,35,31,28,25,22,0
+2025,Jun,WHI02,"Unit 2C: Russia, 1917-91: From Lenin to Yeltsin",50,,36,32,28,25,22,0
+2025,Jun,WHI02,"Unit 2D: South Africa, 1948-2014",50,,34,31,28,25,22,0
 2025,Jun,WHI03,"Unit 3A: The USA, Independence to Civil War, 1763-1865",50,45.0,40,35,30,25,21,0
+2025,Jun,WHI03,"Unit 3B: The British Experience of Warfare, 1803-1945",50,45.0,40,35,30,25,21,0
+2025,Jun,WHI03,"Unit 3C: Germany: United, Divided and Reunited,1 870-1990",50,45.0,40,35,30,25,21,0
+2025,Jun,WHI03,"Unit 3D: Civil Rights and Race Relations in the USA,1 865-2009",50,44.0,39,34,29,25,21,0
 2025,Jun,WHI04,"Unit 4A: The Making of Modern Europe, 1805-71",50,38.0,34,30,27,24,21,0
+2025,Jun,WHI04,"Unit 4B: The World in Crisis, 1879-1945",50,41.0,36,31,27,23,19,0
+2025,Jun,WHI04,"Unit 4C: The World Divided: Superpower Relations, 1943-90",50,41.0,37,33,29,25,21,0
+2025,Jun,WHI04,"Unit 4D: The Cold War and Hot War in Asia, 1945-90",50,38.0,34,30,27,24,21,0
 2025,Jun,WIT11,Unit 1,80,,55,49,43,37,32,0
 2025,Jun,WIT12,Unit 2,80,,64,56,49,42,35,0
 2025,Jun,WIT13,Unit 3,80,57.0,51,45,39,33,28,0
 2025,Jun,WIT14,Unit 4,80,68.0,61,54,47,40,33,0
 2025,Jun,WMA11,Unit 1: Pure Mathematics 1,75,,55,48,41,35,29,0
+2025,Jun,WMA11,Unit 1A: Pure Mathematics 1,75,,55,48,41,35,29,0
 2025,Jun,WMA12,Unit 2: Pure Mathematics 2,75,,53,47,41,35,29,0
+2025,Jun,WMA12,Unit 2A: Pure Mathematics 2,75,,53,47,41,35,29,0
 2025,Jun,WMA13,Unit 3: Pure Mathematics 3,75,63.0,57,51,45,39,34,0
+2025,Jun,WMA13,Unit 3A: Pure Mathematics 3,75,65.0,59,53,47,41,36,0
 2025,Jun,WMA14,Unit 4: Pure Mathematics 4,75,63.0,56,49,42,36,30,0
+2025,Jun,WMA14,Unit 4A: Pure Mathematics 4,75,63.0,56,49,42,36,30,0
 2025,Jun,WME01,Unit 1: Mechanics 1,75,,64,56,48,40,33,0
 2025,Jun,WME02,Unit 2: Mechanics 2,75,62.0,55,48,42,36,30,0
+2025,Jun,WME02,Unit 2A: Mechanics 2,75,62.0,55,48,42,36,30,0
 2025,Jun,WME03,Unit 3: Mechanics 3,75,69.0,64,56,48,41,34,0
 2025,Jun,WPH11,Unit 1: Mechanics and Materials,80,,59,52,46,40,34,0
 2025,Jun,WPH12,Unit 2: Waves and Electricity,80,,58,51,44,37,31,0
