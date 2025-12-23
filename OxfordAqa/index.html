@@ -24,47 +24,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oxford AQA A-Level Grade Boundaries 2020-2025 | Interactive Tables & CSV</title>
-  <meta name="description" content="Oxford AQA A-Level grade boundaries (2020-2025). Includes interactive charts, CSV downloads, and a raw mark to UMS converter tool.">
+  <meta name="description" content="Oxford AQA A-Level grade boundaries (2020-2025). Includes interactive charts and CSV downloads.">
   <meta name="theme-color" content="#111827">
 
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js" defer></script>
   <link rel="preload" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" as="style" onload="this.rel='stylesheet'" />
   <link rel="preload" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css" as="style" onload="this.rel='stylesheet'" />
 
-  <style>
-    .converter-box {
-      background: #f3f4f6;
-      border: 1px solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .dark .converter-box {
-      background: #1f2937;
-      border-color: #374151;
-    }
-    .converter-input {
-      background: white;
-      border: 1px solid #d1d5db;
-      padding: 0.5rem;
-      border-radius: 0.25rem;
-      width: 100%;
-    }
-    .dark .converter-input {
-      background: #374151;
-      border-color: #4b5563;
-      color: white;
-    }
-    .ums-result {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #2b7a78;
-    }
-    .dark .ums-result {
-      color: #5cdb95;
-    }
-  </style>
-</head>
+  </head>
 
 <body class="text-gray-800 flex flex-col min-h-screen">
   <header class="text-white text-center py-6 shadow-lg">
@@ -95,37 +62,12 @@
 
       <hr class="my-8 border-gray-200 dark:border-gray-700">
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        
-        <div class="md:col-span-1">
-          <label for="aqaUnitSearch" class="font-semibold block mb-2">Select Unit:</label>
-          <input type="text" id="aqaUnitSearch" placeholder="e.g. CH01" class="border rounded px-2 py-2 w-full converter-input" list="aqaUnitList" />
+      <div class="mb-6 flex items-center gap-4">
+         <div class="w-full sm:w-auto">
+          <label for="aqaUnitSearch" class="font-semibold block mb-2">Select Unit to Graph:</label>
+          <input type="text" id="aqaUnitSearch" placeholder="e.g. CH01" class="border rounded px-2 py-2 w-full sm:w-64" list="aqaUnitList" />
           <datalist id="aqaUnitList"></datalist>
-
-          <label for="sessionSelect" class="font-semibold block mt-4 mb-2">Select Session:</label>
-          <select id="sessionSelect" class="border rounded px-2 py-2 w-full converter-input">
-            </select>
-        </div>
-
-        <div class="md:col-span-2 converter-box">
-          <h3 class="text-lg font-bold mb-2">⚡ Raw Mark to UMS Converter</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            Enter your raw mark to calculate your specific UMS score based on the boundaries for the selected session.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-4 items-end">
-            <div class="flex-1 w-full">
-              <label class="block text-sm font-medium mb-1">Your Raw Mark</label>
-              <input type="number" id="rawMarkInput" class="converter-input" placeholder="e.g. 65" min="0">
-            </div>
-            <div class="flex-1 w-full">
-              <label class="block text-sm font-medium mb-1">Estimated UMS</label>
-              <div id="umsOutput" class="ums-result">--</div>
-            </div>
-          </div>
-          <p id="converterNote" class="text-xs text-gray-500 mt-2 italic h-4"></p>
-        </div>
-
+         </div>
       </div>
 
       <div class="chart-container" style="min-height: 400px;">
@@ -147,7 +89,6 @@
         .then(csvText=>new Promise((resolve)=>{ Papa.parse(csvText,{header:true,dynamicTyping:true,skipEmptyLines:true,worker:true,complete:({data})=>resolve([data,csvText])}); }))
         .then(async ([parsed,csvText])=>{
           await loadScript('https://code.jquery.com/jquery-3.6.0.min.js');
-          // Duplicate jQuery line removed here
           await loadScript('https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js');
           await loadScript('https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js');
           await loadScript('https://cdn.jsdelivr.net/npm/chart.js');
@@ -194,10 +135,6 @@
       // 2. UI SETUP
       const unitInput = document.getElementById('aqaUnitSearch');
       const unitList = document.getElementById('aqaUnitList');
-      const sessionSelect = document.getElementById('sessionSelect');
-      const rawInput = document.getElementById('rawMarkInput');
-      const umsOutput = document.getElementById('umsOutput');
-      const converterNote = document.getElementById('converterNote');
 
       // Populate Unit Datalist
       Object.keys(dataByUnit).sort().forEach(u=>unitList.appendChild(Object.assign(document.createElement('option'),{value:u})));
@@ -205,96 +142,14 @@
       // Chart Config
       const ctx=document.getElementById('OxfordAqaChart').getContext('2d');
       let chart=null;
-      // Fixed colors for consistency
       const gradeColors = { 'A*':'#8b5cf6', 'A':'#3b82f6', 'B':'#10b981', 'C':'#f59e0b', 'D':'#ef4444', 'E':'#6b7280' };
       const monthOrder={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
 
       // 3. FUNCTIONS
-      function updateSessionsDropdown(unit){
-        sessionSelect.innerHTML = '';
-        if(!dataByUnit[unit]) return;
-        
-        const sessions = Object.keys(dataByUnit[unit]).sort((a,b)=>{
-          const [ya,ma]=a.split(' '); const [yb,mb]=b.split(' ');
-          return (+yb-+ya)||(monthOrder[mb]-monthOrder[ma]); // Newest first
-        });
-
-        sessions.forEach(s => {
-          const opt = document.createElement('option');
-          opt.value = s;
-          opt.innerText = s;
-          sessionSelect.appendChild(opt);
-        });
-        calculateUMS(); // Recalc if session changes
-      }
-
-      function calculateUMS(){
-        const unit = unitInput.value;
-        const session = sessionSelect.value;
-        const raw = parseFloat(rawInput.value);
-        const data = dataByUnit[unit]?.[session];
-
-        if(!data || isNaN(raw)) {
-          umsOutput.innerText = "--"; 
-          converterNote.innerText = "";
-          return;
-        }
-
-        // Standard UMS mapping 
-        let points = [
-          { r: 0, u: 0 },
-          { r: data.E, u: 40 },
-          { r: data.D, u: 50 },
-          { r: data.C, u: 60 },
-          { r: data.B, u: 70 },
-          { r: data.A, u: 80 }
-        ];
-
-        points = points.filter(p => !isNaN(p.r));
-
-        // Add 100 UMS point
-        if (data.UMS_100) {
-          points.push({ r: data.UMS_100, u: 100 });
-          converterNote.innerText = "Calculated using official 100 UMS cap.";
-        } else {
-          // Fallback
-          if(data.max_mark) {
-             points.push({ r: data.max_mark, u: 100 });
-             converterNote.innerText = "Estimate: Assuming Max Mark = 100 UMS.";
-          }
-        }
-
-        points.sort((a,b) => a.r - b.r);
-
-        // Interpolation Logic
-        let ums = 0;
-        if (raw >= points[points.length-1].r) {
-          ums = 100; 
-        } else {
-          for(let i=0; i<points.length-1; i++){
-            const p1 = points[i];
-            const p2 = points[i+1];
-            if(raw >= p1.r && raw <= p2.r){
-               if(p2.r === p1.r) { ums = p2.u; break; }
-               ums = p1.u + (raw - p1.r) * ((p2.u - p1.u) / (p2.r - p1.r));
-               break;
-            }
-          }
-        }
-        
-        umsOutput.innerText = Math.round(ums);
-      }
-
       function updateChart(){
         const unit=unitInput.value.trim();
         if(!dataByUnit[unit]){ if(chart){chart.destroy();chart=null;} return; }
         
-        // Update Session Dropdown when unit changes
-        if(sessionSelect.getAttribute('data-last-unit') !== unit){
-            updateSessionsDropdown(unit);
-            sessionSelect.setAttribute('data-last-unit', unit);
-        }
-
         const dataObj=dataByUnit[unit];
         const sessions=Object.keys(dataObj);
         if(!sessions.length){ if(chart){chart.destroy();chart=null;} return; }
@@ -322,7 +177,7 @@
           fill: false
         });
 
-        // ADD 100 UMS (Dashed Gold)
+        // ADD 100 UMS (Dashed Gold) - Kept this as requested earlier
         datasets.push({
           label: '100 UMS Cap',
           data: sessions.map(s=>dataObj[s].UMS_100??null),
@@ -358,8 +213,6 @@
       // 4. LISTENERS
       unitInput.addEventListener('input', updateChart);
       unitInput.addEventListener('change', updateChart);
-      sessionSelect.addEventListener('change', calculateUMS);
-      rawInput.addEventListener('input', calculateUMS);
 
       // Default init
       unitInput.value=dataByUnit['CH01']? 'CH01' : (Object.keys(dataByUnit)[0]||'');
