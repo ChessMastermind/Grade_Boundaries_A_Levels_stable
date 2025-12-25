@@ -263,22 +263,88 @@
     const monthOrder={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
 
     function updateChart(){
-      const unit=unitInput.value.trim();
+      const unit = unitInput.value.trim();
+      
+      // Safety checks: if unit or data missing, stop
       if(!dataByUnit[unit]){ if(chart){chart.destroy();chart=null;} return; }
-      const dataObj=dataByUnit[unit];
-      const sessions=Object.keys(dataObj);
+      const dataObj = dataByUnit[unit];
+      const sessions = Object.keys(dataObj);
       if(!sessions.length){ if(chart){chart.destroy();chart=null;} return; }
-      sessions.sort((a,b)=>{const [ya,ma]=a.split(' ');const [yb,mb]=b.split(' ');return(+ya-+yb)||(monthOrder[ma]-monthOrder[mb]);});
-      const hasAStar=sessions.some(s=>'a*' in dataObj[s]);
-      const grades=gradeList.filter(g=>g!=='a*'||hasAStar);
-      const datasets=grades.map(g=>({label:g.toUpperCase(),data:sessions.map(s=>dataObj[s][g]??null),borderColor:gradeColors[g],tension:0.2,fill:false}));
-      datasets.push({label:'Max Mark',data:sessions.map(s=>dataObj[s].max_mark??null),borderColor:maxMarkColor,borderDash:[5,5],borderWidth:1,pointRadius:0,fill:false});
+      
+      // Sort sessions by date
+      sessions.sort((a,b)=>{
+        const [ya,ma]=a.split(' ');
+        const [yb,mb]=b.split(' ');
+        return (+ya-+yb) || (monthOrder[ma]-monthOrder[mb]);
+      });
+
+      // 1. PREPARE DATASETS
+      const datasets = [];
+
+      // --- FIRST ITEM: Max Mark (Appears first in Legend/Tooltip) ---
+      // We push this first so it is drawn "behind" the colored grade lines
+      datasets.push({
+        label: 'Max Mark',
+        data: sessions.map(s => dataObj[s].max_mark ?? null),
+        borderColor: '#999999', // Gray color
+        borderDash: [5,5],      // Dashed line style
+        borderWidth: 2,         // Slightly visible
+        pointRadius: 0,         // No dots on the line
+        fill: false
+      });
+
+      // --- NEXT ITEMS: Grades (A*, A, B...) ---
+      // Check if A* exists in the history for this unit
+      const hasAStar = sessions.some(s => 'a*' in dataObj[s]);
+      // Filter the grade list (only show A* if it exists)
+      const grades = gradeList.filter(g => g !== 'a*' || hasAStar);
+
+      grades.forEach(g => {
+        datasets.push({
+          label: g.toUpperCase(),
+          data: sessions.map(s => dataObj[s][g] ?? null),
+          borderColor: gradeColors[g],
+          tension: 0.2, // Smooth curves
+          fill: false
+        });
+      });
+
+      // 2. RENDER CHART
       if(chart) chart.destroy();
-      chart=new Chart(ctx,{type:'line',data:{labels:sessions,datasets},options:{responsive:true,maintainAspectRatio:false,plugins:{title:{display:true,text:`Grade Boundaries — ${unit}`},legend:{position:'bottom'}},scales:{x:{title:{display:true,text:'Exam Session'}},y:{beginAtZero:true,title:{display:true,text:'Marks'}}}}});
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: { labels: sessions, datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { 
+            mode: 'index',      // Shows all values for that session in one tooltip
+            intersect: false    // Hover anywhere on the vertical line
+          }, 
+          plugins: {
+            title: { display: true, text: `Grade Boundaries — ${unit}` },
+            legend: { 
+              position: 'bottom', // Moves legend to bottom
+              labels: { usePointStyle: true } // Makes legend icons distinct
+            },
+            tooltip: { 
+              position: 'nearest',
+              // This ensures the order in the tooltip matches the order we pushed (Max Mark first)
+              itemSort: function(a, b) {
+                return a.datasetIndex - b.datasetIndex;
+              }
+            }
+          },
+          scales: {
+            x: { title: { display: true, text: 'Exam Session' } },
+            y: { beginAtZero: true, title: { display: true, text: 'Marks' } }
+          }
+        }
+      });
     }
 
     unitInput.addEventListener('input',updateChart);
-    unitInput.value=Object.keys(dataByUnit)[0]||'';
+    unitInput.value=dataByUnit['WFM02']? 'WFM02' : (Object.keys(dataByUnit)[0]||'');
     updateChart();
 
     // CSV download
