@@ -10,30 +10,57 @@
   <link rel="preconnect" href="https://code.jquery.com">
 
   <script defer data-domain="gradeboundaries.com" src="https://plausible.io/js/script.js"></script>
-  <script data-goatcounter="https://gradeboundaries.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script async data-goatcounter="https://gradeboundaries.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
 
   <script>
-    function uncloak(){document.documentElement.classList.add("css-loaded");const c=document.getElementById("css-cloak");if(c)c.remove();}
-    const host=location.hostname;
-    const myBase=host==="gradeboundaries.com"?"/":"/Grade_Boundaries_A_Levels/";
-    const base=document.createElement("base");base.href=myBase;document.head.appendChild(base);
-    const t1=document.createElement("link");t1.rel="stylesheet";t1.href="dist/output.css";document.head.appendChild(t1);
-    const t2=document.createElement("link");t2.rel="stylesheet";t2.href="style.css";t2.onload=uncloak;document.head.appendChild(t2);
+    (() => {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  <script>
+    function uncloak() {
+      document.documentElement.classList.add('css-loaded');
+      const c = document.getElementById('css-cloak');
+      if (c) c.remove();
+    }
+    const host = location.hostname;
+    const myBase = host === 'gradeboundaries.com' ? '/' : '/Grade_Boundaries_A_Levels/';
+    const base = Object.assign(document.createElement('base'), { href: myBase });
+    document.head.appendChild(base);
+
+    // Tailwind Output (if you have it)
+    const tw = Object.assign(document.createElement('link'), { rel: 'stylesheet', href: 'dist/output.css' });
+    document.head.appendChild(tw);
+
+    // YOUR CUSTOM CSS
+    const local = Object.assign(document.createElement('link'), {
+      rel: 'stylesheet',
+      href: 'style.css',
+      onload: uncloak
+    });
+    document.head.appendChild(local);
   </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oxford AQA A-Level Grade Boundaries 2020-2025 | Interactive Tables & CSV</title>
-  <meta name="description" content="Oxford AQA A-Level grade boundaries (2020-2025). Includes interactive charts and CSV downloads.">
+  <title>Oxford AQA A-Level Grade Boundaries 2018-2025 | Interactive Tables & CSV</title>
+  <meta name="description" content="Oxford AQA A-Level grade boundaries (2018-2025) — explore them alongside every other UK board on Grade-Boundary Explorer.">
   <meta name="theme-color" content="#111827">
 
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js" defer></script>
-  <link rel="preload" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" as="style" onload="this.rel='stylesheet'" />
-  <link rel="preload" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css" as="style" onload="this.rel='stylesheet'" />
 
-  </head>
+  <link rel="preload" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"></noscript>
+  <link rel="preload" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"></noscript>
+</head>
 
 <body class="text-gray-800 flex flex-col min-h-screen">
+  
   <header class="text-white text-center py-6 shadow-lg">
     <h1 class="page-title">Oxford&nbsp;AQA Grade Boundaries</h1>
     <button id="theme-toggle" class="absolute top-4 right-4">🌙</button>
@@ -57,28 +84,66 @@
       </div>
 
       <div class="text-right my-4">
-        <button id="downloadCSV" class="class-button px-4 py-2 rounded hover:bg-[#2b7a78] transition">Download CSV</button>
+        <button id="downloadCSV" class="class-button text-white px-4 py-2 rounded hover:bg-[#2b7a78] transition">Download CSV</button>
       </div>
 
-      <hr class="my-8 border-gray-200 dark:border-gray-700">
-
-      <div class="mb-6 flex items-center gap-4">
-         <div class="w-full sm:w-auto">
-          <label for="aqaUnitSearch" class="font-semibold block mb-2">Select Unit to Graph:</label>
-          <input type="text" id="aqaUnitSearch" placeholder="e.g. CH01" class="border rounded px-2 py-2 w-full sm:w-64" list="aqaUnitList" />
-          <datalist id="aqaUnitList"></datalist>
-         </div>
+      <div id="aqa-controls" class="flex flex-wrap gap-4 mb-6 items-center">
+        <label for="aqaUnitSearch" class="font-semibold">Unit&nbsp;Code:</label>
+        <input type="text" id="aqaUnitSearch" placeholder="e.g. CH01" class="border rounded px-2 py-1 w-36 sm:w-auto" list="aqaUnitList" />
+        <datalist id="aqaUnitList"></datalist>
       </div>
 
-      <div class="chart-container" style="min-height: 400px;">
+      <div class="chart-container">
         <canvas id="OxfordAqaChart"></canvas>
       </div>
     </section>
   </main>
 
-  <footer class="mt-12 py-6 text-center">
-    <p class="text-lg">Created by <a href="https://github.com/Fire-Frog-Fuel/" class="underline">Fire-Frog-Fuel</a> & <a href="https://github.com/ChessMastermind" class="underline">ChessMastermind</a></p>
-  </footer>
+  <footer class="mt-12" role="contentinfo">
+    <div class="container mx-auto flex flex-col items-center py-6 px-4">
+    <p class="text-lg">Created by</p>
+    <nav aria-label="Created by">
+      <ul class="flex space-x-4 text-lg">
+        <li>
+          <a href="https://github.com/Fire-Frog-Fuel/"
+             class="underline">
+            Fire-Frog-Fuel
+          </a>
+        </li>
+        <li>
+          <span>&nbsp;and&nbsp;</span>
+        </li>
+        <li>
+          <a href="https://github.com/ChessMastermind"
+             class="underline">
+            ChessMastermind
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Utility links -->
+    <nav aria-label="Footer links">
+      <ul class="flex space-x-4 text-lg">
+        <li>
+          <a href="Contact"
+             class="underline">
+            Contact us
+          </a>
+        </li>
+        <li>
+          <span>&nbsp;|&nbsp;</span>
+        </li>
+        <li>
+          <a href="Privacy"
+             class="underline">
+            Privacy Notice
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 
   <script defer>
     const loadScript = (src) => new Promise((res)=>{ const s=document.createElement('script'); s.src=src; s.onload=res; document.body.appendChild(s); });
@@ -142,7 +207,8 @@
       // Chart Config
       const ctx=document.getElementById('OxfordAqaChart').getContext('2d');
       let chart=null;
-      const gradeColors = { 'A*':'#8b5cf6', 'A':'#3b82f6', 'B':'#10b981', 'C':'#f59e0b', 'D':'#ef4444', 'E':'#6b7280' };
+      // Using Colors similar to Edexcel for consistency, but kept AQA specific naming logic
+      const gradeColors = { 'A*':'#2ECC71', 'A':'#F4A261', 'B':'#E9C46A', 'C':'#E63946', 'D':'#264653', 'E':'#6D597A' };
       const monthOrder={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
 
       // 3. FUNCTIONS
@@ -177,7 +243,7 @@
           fill: false
         });
 
-        // ADD 100 UMS (Dashed Gold) - Kept this as requested earlier
+        // ADD 100 UMS (Dashed Gold) - Unique to AQA
         datasets.push({
           label: '100 UMS Cap',
           data: sessions.map(s=>dataObj[s].UMS_100??null),
@@ -224,17 +290,18 @@
         const url=URL.createObjectURL(blob); 
         const a=document.createElement('a'); a.href=url; a.download='OxfordAqa.csv'; a.click(); URL.revokeObjectURL(url); 
       });
-
-      // Dark Mode logic
-      const btn = document.getElementById('theme-toggle');
-      const root = document.documentElement;
-      btn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
-      btn.addEventListener('click', () => {
-        const dark = root.classList.toggle('dark');
-        localStorage.setItem('theme', dark ? 'dark' : 'light');
-        btn.textContent = dark ? '☀️' : '🌙';
-      });
     }
+
+    // THEME TOGGLE LISTENER
+    const btn = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    btn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      const dark = root.classList.toggle('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      btn.textContent = dark ? '☀️' : '🌙';
+    });
   </script>
 </body>
 </html>
