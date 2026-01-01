@@ -10,19 +10,41 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://cdn.datatables.net">
   <link rel="preconnect" href="https://code.jquery.com">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- dashboard-engine.js injected dynamically below -->
   <!-- Analytics (kept) -->
   <script defer data-domain="gradeboundaries.com" src="https://plausible.io/js/script.js"></script>
   <script data-goatcounter="https://gradeboundaries.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
+  
   <!-- Base‑href and CSS injection (unchanged) -->
   <script>
     function uncloak(){document.documentElement.classList.add("css-loaded");const c=document.getElementById("css-cloak");if(c)c.remove();}
-    const host=location.hostname;
-    const myBase=host==="gradeboundaries.com"?"/":"/Grade_Boundaries_A_Levels/";
-    const base=document.createElement("base");base.href=myBase;document.head.appendChild(base);
-    const tail=document.createElement("link");tail.rel="stylesheet";tail.href="dist/output.css";document.head.appendChild(tail);
-    const style=document.createElement("link");style.rel="stylesheet";style.href="style.css";style.onload=uncloak;document.head.appendChild(style);
+    var host=location.hostname;
+    var myBase=host==="gradeboundaries.com"?"/":"/Grade_Boundaries_A_Levels/";
+    var base=document.createElement("base");base.href=myBase;document.head.appendChild(base);
+    var tail=document.createElement("link");tail.rel="stylesheet";tail.href="dist/output.css";document.head.appendChild(tail);
+    var style=document.createElement("link");style.rel="stylesheet";style.href="style.css";style.onload=uncloak;document.head.appendChild(style);
+    // Inject dashboard-engine.js dynamically (only once, after CSS) and signal when ready
+    (function(){
+      var host=location.hostname;
+      var myBase=host==='gradeboundaries.com'?'/':'/Grade_Boundaries_A_Levels/';
+      var pre=document.createElement('link');
+      pre.rel='preload';
+      pre.href=myBase+'dashboard-engine.js';
+      pre.as='script';
+      document.head.appendChild(pre);
+
+      var dash=document.createElement('script');
+      dash.src=myBase+'dashboard-engine.js';
+      dash.defer = true;
+      dash.onload = function(){ document.dispatchEvent(new Event('dashboardEngineLoaded')); };
+      document.head.appendChild(dash);
+    })();
   </script>
 
   <!-- Primary meta tags -->
@@ -161,12 +183,8 @@
 
         <!-- ===== CSV DOWNLOAD ===== -->
         <div class="text-right my-4">
-          <button
-            id="downloadCSV"
-            class="class-button px-4 py-2 rounded hover:bg-[#2b7a78] transition"
-          >
-            Download CSV
-          </button>
+            <p class="site-disclaimer" style="text-align:right"><em>Note: This data is processed from official OCR sources for ease of use. Original rights belong to OCR (Oxford, Cambridge and RSA).</em></p>
+            <button id="downloadCSV" class="class-button px-4 py-2 rounded hover:bg-[#2b7a78] transition">Download CSV</button>
         </div>
 
         <!-- ===== CONTROLS ===== -->
@@ -249,265 +267,53 @@
         </li>
       </ul>
     </nav>
+    <p class="site-disclaimer">Disclaimer: Data is provided for informational purposes only. We strive for accuracy but cannot guarantee completeness or timeliness. Use at your own discretion.</p>
+      <p class="site-disclaimer">All exam data is copyright of the respective exam boards. GradeBoundaries.com is an independent educational tool. <a href="/Grade_Boundaries_A_Levels/Disclaimer/">View Full Disclaimer</a></p>
   </div>
 </footer>
+
+  <div id="sticky-disclaimer" class="sticky-disclaimer" style="display:none">
+    <span>All exam data is copyright of the respective exam boards. GradeBoundaries.com is an independent educational tool. <a href="/Grade_Boundaries_A_Levels/Disclaimer/">View Full Disclaimer</a></span>
+    <button class="sd-close" aria-label="Close">×</button>
+  </div>
+  <script>
+    (function(){
+      try{const key='stickyDisclaimerDismissed_v1'; if(localStorage.getItem(key))return; const el=document.getElementById('sticky-disclaimer'); if(!el) return; el.style.display='flex'; el.querySelector('.sd-close').addEventListener('click',function(){localStorage.setItem(key,'1');el.style.display='none';});}catch(e){}
+    })();
+  </script>
     <!-- ─── PAGE SCRIPT ─── -->
-<script defer>
-  // Helper to load external scripts dynamically
-  const loadScript = (src) =>
-    new Promise((resolve) => {
-      const s = document.createElement('script');
-      s.src = src;
-      s.onload = resolve;
-      document.body.appendChild(s);
-    });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    fetch('OCR/OCR.csv')
-      .then((r) => r.text())
-      .then(
-        (csvText) =>
-          new Promise((resolve) => {
-            Papa.parse(csvText, {
-              header: true,
-              dynamicTyping: true,
-              skipEmptyLines: true,
-              worker: true,
-              complete: ({ data }) => resolve([data, csvText]),
-            });
-          })
-      )
-      .then(async ([parsed, csvText]) => {
-        await loadScript('https://code.jquery.com/jquery-3.6.0.min.js');
-        await loadScript('https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js');      // line 237
-        await loadScript('https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js'); // line 238
-        await loadScript('https://cdn.jsdelivr.net/npm/chart.js');                              // line 239
-        initPage(parsed, csvText);  
-      })
-      .catch((err) => {
-        console.error(err);
-        document.getElementById('OCRTable').innerHTML =
-          '<tbody><tr><td colspan="12" class="text-center py-4">Failed to load data.</td></tr></tbody>';
-      });
-  });
-
-  function initPage(parsed, csvText) {
-    const tableEl = $('#OCRTable');
-
-    // Build DataTable columns from CSV headers
-    const headers = Object.keys(parsed[0] || {});
-    const dtColumns = headers.map((h) => ({ data: h, title: h }));
-
-    // Initialize DataTable
-    const dataTable = tableEl.DataTable({
-      data: parsed,
-      columns: dtColumns,
-      responsive: true,
-      autoWidth: false,
-      deferRender: true,
-      pageLength: 10,
-    });
-
-    // Add “Component” filter next to the default table filter if a component column exists:
-    const compHeaderAliases = [
-      'component',
-      'Component',
-      'ComponentCode',
-      'component_code',
-    ];
-    const componentColIdx = headers.findIndex((h) =>
-      compHeaderAliases.includes(h)
-    );
-    if (componentColIdx !== -1) {
-      const componentSet = new Set(
-        parsed
-          .map((row) => row[headers[componentColIdx]])
-          .filter(Boolean)
-      );
-      const filterDiv = $('#OCRTable_filter');
-      filterDiv.append(
-        `<label style="margin-left:1rem;font-weight:600;">Component:&nbsp;<input type="text" id="componentTableSearch" list="componentTableList" placeholder="component" class="border rounded px-2 py-1 w-24 sm:w-32"></label>`
-      );
-      $('body').append('<datalist id="componentTableList"></datalist>');
-      componentSet.forEach((c) =>
-        $('#componentTableList').append(`<option value="${c}"></option>`)
-      );
-      $('#componentTableSearch').on('input', function () {
-        dataTable.column(componentColIdx).search(this.value).draw();
-      });
-    }
-
-    // Build a nested data structure keyed by [code][component]["YYYY MMM"]
-    const ocrByCodeComp = {};
-    const gradeList = ['a*', 'a', 'b', 'c', 'd', 'e', 'u'];
-    // Use full month names so they match your session strings
-    const monthOrder = {
-      January:   1, February:  2, March:     3, April:    4,
-      May:       5, June:      6, July:      7, August:   8,
-      September: 9, October:  10, November: 11, December: 12,
+<script>
+  (function(){
+    var host = location.hostname;
+    var myBase = host === 'gradeboundaries.com' ? '/' : '/Grade_Boundaries_A_Levels/';
+    var config = {
+      csvUrl: myBase + 'OCR/OCR.csv',
+      dom: {
+        table: '#OCRTable',
+        chart: '#OCRChart',
+        subjectSearch: '#ocrCodeSearch',
+        subjectList: '#ocrCodeList',
+        componentSearch: '#ocrComponentSearch',
+        componentList: '#ocrComponentList'
+      },
+      columns: {
+        code: 'code',
+        component: 'component',
+        year: 'year',
+        session: 'session',
+        maxMark: 'max_mark'
+      },
+      chart: { title: 'OCR Grade Boundaries', showUms: false }
     };
 
-    parsed.forEach((row) => {
-      const yearStr = String(row['year'] || '').trim();
-      const sessionStr = String(row['session'] || '').trim();
-      const codeStr = String(row['code'] || '').trim();
-      const compStr = String(row['component'] || '').trim();
-      if (!yearStr || !sessionStr || !codeStr) return;
-
-      const sessionKey = `${yearStr} ${sessionStr}`;
-
-      ocrByCodeComp[codeStr] ??= {};
-      ocrByCodeComp[codeStr][compStr || 'ALL'] ??= {};
-      ocrByCodeComp[codeStr][compStr || 'ALL'][sessionKey] ??= {};
-
-      gradeList.forEach((g) => {
-        const val = parseFloat(row[g.toUpperCase()] ?? row[g] ?? '');
-        if (!isNaN(val)) {
-          ocrByCodeComp[codeStr][compStr || 'ALL'][sessionKey][g] = val;
-        }
-      });
-      const maxMarkVal = parseFloat(row['max_mark'] ?? '');
-      if (!isNaN(maxMarkVal)) {
-        ocrByCodeComp[codeStr][compStr || 'ALL'][sessionKey]['max_mark'] = maxMarkVal;
-      }
-    });
-
-    const codeInput = document.getElementById('ocrCodeSearch');
-    const componentInput = document.getElementById('ocrComponentSearch');
-    const codeList = document.getElementById('ocrCodeList');
-    const componentList = document.getElementById('ocrComponentList');
-
-    const uniqueCodes = new Set(parsed.map((r) => String(r['code'] || '').trim()).filter(Boolean));
-    Array.from(uniqueCodes)
-      .sort()
-      .forEach((c) => {
-        codeList.appendChild(Object.assign(document.createElement('option'), { value: c }));
-      });
-
-    function populateComponentsForCode(code) {
-      componentList.innerHTML = '';
-      componentInput.value = '';
-      componentInput.disabled = true;
-      if (!code || !ocrByCodeComp[code]) return;
-
-      const comps = Object.keys(ocrByCodeComp[code]).sort();
-      if (!comps.length) return;
-
-      componentInput.disabled = false;
-      comps.forEach((compVal) => {
-        componentList.appendChild(Object.assign(document.createElement('option'), { value: compVal }));
-      });
-      componentInput.value = comps[0];
+    function runInit(){
+      if (typeof initExamDashboard === 'function') initExamDashboard(config);
+      else document.addEventListener('dashboardEngineLoaded', function(){ initExamDashboard(config); });
     }
 
-    const ctx = document.getElementById('OCRChart').getContext('2d');
-    let chart = null;
-    const gradeColors = {
-      'a*': '#2ECC71',
-      a: '#F4A261',
-      b: '#E9C46A',
-      c: '#E63946',
-      d: '#264653',
-      e: '#6D597A',
-      u: '#999999',
-    };
-    const maxMarkColor = '#555555';
-
-    function updateChart() {
-      const codeVal = codeInput.value.trim();
-      const compVal = componentInput.value.trim();
-      if (!codeVal || !compVal || !ocrByCodeComp[codeVal] || !ocrByCodeComp[codeVal][compVal]) {
-        if (chart) {
-          chart.destroy();
-          chart = null;
-        }
-        return;
-      }
-      const dataObj = ocrByCodeComp[codeVal][compVal];
-      const sessions = Object.keys(dataObj);
-      if (!sessions.length) {
-        if (chart) {
-          chart.destroy();
-          chart = null;
-        }
-        return;
-      }
-
-      // Sort "YYYY Month" by year then by full month name
-      sessions.sort((a, b) => {
-        const [ay, am] = a.split(/\s+/);
-        const [by, bm] = b.split(/\s+/);
-        const diffYear = +ay - +by;
-        if (diffYear !== 0) return diffYear;
-        return (monthOrder[am] || 0) - (monthOrder[bm] || 0);
-      });
-
-      const hasAstar = sessions.some((sess) => 'a*' in dataObj[sess]);
-      const gradesToPlot = gradeList.filter((g) => g !== 'a*' || hasAstar);
-
-      const datasets = gradesToPlot.map((g) => ({
-        label: g.toUpperCase(),
-        data: sessions.map((sess) => dataObj[sess][g] ?? null),
-        borderColor: gradeColors[g],
-        tension: 0.2,
-        fill: false,
-      }));
-      datasets.push({
-        label: 'Max mark',
-        data: sessions.map((sess) => dataObj[sess]['max_mark'] ?? null),
-        borderColor: maxMarkColor,
-        borderDash: [5, 5],
-        borderWidth: 1,
-        pointRadius: 0,
-        fill: false,
-      });
-
-      if (chart) chart.destroy();
-      chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: sessions,
-          datasets,
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            title: {
-              display: true,
-              text: `Grade Boundaries — ${codeVal} (${compVal})`,
-            },
-            legend: { position: 'bottom' },
-          },
-          scales: {
-            x: { title: { display: true, text: 'Exam Session (Year Month)' } },
-            y: { beginAtZero: true, title: { display: true, text: 'Marks' } },
-          },
-        },
-      });
-    }
-
-    codeInput.addEventListener('input', () => {
-      populateComponentsForCode(codeInput.value.trim());
-      updateChart();
-    });
-    componentInput.addEventListener('input', updateChart);
-
-    const firstCode = Array.from(uniqueCodes).sort()[0] || '';
-    codeInput.value = firstCode;
-    populateComponentsForCode(firstCode);
-    updateChart();
-
-    document.getElementById('downloadCSV').addEventListener('click', () => {
-      const blob = new Blob([csvText], { type: 'text/csv' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'OCR.csv';
-      a.click();
-      URL.revokeObjectURL(url);
-    });
-  }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', runInit);
+    else runInit();
+  })();
 </script>
 
     <!-- 🟢 put this at the BOTTOM of <body> -->
@@ -525,5 +331,7 @@
         btn.textContent = dark ? '☀️' : '🌙';
       });
     </script>
+
+    <!-- Note: This page includes data about the 'component' column in the CSV files. -->
   </body>
 </html>

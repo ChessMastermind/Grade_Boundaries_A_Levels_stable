@@ -336,5 +336,33 @@
   requestAnimationFrame(step);
 })();
 </script>
+<!-- Subscribe popup (non-intrusive) -->
+<div id="subscribe-popup" class="subscribe-popup" style="display:none" role="dialog" aria-label="Join subreddit">
+  <h4>Join our community</h4>
+  <p>Discuss A-Level tips & resources at <strong>/r/ALevelGems</strong>. Join the conversation!</p>
+  <div class="actions">
+    <a href="https://www.reddit.com/r/ALevelGems/" target="_blank" rel="noopener noreferrer">Visit</a>
+    <button id="subscribe-snooze" aria-label="Dismiss">Dismiss</button>
+  </div>
+</div>
+<script>
+  (function(){
+    try{
+      const key = 'subredditPopupDismissed_v1';
+      if (localStorage.getItem(key)) return;
+      // show after short delay
+      setTimeout(()=>{
+        const el = document.getElementById('subscribe-popup');
+        if (!el) return;
+        el.style.display='block';
+      }, 2200);
+
+      document.getElementById('subscribe-snooze').addEventListener('click', function(){
+        localStorage.setItem(key, '1');
+        document.getElementById('subscribe-popup').style.display='none';
+      });
+    }catch(e){/* silent */}
+  })();
+</script>
 </body>
 </html>
