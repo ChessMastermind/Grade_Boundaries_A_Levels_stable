@@ -163,7 +163,7 @@
       <article class="bg-white shadow-md rounded-lg p-6 flex flex-col h-70" itemscope itemtype="https://schema.org/Dataset">
         <meta itemprop="name" content="Oxford AQA A-Level Grade Boundaries 2018-2025" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">Oxford AQA</h3>
-        <p class="text-sm mb-4" itemprop="description">Oxford AQA subjects from 2020-2025 with all grade-boundary data.</p>
+        <p class="text-sm mb-4" itemprop="description">Oxford AQA subjects from 2018-2025 with all grade-boundary data.</p>
         <a href="OxfordAqa" class="class-button inline-block mt-auto mb-0 px-4 py-2 rounded text-center" itemprop="url">View Oxford AQA grade boundaries</a>
       </article>
 
@@ -296,7 +296,7 @@
     <p class="text-center p-4 bg-yellow-200">JavaScript is disabled. Charts and interactive tables will not function, but you can still download data in CSV format.</p>
   </noscript>
 
-  <button id="theme-toggle" aria-label="Toggle dark / light mode">🌙</button>
+  <button id="theme-toggle" aria-label="Toggle dark / light mode"></button>
 
   <script>
     const btn  = document.getElementById('theme-toggle');
@@ -335,6 +335,37 @@
   };
   requestAnimationFrame(step);
 })();
+</script>
+<!-- Subscribe popup (non-intrusive) -->
+  <div id="subscribe-popup" class="subscribe-popup" style="display:none" role="dialog" aria-label="Join subreddit">
+  <h4>Join our community</h4>
+  <p>Check out <span class="no-wrap"><a href="https://www.reddit.com/r/ALevelGems/" target="_blank" rel="noopener noreferrer">/r/ALevelGems</a></span> — a place to find and share free A‑Level tools and resources. Everybody is welcome!</p>
+  <div class="actions">
+    <a class="visit-cta" href="https://www.reddit.com/r/ALevelGems/" target="_blank" rel="noopener noreferrer">Visit subreddit</a>
+    <button id="subscribe-snooze" aria-label="Dismiss">Dismiss</button>
+  </div>
+</div>
+<script>
+  (function(){
+    try{
+      // Always show on each homepage visit (no persistent dismissal)
+      setTimeout(()=>{
+        const el = document.getElementById('subscribe-popup');
+        if (!el) return;
+        el.style.display='block';
+        el.classList.add('show');
+      }, 1200);
+
+      // Dismiss only for current view (no localStorage write)
+      const btn = document.getElementById('subscribe-snooze');
+      if (btn) btn.addEventListener('click', function(){
+        const el = document.getElementById('subscribe-popup');
+        if (!el) return;
+        el.style.display='none';
+        el.classList.remove('show');
+      });
+    }catch(e){}
+  })();
 </script>
 </body>
 </html>

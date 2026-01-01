@@ -1,0 +1,17 @@
+/.roo/
+# Local room mode file (editor-specific)
+.roomodes
+
+# Ignore continue workspace files
+.continue/
+
+# Node modules should not be tracked
+/node_modules/
+
+# Build output
+/dist/
+
+# Editor/temp
+/.vscode/
+*.log
+*.tmp
