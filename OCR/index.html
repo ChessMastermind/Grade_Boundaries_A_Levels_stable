@@ -15,7 +15,7 @@
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   <!-- dashboard-engine.js injected dynamically below -->
   <!-- Analytics (kept) -->
   <script defer data-domain="gradeboundaries.com" src="https://plausible.io/js/script.js"></script>
@@ -139,7 +139,7 @@
   <body class="text-gray-800 flex flex-col min-h-screen">
     <header class="text-white text-center py-6 shadow-lg">
       <h1 class="page-title">OCR Grade Boundaries</h1>
-      <button id="theme-toggle" class="absolute top-4 right-4">🌙</button>
+      <button id="theme-toggle" class="absolute top-4 right-4" aria-label="Toggle dark / light mode"></button>
       <nav class="mt-4 flex flex-col md:flex-row items-center justify-center gap-2">
         <a href="" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition"
           >Home</a
@@ -183,7 +183,7 @@
 
         <!-- ===== CSV DOWNLOAD ===== -->
         <div class="text-right my-4">
-            <p class="site-disclaimer" style="text-align:right"><em>Note: This data is processed from official OCR sources for ease of use. Original rights belong to OCR (Oxford, Cambridge and RSA).</em></p>
+            <p class="csv-note" style="text-align:right"><em>Note: This data is processed from official OCR sources for ease of use. Original rights belong to OCR (Oxford, Cambridge and RSA).</em></p>
             <button id="downloadCSV" class="class-button px-4 py-2 rounded hover:bg-[#2b7a78] transition">Download CSV</button>
         </div>
 
@@ -268,17 +268,19 @@
       </ul>
     </nav>
     <p class="site-disclaimer">Disclaimer: Data is provided for informational purposes only. We strive for accuracy but cannot guarantee completeness or timeliness. Use at your own discretion.</p>
-      <p class="site-disclaimer">All exam data is copyright of the respective exam boards. GradeBoundaries.com is an independent educational tool. <a href="/Grade_Boundaries_A_Levels/Disclaimer/">View Full Disclaimer</a></p>
-  </div>
-</footer>
-
-  <div id="sticky-disclaimer" class="sticky-disclaimer" style="display:none">
-    <span>All exam data is copyright of the respective exam boards. GradeBoundaries.com is an independent educational tool. <a href="/Grade_Boundaries_A_Levels/Disclaimer/">View Full Disclaimer</a></span>
-    <button class="sd-close" aria-label="Close">×</button>
-  </div>
+    </div>
+   </footer>
   <script>
     (function(){
-      try{const key='stickyDisclaimerDismissed_v1'; if(localStorage.getItem(key))return; const el=document.getElementById('sticky-disclaimer'); if(!el) return; el.style.display='flex'; el.querySelector('.sd-close').addEventListener('click',function(){localStorage.setItem(key,'1');el.style.display='none';});}catch(e){}
+      try{
+        const ul = document.querySelector('footer nav[aria-label="Footer links"] ul');
+        if (ul && !ul.querySelector('a[href*="Disclaimer"]')){
+          const sep = document.createElement('li'); sep.innerHTML='&nbsp;|&nbsp;'; ul.appendChild(sep);
+          const li = document.createElement('li');
+          const a = document.createElement('a'); a.href='Disclaimer/'; a.className='underline'; a.textContent='Disclaimer';
+          li.appendChild(a); ul.appendChild(li);
+        }
+      }catch(e){}
     })();
   </script>
     <!-- ─── PAGE SCRIPT ─── -->

@@ -75,6 +75,8 @@
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif}
 
+
+
 /* Smooth anchor navigation */
 html{scroll-behavior:smooth}
 
@@ -206,10 +208,16 @@ button:hover,
 /* Subscribe popup */
 .subscribe-popup{position:fixed;right:20px;bottom:20px;background:var(--bg-card);color:var(--text-body);border-radius:12px;box-shadow:0 8px 24px rgba(2,6,23,0.12);padding:14px 16px;z-index:1200;max-width:320px;font-size:14px}
 .subscribe-popup h4{margin:0 0 6px 0;font-size:15px}
-.subscribe-popup p{margin:0 0 10px 0;color:var(--text-body);opacity:0.95}
+.subscribe-popup p{margin:0 0 10px 0;color:var(--text-body);opacity:0.95;line-height:1.25}
+.subscribe-popup .no-wrap{white-space:nowrap}
 .subscribe-popup .actions{display:flex;gap:8px;justify-content:flex-end}
-.subscribe-popup .actions a{background:var(--btn-bg);color:var(--btn-text);padding:.4rem .7rem;border-radius:8px;text-decoration:none;font-weight:700}
-.subscribe-popup .actions button{background:transparent;border:none;color:var(--text-body);cursor:pointer;padding:.4rem;font-weight:600}
+.subscribe-popup .actions a{background:var(--btn-bg);color:var(--btn-text);padding:.45rem .9rem;border-radius:8px;text-decoration:none;font-weight:700}
+.subscribe-popup .actions .visit-cta{box-shadow:var(--btn-shadow)}
+.subscribe-popup .actions button{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--text-body);cursor:pointer;padding:.4rem .6rem;border-radius:8px;font-weight:700}
+
+/* Ensure inline links inside the popup are visible in light mode */
+.subscribe-popup p a{color:var(--brand-600);text-decoration:underline}
+.subscribe-popup p a:hover{color:var(--brand-500)}
 
 /* Popup animation & responsive */
 .subscribe-popup{transform:translateY(12px);opacity:0;transition:transform .36s cubic-bezier(.2,.9,.2,1),opacity .26s ease;}
@@ -234,6 +242,9 @@ button:hover,
 }
 .sticky-disclaimer a{color:var(--text-link-hover);text-decoration:underline}
 .sticky-disclaimer .sd-close{background:transparent;border:none;color:var(--text-link-hover);font-size:18px;cursor:pointer}
+
+/* CSV note style (small italic) */
+.csv-note{font-size:12px;font-style:italic;color:var(--text-body);opacity:0.9;margin-bottom:0.25rem}
 
 /* Responsive adjustments */
 @media (max-width: 640px){
