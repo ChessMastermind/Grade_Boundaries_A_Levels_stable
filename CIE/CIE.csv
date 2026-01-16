@@ -1,4 +1,451 @@
 SubjectCode,Subject,Series,Component,MaxRawMark,A,B,C,D,E
+9706,Accounting,november-2025,11,30,24,19,16,14,12
+9706,Accounting,november-2025,12,30,22,17,15,12,10
+9706,Accounting,november-2025,13,30,23,18,15,13,11
+9706,Accounting,november-2025,21,90,56,49,40,31,21
+9706,Accounting,november-2025,22,90,56,46,37,30,21
+9706,Accounting,november-2025,23,90,59,50,41,32,22
+9706,Accounting,november-2025,31,75,44,41,35,29,22
+9706,Accounting,november-2025,32,75,44,39,33,27,20
+9706,Accounting,november-2025,33,75,44,39,33,26,20
+9706,Accounting,november-2025,41,50,36,34,28,22,16
+9706,Accounting,november-2025,42,50,32,26,21,16,12
+9706,Accounting,november-2025,43,50,36,34,28,22,16
+8679,Afrikaans Language AS Level,november-2025,02,70,43,37,31,25,19
+8679,Afrikaans Language AS Level,november-2025,03,40,26,22,19,16,13
+9680,Arabic A Level,november-2025,22,70,41,36,30,24,18
+9680,Arabic A Level,november-2025,32,40,33,29,25,21,17
+9680,Arabic A Level,november-2025,42,75,53,48,44,40,36
+9680,Arabic A Level,november-2025,52,40,34,30,26,22,19
+8680,Arabic Language AS Level,november-2025,22,70,36,30,24,18,12
+8680,Arabic Language AS Level,november-2025,32,40,29,25,21,17,13
+9479,Art and Design,november-2025,01,100,75,65,55,45,35
+9479,Art and Design,november-2025,02,100,72,62,52,42,32
+9479,Art and Design,november-2025,03,100,75,65,55,45,35
+9484,Biblical Studies,november-2025,11,50,35,32,28,25,22
+9484,Biblical Studies,november-2025,12,50,35,32,28,25,22
+9484,Biblical Studies,november-2025,13,50,35,32,28,25,22
+9484,Biblical Studies,november-2025,21,50,31,28,25,22,19
+9484,Biblical Studies,november-2025,22,50,31,28,25,22,19
+9484,Biblical Studies,november-2025,23,50,31,28,25,22,19
+9484,Biblical Studies,november-2025,32,50,37,33,29,25,22
+9484,Biblical Studies,november-2025,42,50,40,35,31,26,21
+9700,Biology,november-2025,11,40,28,26,23,20,17
+9700,Biology,november-2025,12,40,30,27,23,21,17
+9700,Biology,november-2025,13,40,29,27,23,20,16
+9700,Biology,november-2025,14,40,31,28,24,21,17
+9700,Biology,november-2025,21,60,40,33,27,21,16
+9700,Biology,november-2025,22,60,39,32,27,21,15
+9700,Biology,november-2025,23,60,34,27,23,19,14
+9700,Biology,november-2025,24,60,37,30,25,20,14
+9700,Biology,november-2025,31,40,29,26,24,22,20
+9700,Biology,november-2025,33,40,27,25,22,19,17
+9700,Biology,november-2025,34,40,29,27,23,20,17
+9700,Biology,november-2025,35,40,27,25,22,19,17
+9700,Biology,november-2025,36,40,25,22,20,18,16
+9700,Biology,november-2025,37,40,27,25,22,19,17
+9700,Biology,november-2025,38,40,25,22,20,18,16
+9700,Biology,november-2025,41,100,62,53,46,38,29
+9700,Biology,november-2025,42,100,60,52,44,35,25
+9700,Biology,november-2025,43,100,62,53,46,38,29
+9700,Biology,november-2025,44,100,62,53,46,39,31
+9700,Biology,november-2025,51,30,23,19,16,13,11
+9700,Biology,november-2025,52,30,20,17,14,12,10
+9700,Biology,november-2025,53,30,23,19,16,13,11
+9700,Biology,november-2025,54,30,22,19,16,13,11
+9609,Business,november-2025,11,40,36,33,30,27,25
+9609,Business,november-2025,12,40,36,33,30,27,25
+9609,Business,november-2025,13,40,35,33,30,27,24
+9609,Business,november-2025,21,60,48,45,41,37,32
+9609,Business,november-2025,22,60,42,40,36,32,27
+9609,Business,november-2025,23,60,45,41,37,33,30
+9609,Business,november-2025,31,60,42,40,34,28,21
+9609,Business,november-2025,32,60,42,39,35,31,26
+9609,Business,november-2025,33,60,40,38,33,28,22
+9609,Business,november-2025,41,40,27,24,20,16,13
+9609,Business,november-2025,42,40,26,24,21,19,17
+9609,Business,november-2025,43,40,29,27,24,21,19
+9980,Cambridge International Project,november-2025,01,80,57,50,43,36,30
+9701,Chemistry,november-2025,11,40,27,22,19,16,13
+9701,Chemistry,november-2025,12,40,25,22,18,15,12
+9701,Chemistry,november-2025,13,40,27,22,19,16,13
+9701,Chemistry,november-2025,14,40,28,22,19,16,13
+9701,Chemistry,november-2025,21,60,41,32,28,23,19
+9701,Chemistry,november-2025,22,60,43,37,32,26,20
+9701,Chemistry,november-2025,23,60,41,32,28,23,19
+9701,Chemistry,november-2025,24,60,40,30,26,21,17
+9701,Chemistry,november-2025,31,40,28,26,22,18,15
+9701,Chemistry,november-2025,33,40,26,23,19,16,13
+9701,Chemistry,november-2025,34,40,26,24,20,16,12
+9701,Chemistry,november-2025,35,40,28,26,22,18,15
+9701,Chemistry,november-2025,36,40,25,23,19,16,13
+9701,Chemistry,november-2025,37,40,28,26,22,18,15
+9701,Chemistry,november-2025,38,40,25,23,19,16,13
+9701,Chemistry,november-2025,41,100,70,61,50,39,26
+9701,Chemistry,november-2025,42,100,63,53,43,32,21
+9701,Chemistry,november-2025,43,100,70,61,50,39,26
+9701,Chemistry,november-2025,44,100,66,58,49,39,28
+9701,Chemistry,november-2025,51,30,24,21,18,15,13
+9701,Chemistry,november-2025,52,30,23,20,17,14,11
+9701,Chemistry,november-2025,53,30,24,21,18,15,13
+9701,Chemistry,november-2025,54,30,24,21,17,14,11
+9868,Chinese Language and Literature A Level,november-2025,11,40,33,30,27,22,18
+9868,Chinese Language and Literature A Level,november-2025,12,40,32,29,26,21,17
+9868,Chinese Language and Literature A Level,november-2025,13,40,33,30,27,22,18
+9868,Chinese Language and Literature A Level,november-2025,21,40,28,24,20,17,14
+9868,Chinese Language and Literature A Level,november-2025,22,40,28,24,20,17,14
+9868,Chinese Language and Literature A Level,november-2025,23,40,28,24,20,17,14
+9868,Chinese Language and Literature A Level,november-2025,31,40,28,24,20,17,14
+9868,Chinese Language and Literature A Level,november-2025,32,40,28,24,20,17,14
+9868,Chinese Language and Literature A Level,november-2025,33,40,28,24,20,17,14
+8238,Chinese Language AS Level,november-2025,04,65,53,49,43,37,32
+8238,Chinese Language AS Level,november-2025,11,40,30,26,23,19,14
+8238,Chinese Language AS Level,november-2025,12,40,30,26,23,19,14
+8238,Chinese Language AS Level,november-2025,13,40,30,26,23,19,14
+8238,Chinese Language AS Level,november-2025,21,40,30,26,21,17,13
+8238,Chinese Language AS Level,november-2025,22,40,30,26,21,17,13
+8238,Chinese Language AS Level,november-2025,23,40,30,26,21,17,13
+8238,Chinese Language AS Level,november-2025,31,40,32,28,24,21,18
+8238,Chinese Language AS Level,november-2025,32,40,32,28,24,21,18
+8238,Chinese Language AS Level,november-2025,33,40,32,28,24,21,18
+9274,Classical Studies,november-2025,11,50,35,30,25,20,16
+9274,Classical Studies,november-2025,12,50,35,30,25,20,16
+9274,Classical Studies,november-2025,13,50,35,30,25,20,16
+9274,Classical Studies,november-2025,21,50,34,30,25,20,15
+9274,Classical Studies,november-2025,22,50,36,32,27,22,17
+9274,Classical Studies,november-2025,23,50,36,32,27,22,17
+9274,Classical Studies,november-2025,31,50,35,30,27,23,19
+9274,Classical Studies,november-2025,32,50,35,30,27,23,19
+9274,Classical Studies,november-2025,33,50,35,30,27,23,19
+9274,Classical Studies,november-2025,41,50,37,29,25,22,19
+9274,Classical Studies,november-2025,42,50,37,29,25,22,19
+9274,Classical Studies,november-2025,43,50,37,29,25,22,19
+9618,Computer Science,november-2025,11,75,49,41,33,26,18
+9618,Computer Science,november-2025,12,75,49,41,34,27,21
+9618,Computer Science,november-2025,13,75,49,41,34,27,21
+9618,Computer Science,november-2025,21,75,46,37,29,21,14
+9618,Computer Science,november-2025,22,75,46,37,30,23,16
+9618,Computer Science,november-2025,23,75,46,37,30,23,16
+9618,Computer Science,november-2025,31,75,54,46,39,31,23
+9618,Computer Science,november-2025,32,75,54,46,39,31,23
+9618,Computer Science,november-2025,33,75,54,46,39,32,23
+9618,Computer Science,november-2025,41,75,51,41,32,24,16
+9618,Computer Science,november-2025,42,75,49,39,30,22,13
+9618,Computer Science,november-2025,43,75,49,39,30,21,13
+9705,Design and Technology,november-2025,02,50,43,38,33,29,25
+9705,Design and Technology,november-2025,04,50,43,38,33,29,25
+9705,Design and Technology,november-2025,11,100,75,71,65,59,53
+9705,Design and Technology,november-2025,12,100,75,71,65,59,53
+9705,Design and Technology,november-2025,13,100,75,71,65,59,53
+9705,Design and Technology,november-2025,32,100,74,68,64,57,50
+9705,Design and Technology,november-2025,33,100,74,68,64,57,50
+9481,Digital Media & Design,november-2025,01,100,70,60,49,38,28
+9481,Digital Media & Design,november-2025,02,100,70,60,49,39,28
+9481,Digital Media & Design,november-2025,03,100,70,60,50,39,28
+9482,Drama,november-2025,02,60,50,44,37,31,25
+9482,Drama,november-2025,03,60,51,45,39,33,26
+9482,Drama,november-2025,04,60,48,39,33,26,20
+9482,Drama,november-2025,11,60,39,34,29,24,19
+9482,Drama,november-2025,12,60,39,34,29,24,19
+9482,Drama,november-2025,13,60,39,34,29,24,19
+9708,Economics,november-2025,11,30,24,22,19,17,15
+9708,Economics,november-2025,12,30,25,22,19,17,15
+9708,Economics,november-2025,13,30,25,22,19,16,13
+9708,Economics,november-2025,14,30,25,22,19,16,14
+9708,Economics,november-2025,21,60,26,24,20,16,12
+9708,Economics,november-2025,22,60,22,20,17,14,11
+9708,Economics,november-2025,23,60,24,21,17,13,10
+9708,Economics,november-2025,24,60,24,22,18,15,11
+9708,Economics,november-2025,31,30,23,19,17,15,14
+9708,Economics,november-2025,32,30,24,19,17,15,14
+9708,Economics,november-2025,33,30,23,19,17,16,14
+9708,Economics,november-2025,34,30,23,18,16,14,13
+9708,Economics,november-2025,41,60,38,31,29,26,22
+9708,Economics,november-2025,42,60,38,33,30,26,21
+9708,Economics,november-2025,43,60,38,32,28,23,18
+9708,Economics,november-2025,44,60,39,32,29,25,21
+8021,English General Paper AS Level,november-2025,11,30,22,19,17,15,13
+8021,English General Paper AS Level,november-2025,12,30,22,19,17,15,13
+8021,English General Paper AS Level,november-2025,13,30,22,19,17,15,13
+8021,English General Paper AS Level,november-2025,21,50,32,30,28,25,22
+8021,English General Paper AS Level,november-2025,22,50,33,31,29,26,23
+8021,English General Paper AS Level,november-2025,23,50,30,28,26,23,20
+9093,English Language A Level,november-2025,11,50,33,29,26,22,19
+9093,English Language A Level,november-2025,12,50,33,29,26,22,19
+9093,English Language A Level,november-2025,13,50,33,29,26,22,19
+9093,English Language A Level,november-2025,21,50,33,28,24,21,18
+9093,English Language A Level,november-2025,22,50,33,28,24,21,18
+9093,English Language A Level,november-2025,23,50,33,28,24,21,18
+9093,English Language A Level,november-2025,31,50,36,31,26,21,15
+9093,English Language A Level,november-2025,32,50,36,31,26,21,15
+9093,English Language A Level,november-2025,33,50,36,31,26,21,15
+9093,English Language A Level,november-2025,41,50,37,32,27,21,16
+9093,English Language A Level,november-2025,42,50,37,32,27,21,16
+9093,English Language A Level,november-2025,43,50,37,32,27,21,16
+8291,Environmental Management AS Level,november-2025,11,80,51,43,39,35,30
+8291,Environmental Management AS Level,november-2025,12,80,51,43,39,35,30
+8291,Environmental Management AS Level,november-2025,13,80,51,43,39,35,30
+8291,Environmental Management AS Level,november-2025,21,80,50,42,37,32,28
+8291,Environmental Management AS Level,november-2025,22,80,50,42,37,32,28
+8291,Environmental Management AS Level,november-2025,23,80,50,42,37,32,28
+8028,French Language AS Level,november-2025,04,65,56,52,46,40,34
+8028,French Language AS Level,november-2025,11,40,32,29,25,20,16
+8028,French Language AS Level,november-2025,12,40,32,29,25,20,16
+8028,French Language AS Level,november-2025,13,40,32,29,25,20,16
+8028,French Language AS Level,november-2025,21,40,29,26,23,19,16
+8028,French Language AS Level,november-2025,22,40,29,26,23,19,16
+8028,French Language AS Level,november-2025,23,40,29,26,23,19,16
+8028,French Language AS Level,november-2025,31,40,30,26,22,19,16
+8028,French Language AS Level,november-2025,32,40,30,26,22,19,16
+8028,French Language AS Level,november-2025,33,40,30,26,22,19,16
+9231,Further Mathematics A Level,november-2025,11,75,49,39,33,27,21
+9231,Further Mathematics A Level,november-2025,12,75,45,36,30,24,18
+9231,Further Mathematics A Level,november-2025,13,75,49,39,33,27,21
+9231,Further Mathematics A Level,november-2025,14,75,49,39,33,27,21
+9231,Further Mathematics A Level,november-2025,21,75,66,60,52,43,34
+9231,Further Mathematics A Level,november-2025,22,75,66,60,52,43,34
+9231,Further Mathematics A Level,november-2025,23,75,66,60,52,43,34
+9231,Further Mathematics A Level,november-2025,24,75,66,60,52,44,34
+9231,Further Mathematics A Level,november-2025,31,50,25,17,13,10,7
+9231,Further Mathematics A Level,november-2025,32,50,25,17,13,10,7
+9231,Further Mathematics A Level,november-2025,33,50,25,17,13,10,7
+9231,Further Mathematics A Level,november-2025,34,50,25,17,13,10,7
+9231,Further Mathematics A Level,november-2025,41,50,38,31,25,19,13
+9231,Further Mathematics A Level,november-2025,42,50,39,34,28,23,17
+9231,Further Mathematics A Level,november-2025,43,50,38,31,25,19,13
+9231,Further Mathematics A Level,november-2025,44,50,40,34,28,22,17
+9696,Geography,november-2025,11,60,35,31,27,23,19
+9696,Geography,november-2025,12,60,35,31,27,23,19
+9696,Geography,november-2025,13,60,35,31,27,23,19
+9696,Geography,november-2025,21,60,37,31,28,25,22
+9696,Geography,november-2025,22,60,34,28,25,22,19
+9696,Geography,november-2025,23,60,34,28,25,22,19
+9696,Geography,november-2025,31,60,34,30,27,23,20
+9696,Geography,november-2025,32,60,35,31,27,24,21
+9696,Geography,november-2025,33,60,34,30,27,23,20
+9696,Geography,november-2025,41,60,33,29,26,23,19
+9696,Geography,november-2025,42,60,33,29,26,23,19
+9696,Geography,november-2025,43,60,33,29,26,23,19
+8027,German Language AS Level,november-2025,04,65,53,49,43,37,32
+8027,German Language AS Level,november-2025,12,40,31,28,24,20,16
+8027,German Language AS Level,november-2025,13,40,29,26,22,19,16
+8027,German Language AS Level,november-2025,22,40,28,25,21,18,14
+8027,German Language AS Level,november-2025,23,40,26,23,20,17,13
+8027,German Language AS Level,november-2025,32,40,33,30,26,23,20
+8027,German Language AS Level,november-2025,33,40,33,30,26,23,20
+9897,German Language and Literature A Level,november-2025,12,40,32,28,26,22,18
+9897,German Language and Literature A Level,november-2025,13,40,32,28,26,22,18
+9897,German Language and Literature A Level,november-2025,22,40,28,24,20,17,14
+9897,German Language and Literature A Level,november-2025,23,40,28,24,20,17,14
+9897,German Language and Literature A Level,november-2025,32,40,28,24,20,17,14
+9897,German Language and Literature A Level,november-2025,33,40,28,24,20,17,14
+9239,Global Perspectives & Research,november-2025,02,40,29,26,24,22,21
+9239,Global Perspectives & Research,november-2025,03,40,28,26,24,23,21
+9239,Global Perspectives & Research,november-2025,04,85,57,52,46,41,34
+9239,Global Perspectives & Research,november-2025,11,45,34,32,30,27,24
+9239,Global Perspectives & Research,november-2025,12,45,34,32,30,27,24
+9239,Global Perspectives & Research,november-2025,13,45,34,32,30,27,24
+9489,History,november-2025,11,40,22,19,16,14,12
+9489,History,november-2025,12,40,22,19,16,14,12
+9489,History,november-2025,13,40,22,19,16,14,12
+9489,History,november-2025,21,60,39,34,30,25,20
+9489,History,november-2025,22,60,39,34,30,25,20
+9489,History,november-2025,23,60,39,34,30,25,20
+9489,History,november-2025,31,40,31,28,25,22,19
+9489,History,november-2025,32,40,31,28,25,22,19
+9489,History,november-2025,33,40,31,28,25,22,19
+9489,History,november-2025,41,60,42,38,34,29,24
+9489,History,november-2025,42,60,42,38,34,29,24
+9489,History,november-2025,43,60,42,38,34,29,24
+9626,Information Technology,november-2025,02,90,58,50,44,38,31
+9626,Information Technology,november-2025,04,90,66,57,50,41,31
+9626,Information Technology,november-2025,11,70,40,35,29,23,18
+9626,Information Technology,november-2025,12,70,40,35,29,23,18
+9626,Information Technology,november-2025,13,70,40,35,29,23,18
+9626,Information Technology,november-2025,32,70,42,37,32,27,22
+9626,Information Technology,november-2025,33,70,42,37,32,27,22
+9488,Islamic Studies,november-2025,12,50,39,34,29,25,21
+9488,Islamic Studies,november-2025,22,50,38,33,29,24,20
+9488,Islamic Studies,november-2025,32,50,39,34,29,24,19
+9488,Islamic Studies,november-2025,42,50,37,32,27,22,17
+8695,Language and Literature in English AS Level,november-2025,11,50,33,28,24,21,18
+8695,Language and Literature in English AS Level,november-2025,12,50,33,28,24,21,18
+8695,Language and Literature in English AS Level,november-2025,13,50,33,28,24,21,18
+8695,Language and Literature in English AS Level,november-2025,21,50,36,32,29,25,21
+8695,Language and Literature in English AS Level,november-2025,22,50,36,32,29,25,21
+8695,Language and Literature in English AS Level,november-2025,23,50,36,32,29,25,21
+9084,Law,november-2025,11,75,46,42,36,30,23
+9084,Law,november-2025,12,75,46,42,36,30,23
+9084,Law,november-2025,13,75,46,42,36,30,23
+9084,Law,november-2025,21,60,40,33,29,25,22
+9084,Law,november-2025,22,60,40,33,29,25,22
+9084,Law,november-2025,23,60,40,33,29,25,22
+9084,Law,november-2025,31,75,45,39,34,30,24
+9084,Law,november-2025,32,75,45,39,34,30,24
+9084,Law,november-2025,41,75,42,38,33,28,24
+9084,Law,november-2025,42,75,42,38,33,28,24
+9695,Literature in English,november-2025,11,50,36,32,29,25,21
+9695,Literature in English,november-2025,12,50,36,32,29,25,21
+9695,Literature in English,november-2025,13,50,36,32,29,25,21
+9695,Literature in English,november-2025,21,50,31,27,23,20,17
+9695,Literature in English,november-2025,22,50,31,27,23,20,17
+9695,Literature in English,november-2025,23,50,31,27,23,20,17
+9695,Literature in English,november-2025,31,50,38,33,29,25,21
+9695,Literature in English,november-2025,32,50,38,33,29,25,21
+9695,Literature in English,november-2025,33,50,38,33,29,25,21
+9695,Literature in English,november-2025,41,50,40,34,30,26,21
+9695,Literature in English,november-2025,42,50,40,34,30,26,21
+9695,Literature in English,november-2025,43,50,40,34,30,26,21
+9693,Marine Science,november-2025,11,75,54,44,37,31,25
+9693,Marine Science,november-2025,12,75,54,44,37,31,25
+9693,Marine Science,november-2025,13,75,54,44,37,31,25
+9693,Marine Science,november-2025,21,75,49,43,36,29,22
+9693,Marine Science,november-2025,22,75,49,43,36,29,22
+9693,Marine Science,november-2025,23,75,49,43,36,29,22
+9693,Marine Science,november-2025,31,75,49,42,35,27,20
+9693,Marine Science,november-2025,32,75,49,42,35,27,20
+9693,Marine Science,november-2025,33,75,49,42,35,27,20
+9693,Marine Science,november-2025,41,75,50,43,37,30,22
+9693,Marine Science,november-2025,42,75,50,43,37,30,22
+9693,Marine Science,november-2025,43,75,50,43,37,30,22
+9709,Mathematics,november-2025,11,75,60,51,40,28,16
+9709,Mathematics,november-2025,12,75,60,51,39,27,16
+9709,Mathematics,november-2025,13,75,61,54,43,30,19
+9709,Mathematics,november-2025,15,75,63,55,43,31,18
+9709,Mathematics,november-2025,21,50,42,37,29,21,13
+9709,Mathematics,november-2025,22,50,42,37,29,21,13
+9709,Mathematics,november-2025,23,50,42,37,29,21,13
+9709,Mathematics,november-2025,25,50,42,37,29,21,13
+9709,Mathematics,november-2025,31,75,58,49,40,31,21
+9709,Mathematics,november-2025,32,75,45,38,32,25,17
+9709,Mathematics,november-2025,33,75,58,49,41,31,22
+9709,Mathematics,november-2025,35,75,60,51,42,32,21
+9709,Mathematics,november-2025,41,50,38,32,25,18,12
+9709,Mathematics,november-2025,42,50,35,29,23,17,11
+9709,Mathematics,november-2025,43,50,36,28,22,18,12
+9709,Mathematics,november-2025,45,50,38,31,24,17,11
+9709,Mathematics,november-2025,51,50,41,37,29,22,15
+9709,Mathematics,november-2025,52,50,38,33,25,18,10
+9709,Mathematics,november-2025,53,50,45,40,32,25,17
+9709,Mathematics,november-2025,55,50,43,39,32,25,19
+9709,Mathematics,november-2025,61,50,46,42,34,27,19
+9709,Mathematics,november-2025,62,50,36,32,26,21,16
+9709,Mathematics,november-2025,63,50,46,42,34,27,19
+9709,Mathematics,november-2025,65,50,44,39,32,25,19
+9607,Media Studies,november-2025,01,50,40,35,30,25,20
+9607,Media Studies,november-2025,02,50,40,35,30,26,22
+9607,Media Studies,november-2025,03,50,40,35,30,25,20
+9607,Media Studies,november-2025,04,60,46,40,35,29,24
+9483,Music,november-2025,02,100,75,65,56,48,40
+9483,Music,november-2025,03,100,80,70,60,50,40
+9483,Music,november-2025,04,100,80,70,60,50,40
+9483,Music,november-2025,05,100,80,70,60,50,40
+9483,Music,november-2025,11,100,70,57,49,40,31
+9483,Music,november-2025,12,100,70,57,49,40,31
+9483,Music,november-2025,13,100,70,57,49,40,31
+9702,Physics,november-2025,11,40,29,25,22,18,15
+9702,Physics,november-2025,12,40,32,27,23,20,17
+9702,Physics,november-2025,13,40,29,25,22,18,15
+9702,Physics,november-2025,14,40,31,27,23,20,17
+9702,Physics,november-2025,21,60,44,37,31,25,18
+9702,Physics,november-2025,22,60,43,37,31,24,16
+9702,Physics,november-2025,23,60,44,37,31,25,18
+9702,Physics,november-2025,24,60,46,39,33,26,19
+9702,Physics,november-2025,31,40,32,30,27,24,21
+9702,Physics,november-2025,33,40,31,29,25,22,19
+9702,Physics,november-2025,34,40,31,29,26,23,21
+9702,Physics,november-2025,35,40,30,28,24,21,18
+9702,Physics,november-2025,36,40,31,28,25,22,19
+9702,Physics,november-2025,37,40,30,28,24,21,18
+9702,Physics,november-2025,38,40,31,28,25,22,19
+9702,Physics,november-2025,41,100,64,56,45,34,22
+9702,Physics,november-2025,42,100,57,48,39,29,19
+9702,Physics,november-2025,43,100,64,56,45,34,22
+9702,Physics,november-2025,44,100,66,58,47,35,22
+9702,Physics,november-2025,51,30,24,22,19,16,13
+9702,Physics,november-2025,52,30,22,19,15,12,9
+9702,Physics,november-2025,53,30,24,22,19,16,13
+9702,Physics,november-2025,54,30,24,21,17,14,11
+9990,Psychology,november-2025,11,60,40,37,32,26,20
+9990,Psychology,november-2025,12,60,40,36,32,27,22
+9990,Psychology,november-2025,13,60,40,35,30,26,21
+9990,Psychology,november-2025,21,60,37,32,27,23,19
+9990,Psychology,november-2025,22,60,37,34,29,25,21
+9990,Psychology,november-2025,23,60,37,32,28,24,21
+9990,Psychology,november-2025,31,60,31,27,23,19,16
+9990,Psychology,november-2025,32,60,30,27,23,19,15
+9990,Psychology,november-2025,33,60,31,27,23,19,16
+9990,Psychology,november-2025,41,60,30,26,23,19,14
+9990,Psychology,november-2025,42,60,30,27,23,19,14
+9990,Psychology,november-2025,43,60,30,26,23,19,14
+9699,Sociology,november-2025,11,60,41,37,32,26,21
+9699,Sociology,november-2025,12,60,42,38,33,28,23
+9699,Sociology,november-2025,13,60,41,37,32,26,21
+9699,Sociology,november-2025,21,60,38,34,28,23,18
+9699,Sociology,november-2025,22,60,38,34,28,23,18
+9699,Sociology,november-2025,23,60,38,34,28,23,18
+9699,Sociology,november-2025,31,50,38,35,32,28,25
+9699,Sociology,november-2025,32,50,39,36,32,29,26
+9699,Sociology,november-2025,33,50,38,35,32,28,25
+9699,Sociology,november-2025,41,70,57,53,49,44,39
+9699,Sociology,november-2025,42,70,57,53,49,44,39
+9699,Sociology,november-2025,43,70,57,53,49,44,39
+9844,Spanish Language and Literature A Level,november-2025,11,40,27,23,20,17,12
+9844,Spanish Language and Literature A Level,november-2025,12,40,27,23,20,17,12
+9844,Spanish Language and Literature A Level,november-2025,13,40,27,23,20,17,12
+9844,Spanish Language and Literature A Level,november-2025,21,40,32,28,24,20,17
+9844,Spanish Language and Literature A Level,november-2025,22,40,32,28,24,20,17
+9844,Spanish Language and Literature A Level,november-2025,23,40,32,28,24,20,17
+9844,Spanish Language and Literature A Level,november-2025,31,40,22,19,16,13,11
+9844,Spanish Language and Literature A Level,november-2025,32,40,22,19,16,13,11
+9844,Spanish Language and Literature A Level,november-2025,33,40,22,19,16,13,11
+8022,Spanish Language AS Level,november-2025,04,65,56,52,46,40,34
+8022,Spanish Language AS Level,november-2025,11,40,31,28,25,21,18
+8022,Spanish Language AS Level,november-2025,12,40,31,28,25,21,18
+8022,Spanish Language AS Level,november-2025,13,40,31,28,25,21,18
+8022,Spanish Language AS Level,november-2025,21,40,27,24,21,17,14
+8022,Spanish Language AS Level,november-2025,22,40,27,24,21,17,14
+8022,Spanish Language AS Level,november-2025,23,40,27,24,21,17,14
+8022,Spanish Language AS Level,november-2025,31,40,33,30,26,23,20
+8022,Spanish Language AS Level,november-2025,32,40,33,30,26,23,20
+8022,Spanish Language AS Level,november-2025,33,40,33,30,26,23,20
+8386,Sport & Physical Education AS Level,november-2025,02,70,52,45,38,32,26
+8386,Sport & Physical Education AS Level,november-2025,11,70,49,44,39,33,28
+8386,Sport & Physical Education AS Level,november-2025,12,70,49,44,39,33,28
+8386,Sport & Physical Education AS Level,november-2025,13,70,49,44,39,33,28
+9689,Tamil A Level,november-2025,22,70,44,40,36,29,22
+9689,Tamil A Level,november-2025,32,40,29,25,21,18,15
+9689,Tamil A Level,november-2025,42,75,39,36,31,27,23
+9689,Tamil A Level,november-2025,52,40,29,24,21,18,16
+8689,Tamil Language AS Level,november-2025,22,70,40,34,28,22,16
+8689,Tamil Language AS Level,november-2025,32,40,25,21,18,15,12
+9694,Thinking Skills,november-2025,11,50,31,26,22,18,14
+9694,Thinking Skills,november-2025,12,50,31,26,22,18,14
+9694,Thinking Skills,november-2025,13,50,31,26,22,18,14
+9694,Thinking Skills,november-2025,21,50,28,25,21,18,15
+9694,Thinking Skills,november-2025,22,50,28,25,21,18,15
+9694,Thinking Skills,november-2025,23,50,28,25,21,18,15
+9694,Thinking Skills,november-2025,31,50,33,27,23,18,12
+9694,Thinking Skills,november-2025,32,50,33,27,23,18,12
+9694,Thinking Skills,november-2025,33,50,33,27,23,18,12
+9694,Thinking Skills,november-2025,41,50,30,26,22,19,16
+9694,Thinking Skills,november-2025,42,50,30,26,22,19,16
+9694,Thinking Skills,november-2025,43,50,30,26,22,19,16
+9395,Travel and Tourism,november-2025,02,50,42,37,32,27,23
+9395,Travel and Tourism,november-2025,11,75,64,60,58,55,52
+9395,Travel and Tourism,november-2025,12,75,64,60,58,55,52
+9395,Travel and Tourism,november-2025,13,75,64,60,58,55,52
+9395,Travel and Tourism,november-2025,31,50,34,27,23,20,15
+9395,Travel and Tourism,november-2025,32,50,34,27,23,20,15
+9395,Travel and Tourism,november-2025,33,50,34,27,23,20,15
+9395,Travel and Tourism,november-2025,41,50,37,31,28,25,22
+9395,Travel and Tourism,november-2025,42,50,37,31,28,25,22
+9395,Travel and Tourism,november-2025,43,50,37,31,28,25,22
+9686,Urdu A Level,november-2025,02,70,63,58,52,47,39
+9686,Urdu A Level,november-2025,03,40,32,28,24,20,17
+9686,Urdu A Level,november-2025,04,75,56,50,45,40,36
+8686,Urdu Language AS Level,november-2025,02,70,58,51,45,39,33
+8686,Urdu Language AS Level,november-2025,03,40,28,24,20,17,14
 9706,Accounting,june-2025,11,30,21,16,14,12,11
 9706,Accounting,june-2025,12,30,22,18,15,13,11
 9706,Accounting,june-2025,13,30,21,16,14,12,11
