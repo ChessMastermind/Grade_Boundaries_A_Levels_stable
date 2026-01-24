@@ -19,9 +19,8 @@
     }
     // 1) compute your base href
     const host   = location.hostname;
-    const myBase = host === "gradeboundaries.com"
-                 ? "/"
-                 : "/Grade_Boundaries_A_Levels/";
+    var isLocal = host === "localhost" || host === "127.0.0.1";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
 
     // 2) inject <base>
     const baseEl = document.createElement("base");

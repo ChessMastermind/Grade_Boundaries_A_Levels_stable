@@ -25,14 +25,16 @@
   <script>
     function uncloak(){document.documentElement.classList.add("css-loaded");const c=document.getElementById("css-cloak");if(c)c.remove();}
     var host=location.hostname;
-    var myBase=host==="gradeboundaries.com"?"/":"/Grade_Boundaries_A_Levels/";
+    var isLocal = host === "localhost" || host === "127.0.0.1";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
     var base=document.createElement("base");base.href=myBase;document.head.appendChild(base);
     var tail=document.createElement("link");tail.rel="stylesheet";tail.href="dist/output.css";document.head.appendChild(tail);
     var style=document.createElement("link");style.rel="stylesheet";style.href="style.css";style.onload=uncloak;document.head.appendChild(style);
     // Inject dashboard-engine.js dynamically (only once, after CSS) and signal when ready
     (function(){
       var host=location.hostname;
-      var myBase=host==='gradeboundaries.com'?'/':'/Grade_Boundaries_A_Levels/';
+      var isLocal = host === "localhost" || host === "127.0.0.1";
+      var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
       var pre=document.createElement('link');
       pre.rel='preload';
       pre.href=myBase+'dashboard-engine.js';
@@ -287,7 +289,7 @@
 <script>
   (function(){
     var host = location.hostname;
-    var myBase = host === 'gradeboundaries.com' ? '/' : '/Grade_Boundaries_A_Levels/';
+    var myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") ? "/" : "/Grade_Boundaries_A_Levels/";
     var config = {
       csvUrl: myBase + 'OCR/OCR.csv',
       dom: {

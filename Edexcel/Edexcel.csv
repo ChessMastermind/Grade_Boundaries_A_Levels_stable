@@ -1,4 +1,75 @@
 year,session,code,unit,max_mark,a*,a,b,c,d,e,u
+2025,Oct,WAC11,Unit 1: The Accounting System and Costing,200,,138,118,98,79,60,0
+2025,Oct,WAC11,Unit 1A: The Accounting System and Costing,200,,126,105,84,64,44,0
+2025,Oct,WAC12,Unit 2: Corporate and Management Accounting,200,178,159,140,121,102,84,0
+2025,Oct,WAC12,Unit 2A: Corporate and Management Accounting,200,168,149,130,111,92,74,0
+2025,Oct,WBI11,"Unit 1: Molecules, Diet, Transport and Health",80,,53,47,41,35,29,0
+2025,Oct,WBI11,"Unit 1A: Molecules, Diet, Transport and Health",80,,53,47,41,35,29,0
+2025,Oct,WBI12,"Unit 2: Cells, Development, Biodiversity and Conservation",80,,55,48,41,35,29,0
+2025,Oct,WBI12,"Unit 2A: Cells, Development, Biodiversity and Conservation",80,,55,48,41,35,29,0
+2025,Oct,WBI13,Unit 3: Practical Skills in Biology I,50,,40,35,30,25,21,0
+2025,Oct,WBI13,Unit 3A: Practical Skills in Biology I,50,,40,35,30,25,21,0
+2025,Oct,WBI14,"Unit 4: Energy, Environment, Microbiology and Immunity",90,60,54,48,43,38,33,0
+2025,Oct,WBI14,"Unit 4A: Energy, Environment, Microbiology and Immunity",90,60,54,48,43,38,33,0
+2025,Oct,WBI15,"Unit 5: Respiration, Internal Environment, Coordination and Gene Technology",90,67,60,53,47,41,35,0
+2025,Oct,WBI16,Unit 6: Practical Skills in Biology II,50,45,40,35,31,27,23,0
+2025,Oct,WBI16,Unit 6A: Practical Skills in Biology II,50,45,40,35,31,27,23,0
+2025,Oct,WBS11,Unit 1: Marketing and People,80,,55,49,44,39,34,0
+2025,Oct,WBS11,Unit 1A: Marketing and People,80,,55,49,44,39,34,0
+2025,Oct,WBS12,Unit 2: Managing Business Activities,80,,53,48,43,38,33,0
+2025,Oct,WBS12,Unit 2A: Managing Business Activities,80,,53,48,43,38,33,0
+2025,Oct,WBS13,Unit 3: Business Decisions And Strategy,80,47,42,37,33,29,25,0
+2025,Oct,WBS13,Unit 3A: Business Decisions And Strategy,80,47,42,37,33,29,25,0
+2025,Oct,WBS14,Unit 4: Global Business,80,59,52,45,38,31,25,0
+2025,Oct,WBS14,Unit 4A: Global Business,80,59,52,45,38,31,25,0
+2025,Oct,WCH11,"Unit 1: Structure, Bonding and Introducttion to Organic Chemistry",80,,64,56,48,40,33,0
+2025,Oct,WCH11,"Unit 1A: Structure, Bonding and Introducttion to Organic Chemistry",80,,64,56,48,40,33,0
+2025,Oct,WCH12,"Unit 2: Energetics, Group Chemistry, Halogenoalkanes and Alcohol",80,,60,52,44,36,29,0
+2025,Oct,WCH12,"Unit 2A: Energetics, Group Chemistry, Halogenoalkanes and Alcohol",80,,60,52,44,36,29,0
+2025,Oct,WCH13,Unit 3: Practical Skills in Chemistry I,50,,34,29,25,21,17,0
+2025,Oct,WCH13,Unit 3A: Practical Skills in Chemistry I,50,,34,29,25,21,17,0
+2025,Oct,WCH14,"Unit 4: Rates, Equilibria and Further Organic Chemistry",90,70,61,52,43,35,27,0
+2025,Oct,WCH14,"Unit 4A: Rates, Equilibria and Further Organic Chemistry",90,81,73,64,55,47,39,0
+2025,Oct,WCH15,Unit 5: Transition Metals and Organic Nitrogen Chemistry,90,69,62,55,48,41,35,0
+2025,Oct,WCH15,Unit 5A: Transition Metals and Organic Nitrogen Chemistry,90,69,62,55,48,41,35,0
+2025,Oct,WCH16,Unit 6: Practical Skills in Chemistry II,50,44,40,36,32,28,25,0
+2025,Oct,WCH16,Unit 6A: Practical Skills in Chemistry II,50,44,40,36,32,28,25,0
+2025,Oct,WEC11,Unit 1: Markets in Action,80,,50,45,40,35,31,0
+2025,Oct,WEC11,Unit 1A: Markets in Action,80,,53,47,41,35,30,0
+2025,Oct,WEC12,Unit 2: Macroeconomic Performance and Policy,80,,50,45,40,35,31,0
+2025,Oct,WEC12,Unit 2A: Macroeconomic Performance and Policy,80,,56,50,45,40,35,0
+2025,Oct,WEC13,Unit 3: Business Behaviour,80,57,52,47,42,37,33,0
+2025,Oct,WEC13,Unit 3A: Business Behaviour,80,57,52,47,42,37,33,0
+2025,Oct,WEC14,Unit 4: Developments in the Global Economy,80,60,54,48,42,36,31,0
+2025,Oct,WEC14,Unit 4A: Developments in the Global Economy,80,60,54,48,42,36,31,0
+2025,Oct,WMA11,Unit 1: Pure Mathematics 1,75,,57,50,43,36,29,0
+2025,Oct,WMA11,Unit 1A: Pure Mathematics 1,75,,59,51,44,37,30,0
+2025,Oct,WMA12,Unit 2: Pure Mathematics 2,75,,54,47,40,34,28,0
+2025,Oct,WMA12,Unit 2A: Pure Mathematics 2,75,,54,47,40,34,28,0
+2025,Oct,WMA13,Unit 3: Pure Mathematics 3,75,63,57,51,45,39,34,0
+2025,Oct,WMA13,Unit 3A: Pure Mathematics 3,75,65,59,53,47,41,36,0
+2025,Oct,WMA14,Unit 4: Pure Mathematics 4,75,67,59,51,43,36,29,0
+2025,Oct,WMA14,Unit 4A: Pure Mathematics 4,75,69,63,55,47,39,32,0
+2025,Oct,WME01,Unit 1: Mechanics 1,75,,61,53,45,37,30,0
+2025,Oct,WME01,Unit 1A: Mechanics 1,75,,61,53,45,37,30,0
+2025,Oct,WME02,Unit 2: Mechanics 2,75,68,62,54,47,40,33,0
+2025,Oct,WME02,Unit 2A: Mechanics 2,75,68,62,54,47,40,33,0
+2025,Oct,WPH11,Unit 1: Mechanics and Materials,80,,59,52,46,40,34,0
+2025,Oct,WPH11,Unit 1A: Mechanics and Materials,80,,59,52,46,40,34,0
+2025,Oct,WPH12,Unit 2: Waves and Electricity,80,,58,51,44,37,31,0
+2025,Oct,WPH12,Unit 2A: Waves and Electricity,80,,60,53,46,39,32,0
+2025,Oct,WPH13,Unit 3: Practical Skills in Physics I,50,,37,33,29,25,22,0
+2025,Oct,WPH13,Unit 3A: Practical Skills in Physics I,50,,39,35,31,28,25,0
+2025,Oct,WPH14,"Unit 4: Further Mechanics, Fields and Particles",90,80,71,62,54,46,38,0
+2025,Oct,WPH14,"Unit 4A: Further Mechanics, Fields and Particles",90,82,74,66,58,50,42,0
+2025,Oct,WPH15,"Unit 5: Thermodynamics, Radiation, Oscillations and Cosmology",90,79,71,63,55,47,39,0
+2025,Oct,WPH15,"Unit 5A: Thermodynamics, Radiation, Oscillations and Cosmology",90,79,71,63,55,47,39,0
+2025,Oct,WPH16,Unit 6: Practical Skills in Physics II,50,43,38,33,28,23,19,0
+2025,Oct,WPH16,Unit 6A: Practical Skills in Physics II,50,43,38,33,28,23,19,0
+2025,Oct,WST01,Unit 1: Statistics 1,75,,66,56,46,36,27,0
+2025,Oct,WST01,Unit 1A: Statistics 1,75,,62,53,44,35,27,0
+2025,Oct,WST02,Unit 2: Statistics 2,75,67,60,51,43,35,27,0
+2025,Oct,WST02,Unit 2A: Statistics 2,75,70,65,56,47,38,30,0
 2025,Jun,WAA01,Unit 1: Understanding and Written Response,80,,51,42,34,26,18,0
 2025,Jun,WAA02,Unit 2: Writing and Research,80,63,53,43,34,25,16,0
 2025,Jun,WAC11,Unit 1: The Accounting System and Costing,200,,153,132,111,91,71,0
@@ -1591,6 +1662,63 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2017,Oct,WST01,Statistics S1,75,,59,50,42,34,26,0
 2017,Oct,WST02,Statistics S2,75,63,56,49,42,35,29,0
 2017,Oct,YLA1,International A level Law,200,112,101,90,79,69,59,0
+2017,Jun,WBI01,"Lifestyle, Transport, Genes and Health",80,,55,50,45,40,35,0
+2017,Jun,WBI02,"Development, Plants and the Environment",80,,57,53,49,46,43,0
+2017,Jun,WBI03,Practical Biology and Research Skills,40,,30,27,24,22,20,0
+2017,Jun,WBI04,The Natural Environment and Species,90,59,55,51,47,44,41,0
+2017,Jun,WBI05,"Energy, Exercise and Coordination",90,56,52,48,44,40,37,0
+2017,Jun,WBI06,Practical Biology and Investigative Skills,50,47,44,40,36,32,28,0
+2017,Jun,WBS01,Business Enterprise,80,,55,49,44,39,34,0
+2017,Jun,WBS02,Business Structures and Processes,80,,52,47,43,39,35,0
+2017,Jun,WBS03,Strategic Business Decisions,80,63,58,53,48,43,39,0
+2017,Jun,WBS04,Business in a Global Context,80,65,59,53,47,42,37,0
+2017,Jun,WCH01,Core Principles Of Chemistry,80,,61,54,47,40,34,0
+2017,Jun,WCH02,Application of Core Principles of Chemistry,80,,63,57,51,45,39,0
+2017,Jun,WCH03,Chemistry Laboratory Skills I,50,,37,33,30,27,24,0
+2017,Jun,WCH04,"General Principles Of Chemistry I: Rates,",90,69,63,57,52,47,42,0
+2017,Jun,WCH05,General Principles Of Chemistry II –,90,77,70,63,56,49,43,0
+2017,Jun,WCH06,Chemistry Laboratory Skills II,50,36,33,30,27,24,21,0
+2017,Jun,WCH07,Chemistry Practical Examination,50,41,37,33,29,25,21,0
+2017,Jun,WDM01,Decision Mathematics D1,75,,58,52,46,41,36,0
+2017,Jun,WEC01,Markets in Action,80,,60,54,49,44,39,0
+2017,Jun,WEC02,Macroeconomic Performance and Policy,80,,58,53,48,44,40,0
+2017,Jun,WEC03,Business Behavior,80,63,57,51,45,40,35,0
+2017,Jun,WEC04,Developments in the Global Economy,80,61,56,51,46,41,37,0
+2017,Jun,WFM01,Further Pure Mathematics F1,75,,64,57,50,44,38,0
+2017,Jun,WFM02,Further Pure Mathematics F2,75,69,63,56,49,42,35,0
+2017,Jun,WFM03,Further Pure Mathematics F3,75,61,54,47,40,34,28,0
+2017,Jun,WHI01,"A - France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2017,Jun,WHI01,"B - Russia in Revolution, 1881-1917",50,,39,34,29,25,21,0
+2017,Jun,WHI01,"C - Germany, 1918-45",50,,39,34,29,25,21,0
+2017,Jun,WHI01,"D - Britain, 1964-90",50,,39,34,29,25,21,0
+2017,Jun,WHI02,"A - India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2017,Jun,WHI02,"B - China, 1900-76",50,,34,31,28,25,22,0
+2017,Jun,WHI02,"C - Russia, 1917-91: From Lenin to Yeltsin",50,,33,30,27,24,21,0
+2017,Jun,WHI02,"D - South Africa, 1948-2014, From",50,,34,31,28,25,22,0
+2017,Jun,WHI03,"A - The USA, Independence to Civil War,",50,38,34,30,27,24,21,0
+2017,Jun,WHI03,"B - The British Experience of Warfare,",50,38,34,30,27,24,21,0
+2017,Jun,WHI03,"C - Germany: United, Divided and",50,38,34,30,27,24,21,0
+2017,Jun,WHI03,D - Civil Rights and Race Relations in the,50,38,34,30,27,24,21,0
+2017,Jun,WHI04,"A - The Making of Modern Europe,",50,38,34,30,27,24,21,0
+2017,Jun,WHI04,"B - The World in Crisis, 1879–1945",50,38,34,30,27,24,21,0
+2017,Jun,WHI04,C - The World Divided: Superpower,50,38,34,30,27,24,21,0
+2017,Jun,WHI04,"D - The Cold War and Hot War in Asia,",50,38,34,30,27,24,21,0
+2017,Jun,WMA01,Core Mathematics C12,125,,100,88,76,64,53,0
+2017,Jun,WMA02,Core Mathematics C34,125,103,92,81,70,60,50,0
+2017,Jun,WME01,Mechanics M1,75,,65,59,53,47,41,0
+2017,Jun,WME02,Mechanics M2,75,68,62,56,50,44,38,0
+2017,Jun,WME03,Mechanics M3,75,71,67,60,54,48,42,0
+2017,Jun,WPH01,Physics On The Go,80,,52,48,44,40,36,0
+2017,Jun,WPH02,Physics At Work,80,,52,46,41,36,31,0
+2017,Jun,WPH03,Exploring Physics,40,,32,29,26,23,20,0
+2017,Jun,WPH04,Physics On The Move,80,59,54,49,44,40,36,0
+2017,Jun,WPH05,Physics from Creation to Collapse,80,63,59,55,52,49,46,0
+2017,Jun,WPH06,Experimental Physics,40,35,32,29,26,23,20,0
+2017,Jun,WPH07,Physics Practice Examination,40,35,32,29,26,23,21,0
+2017,Jun,WST01,Statistics S1,75,,55,47,39,32,25,0
+2017,Jun,WST02,Statistics S2,75,66,58,50,42,34,26,0
+2017,Jun,WST03,Statistics S3,75,70,66,60,54,48,42,0
+2017,Jun,YLA1,International A level Law,200,112,101,90,79,69,59,0
 2016,Oct,WAC01,Unit 1: The Accounting System and,200,,143,126,109,93,77,0
 2016,Oct,WAC02,Unit 2: Corporate and Management,200,165,148,131,114,97,80,0
 2016,Oct,WAC11,Unit 1: The Accounting System and,200,,135,120,105,91,77,0
@@ -1616,6 +1744,61 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2016,Oct,WST01,Statistics S1,75,,59,52,45,38,31,0
 2016,Oct,WST02,Statistics S2,75,68,61,54,47,40,33,0
 2016,Oct,YLA0,International A level Law,100,62,56,50,45,40,35,0
+2016,Jun,WAC01,Unit 1: The Accounting System and,200,,146,129,112,95,79,0
+2016,Jun,WAC02,Unit 2: Corporate and Management,200,167,150,133,116,100,84,0
+2016,Jun,WAC11,Unit 1: The Accounting System and,200,,143,127,111,95,79,0
+2016,Jun,WBI01,"Lifestyle, Transport, Genes and Health",80,,62,57,52,47,43,0
+2016,Jun,WBI02,"Development, Plants and the Environment",80,,59,55,51,48,45,0
+2016,Jun,WBI03,Practical Biology and Research Skills,40,,34,31,28,26,24,0
+2016,Jun,WBI04,The Natural Environment and Species,90,66,62,58,55,52,49,0
+2016,Jun,WBI05,"Energy, Exercise and Coordination",90,68,63,58,53,49,45,0
+2016,Jun,WBI06,Practical Biology and Investigative Skills,50,46,42,37,32,28,24,0
+2016,Jun,WBS01,Business Enterprise,80,,55,49,44,39,34,0
+2016,Jun,WBS02,Business Structures and Processes,80,,48,44,40,37,34,0
+2016,Jun,WBS03,Strategic Business Decisions,80,62,57,52,47,43,39,0
+2016,Jun,WBS04,Business in a Global Context,80,63,58,53,48,43,38,0
+2016,Jun,WCH01,Core Principles Of Chemistry,80,,61,55,49,43,37,0
+2016,Jun,WCH02,Application of Core Principles of Chemistry,80,,60,54,48,42,36,0
+2016,Jun,WCH03,Chemistry Laboratory Skills I,50,,32,28,25,22,19,0
+2016,Jun,WCH04,"General Principles Of Chemistry I: Rates,",90,76,71,66,61,57,53,0
+2016,Jun,WCH05,General Principles Of Chemistry II –,90,79,72,65,58,52,46,0
+2016,Jun,WCH06,Chemistry Laboratory Skills II,50,30,27,24,21,18,15,0
+2016,Jun,WEC01,Markets in Action,80,,61,55,49,44,39,0
+2016,Jun,WEC02,Macroeconomic Performance and Policy,80,,56,52,48,44,40,0
+2016,Jun,WEC03,Business Behavior,80,61,55,49,43,38,33,0
+2016,Jun,WEC04,Developments in the Global Economy,80,62,57,52,47,42,38,0
+2016,Jun,WEN01,Language: Context and Identity,50,,37,31,26,21,16,0
+2016,Jun,WEN02,Language in Transition,50,,37,32,27,22,18,0
+2016,Jun,WET01,Post-2000 Poetry and Prose,50,,36,32,28,24,21,0
+2016,Jun,WET02,Drama,50,,36,32,28,24,21,0
+2016,Jun,WFM01,Further Pure Mathematics F1,75,,63,56,49,42,35,0
+2016,Jun,WFM02,Further Pure Mathematics F2,75,69,64,58,52,47,42,0
+2016,Jun,WFM03,Further Pure Mathematics F3,75,69,63,56,49,43,37,0
+2016,Jun,WHI01,"AFrance in Revolution, 1774-99",50,,39,34,29,25,21,0
+2016,Jun,WHI01,"BRussia in Revolution, 1881-1917",50,,37,33,29,25,22,0
+2016,Jun,WHI01,"CGermany, 1918-45",50,,39,34,29,25,21,0
+2016,Jun,WHI01,"DBritain, 1964-90",50,,39,34,30,26,22,0
+2016,Jun,WHI02,"AIndia, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2016,Jun,WHI02,"BChina, 1900-76",50,,34,31,28,25,2,0
+2016,Jun,WHI02,"CRussia, 1917-91: From Lenin to Yeltsin",50,,34,30,27,24,21,0
+2016,Jun,WHI02,"DSouth Africa, 1948-2014, From Apartheid",50,,34,31,28,25,22,0
+2016,Jun,WMA01,Core Mathematics C12,125,,96,83,71,59,47,0
+2016,Jun,WMA02,Core Mathematics C34,125,108,96,84,72,60,49,0
+2016,Jun,WME01,Mechanics M1,75,,56,50,45,40,35,0
+2016,Jun,WME02,Mechanics M2,75,68,61,54,47,40,33,0
+2016,Jun,WME03,Mechanics M3,75,70,65,58,51,44,38,0
+2016,Jun,WPH01,Physics On The Go,80,,51,47,43,39,36,0
+2016,Jun,WPH02,Physics At Work,80,,47,41,35,30,25,0
+2016,Jun,WPH03,Exploring Physics,40,,32,29,26,23,20,0
+2016,Jun,WPH04,Physics On The Move,80,60,55,50,45,40,36,0
+2016,Jun,WPH05,Physics from Creation to Collapse,80,63,58,53,48,44,40,0
+2016,Jun,WPH06,Experimental Physics,40,31,27,23,20,17,14,0
+2016,Jun,WPS01,Social and cognitive psychology,64,,35,31,27,23,20,0
+2016,Jun,WPS02,"Biological psychology, learning theories",96,,55,48,41,34,28,0
+2016,Jun,WST01,Statistics S1,75,,59,52,45,38,31,0
+2016,Jun,WST02,Statistics S2,75,68,62,54,47,40,33,0
+2016,Jun,WST03,Statistics S3,75,69,63,56,49,42,36,0
+2016,Jun,YLA0,International A level Law,100,62,56,50,45,40,35,0
 2016,Jan,WAC01,Unit 1: The Accounting System and,200,,149,130,111,92,74,0
 2016,Jan,WAC02,Unit 2: Corporate and Management,200,165,147,129,111,93,75,0
 2016,Jan,WBI01,"Lifestyle, Transport, Genes and Health",80,,57,51,45,39,33,0
@@ -1694,6 +1877,84 @@ year,session,code,unit,max_mark,a*,a,b,c,d,e,u
 2015,Jun,WST02,Statistics S2,75,67,60,52,44,37,30,0
 2015,Jun,WST03,Statistics S3,75,70,65,58,51,44,38,0
 2015,Jun,YLA0,International A level Law,100,62,57,52,47,42,37,0
+2015,Jan,WAC01,Unit 1: The Accounting System and,200,,145,126,107,88,70,0
+2015,Jan,WAC02,Unit 2: Corporate and Management,200,162,143,124,106,88,70,0
+2015,Jan,WBI01,"Lifestyle, Transport, Genes and Health",80,,63,57,51,45,40,0
+2015,Jan,WBI02,"Development, Plants and the Environment",80,,52,47,42,37,33,0
+2015,Jan,WBI03,Practical Biology and Research Skills,40,,32,28,25,22,19,0
+2015,Jan,WBI04,The Natural Environment and Species,90,65,59,53,48,43,38,0
+2015,Jan,WBI05,"Energy, Exercise and Coordination",90,65,60,55,50,45,40,0
+2015,Jan,WBI06,Practical Biology and Investigative Skills,50,44,39,33,28,23,18,0
+2015,Jan,WBS01,Business Enterprise,80,,51,46,41,36,32,0
+2015,Jan,WBS02,Business Structures and Processes,80,,50,46,42,38,35,0
+2015,Jan,WBS03,Strategic Business Decisions,80,58,53,48,43,38,33,0
+2015,Jan,WBS04,Business in a Global Context,80,57,52,47,42,37,32,0
+2015,Jan,WCH01,Core Principles Of Chemistry,80,,61,55,50,45,40,0
+2015,Jan,WCH02,Application of Core Principles of Chemistry,80,,59,53,47,42,37,0
+2015,Jan,WCH03,Chemistry Laboratory Skills I,50,,33,29,25,21,17,0
+2015,Jan,WCH04,"General Principles Of Chemistry I: Rates,",90,78,71,64,57,50,43,0
+2015,Jan,WCH05,General Principles Of Chemistry II –,90,64,58,52,46,40,34,0
+2015,Jan,WCH06,Chemistry Laboratory Skills II,50,35,31,27,24,21,18,0
+2015,Jan,WDM01,Decision Mathematics D1,75,,61,55,49,44,39,0
+2015,Jan,WEC01,Markets in Action,80,,61,54,48,42,36,0
+2015,Jan,WEC02,Macroeconomic Performance and Policy,80,,57,51,46,41,36,0
+2015,Jan,WEC03,Business Behavior,80,67,60,53,46,39,32,0
+2015,Jan,WEC04,Developments in the Global Economy,80,64,57,50,43,36,30,0
+2015,Jan,WFM01,Further Pure Mathematics F1,75,,60,52,45,38,31,0
+2015,Jan,WMA01,Core Mathematics C12,125,,89,77,65,53,41,0
+2015,Jan,WMA02,Core Mathematics C34,125,109,96,83,70,57,45,0
+2015,Jan,WME01,Mechanics M1,75,,54,47,41,35,29,0
+2015,Jan,WME02,Mechanics M2,75,68,62,54,46,38,31,0
+2015,Jan,WME03,Mechanics M3,75,68,62,54,47,40,33,0
+2015,Jan,WPH01,Physics On The Go,80,,53,48,43,38,34,0
+2015,Jan,WPH02,Physics At Work,80,,49,44,39,35,31,0
+2015,Jan,WPH03,Exploring Physics,40,,30,26,23,20,17,0
+2015,Jan,WPH04,Physics On The Move,80,67,61,55,49,44,39,0
+2015,Jan,WPH05,Physics from Creation to Collapse,80,62,57,52,47,42,38,0
+2015,Jan,WPH06,Experimental Physics,40,30,27,24,21,18,16,0
+2015,Jan,WST01,Statistics S1,75,,59,51,44,37,30,0
+2015,Jan,WST02,Statistics S2,75,67,60,52,44,37,30,0
+2014,Jun,WAC01,Unit 1: The Accounting System and,200,,142,125,108,92,76,0
+2014,Jun,WAC02,Unit 2: Corporate and Management,200,145,130,115,101,87,73,0
+2014,Jun,WBI01,"Lifestyle, Transport, Genes and Health",80,,58,54,50,46,43,0
+2014,Jun,WBI02,"Development, Plants and the Environment",80,,61,57,53,49,45,0
+2014,Jun,WBI03,Practical Biology and Research Skills,40,,29,26,23,20,17,0
+2014,Jun,WBI04,The Natural Environment and Species,90,65,60,55,51,47,43,0
+2014,Jun,WBI05,"Energy, Exercise and Coordination",90,68,63,58,54,50,46,0
+2014,Jun,WBI06,Practical Biology and Investigative Skills,50,45,41,36,31,27,23,0
+2014,Jun,WBS01,Business Enterprise,80,,51,45,39,33,28,0
+2014,Jun,WBS02,Business Structures and Processes,80,,47,44,41,38,35,0
+2014,Jun,WBS03,Strategic Business Decisions,80,66,60,54,48,42,37,0
+2014,Jun,WBS04,Business in a Global Context,80,59,52,45,39,33,27,0
+2014,Jun,WCH01,Core Principles Of Chemistry,80,,66,59,52,46,40,0
+2014,Jun,WCH02,Application of Core Principles of Chemistry,80,,62,56,50,45,40,0
+2014,Jun,WCH03,Chemistry Laboratory Skills I,50,,34,30,26,22,19,0
+2014,Jun,WCH04,"General Principles Of Chemistry I: Rates,",90,80,74,68,62,56,50,0
+2014,Jun,WCH05,General Principles Of Chemistry II –,90,64,58,52,47,42,37,0
+2014,Jun,WCH06,Chemistry Laboratory Skills II,50,41,37,33,29,26,23,0
+2014,Jun,WDM01,Decision Mathematics D1,75,,58,52,46,41,36,0
+2014,Jun,WEC01,Markets in Action,80,,59,53,47,42,37,0
+2014,Jun,WEC02,Macroeconomic Performance and Policy,80,,57,51,45,40,35,0
+2014,Jun,WEC03,Business Behavior,80,65,58,51,44,37,31,0
+2014,Jun,WEC04,Developments in the Global Economy,80,67,60,53,46,40,34,0
+2014,Jun,WFM01,Further Pure Mathematics F1,75,,61,53,45,37,29,0
+2014,Jun,WFM02,Further Pure Mathematics F2,75,68,62,55,48,41,35,0
+2014,Jun,WFM03,Further Pure Mathematics F3,75,63,56,49,42,36,30,0
+2014,Jun,WMA01,Core Mathematics C12,125,,80,69,58,47,36,0
+2014,Jun,WMA02,Core Mathematics C34,125,102,89,76,63,51,39,0
+2014,Jun,WME01,Mechanics M1,75,,60,53,47,41,35,0
+2014,Jun,WME02,Mechanics M2,75,63,56,49,42,35,28,0
+2014,Jun,WME03,Mechanics M3,75,68,62,54,46,38,31,0
+2014,Jun,WPH01,Physics On The Go,80,,53,48,43,39,35,0
+2014,Jun,WPH02,Physics At Work,80,,47,42,37,32,27,0
+2014,Jun,WPH03,Exploring Physics,40,,28,25,22,19,16,0
+2014,Jun,WPH04,Physics On The Move,80,63,57,51,46,41,36,0
+2014,Jun,WPH05,Physics from Creation to Collapse,80,66,61,56,51,47,43,0
+2014,Jun,WPH06,Experimental Physics,40,33,29,25,22,19,16,0
+2014,Jun,WST01,Statistics S1,75,,59,51,43,36,29,0
+2014,Jun,WST02,Statistics S2,75,67,60,53,47,41,35,0
+2014,Jun,WST03,Statistics S3,75,69,64,57,51,45,39,0
+2014,Jun,YLA0,International A level Law,100,67,61,55,50,45,40,0
 2014,Jan,WAC01,Unit 1: The Accounting System and,200,,135,115,96,77,58,0
 2014,Jan,WAC02,Unit 2: Corporate and Management,200,148,130,112,94,76,58,0
 2014,Jan,WBI01,"Lifestyle, Transport, Genes and Health",80,,58,53,48,43,38,0

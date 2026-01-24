@@ -25,7 +25,10 @@
       if (cloak) cloak.remove();
     }
     const host   = location.hostname;
-    const myBase = host === "gradeboundaries.com" ? "/" : "/Grade_Boundaries_A_Levels/";
+    // Add "localhost" or "127.0.0.1" to the root path condition
+    const myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") 
+                   ? "/" 
+                   : "/Grade_Boundaries_A_Levels/";
     const baseEl = document.createElement("base");
     baseEl.href  = myBase;
     document.head.appendChild(baseEl);
