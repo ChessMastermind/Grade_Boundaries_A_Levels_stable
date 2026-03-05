@@ -1,4 +1,140 @@
 year,session,code,unit,max_mark,a*,a,b,c,d,e,u
+2026,Jan,WAA01,Unit 1: Understanding and Written Response,80,,58,47,36,26,16,0
+2026,Jan,WAA02,Unit 2: Writing and Research,80,57,48,39,30,21,13,0
+2026,Jan,WAC11,Unit 1: The Accounting System and Costing,200,,137,115,94,73,52,0
+2026,Jan,WAC11,Unit 1A: The Accounting System and Costing,200,,125,104,83,62,42,0
+2026,Jan,WAC12,Unit 2: Corporate and Management Accounting,200,157,140,123,106,89,73,0
+2026,Jan,WAC12,Unit 2A: Corporate and Management Accounting,200,158,140,122,104,86,68,0
+2026,Jan,WBI11,"Unit 1: Molecules, Diet, Transport and Health",80,,54,48,42,36,30,0
+2026,Jan,WBI11,"Unit 1A: Molecules, Diet, Transport and Health",80,,54,48,42,36,30,0
+2026,Jan,WBI12,"Unit 2: Cells, Development, Biodiversity and Conservation",80,,57,50,43,37,31,0
+2026,Jan,WBI12,"Unit 2A: Cells, Development, Biodiversity and Conservation",80,,57,50,43,37,31,0
+2026,Jan,WBI13,Unit 3: Practical Skills in Biology I,50,,38,33,28,23,19,0
+2026,Jan,WBI13,Unit 3A: Practical Skills in Biology I,50,,38,33,28,23,19,0
+2026,Jan,WBI14,"Unit 4: Energy, Environment, Microbiology and Immunity",90,61,55,49,44,39,34,0
+2026,Jan,WBI14,"Unit 4A: Energy, Environment, Microbiology and Immunity",90,61,55,49,44,39,34,0
+2026,Jan,WBI16,Unit 6: Practical Skills in Biology II,50,43,38,33,29,25,21,0
+2026,Jan,WBI16,Unit 6A: Practical Skills in Biology II,50,43,38,33,29,25,21,0
+2026,Jan,WBS11,Unit 1: Marketing and People,80,,54,48,43,38,33,0
+2026,Jan,WBS11,Unit 1A: Marketing and People,80,,54,48,43,38,33,0
+2026,Jan,WBS12,Unit 2: Managing Business Activities,80,,53,48,43,38,33,0
+2026,Jan,WBS12,Unit 2A: Managing Business Activities,80,,53,48,43,38,33,0
+2026,Jan,WBS13,Unit 3: Business Decisions And Strategy,80,50,45,40,36,32,28,0
+2026,Jan,WBS13,Unit 3A: Business Decisions And Strategy,80,50,45,40,36,32,28,0
+2026,Jan,WBS14,Unit 4: Global Business,80,55,48,41,34,27,20,0
+2026,Jan,WBS14,Unit 4A: Global Business,80,55,48,41,34,27,20,0
+2026,Jan,WCH11,"Unit 1: Structure, Bonding and Introducttion to Organic Chemistry",80,,63,55,47,39,32,0
+2026,Jan,WCH11,"Unit 1A: Structure, Bonding and Introducttion to Organic Chemistry",80,,63,55,47,39,32,0
+2026,Jan,WCH12,"Unit 2: Energetics, Group Chemistry, Halogenoalkanes and Alcohol",80,,60,52,44,36,29,0
+2026,Jan,WCH12,"Unit 2A: Energetics, Group Chemistry, Halogenoalkanes and Alcohol",80,,60,52,44,36,29,0
+2026,Jan,WCH13,Unit 3: Practical Skills in Chemistry I,50,,35,30,26,22,18,0
+2026,Jan,WCH13,Unit 3A: Practical Skills in Chemistry I,50,,37,32,28,24,20,0
+2026,Jan,WCH14,"Unit 4: Rates, Equilibria and Further Organic Chemistry",90,81,72,63,54,46,38,0
+2026,Jan,WCH14,"Unit 4A: Rates, Equilibria and Further Organic Chemistry",90,81,73,64,55,47,39,0
+2026,Jan,WCH15,Unit 5: Transition Metals and Organic Nitrogen Chemistry,90,73,66,59,52,45,39,0
+2026,Jan,WCH15,Unit 5A: Transition Metals and Organic Nitrogen Chemistry,90,73,66,59,52,45,39,0
+2026,Jan,WCH16,Unit 6: Practical Skills in Chemistry II,50,41,37,33,29,26,23,0
+2026,Jan,WCH16,Unit 6A: Practical Skills in Chemistry II,50,41,37,33,29,26,23,0
+2026,Jan,WDM11,Unit 1: Decision Mathematics 1,75,,58,51,45,39,33,0
+2026,Jan,WDM11,Unit 1A: Decision Mathematics 1,75,,58,51,45,39,33,0
+2026,Jan,WEC11,Unit 1: Markets in Action,80,,57,52,47,42,37,0
+2026,Jan,WEC11,Unit 1A: Markets in Action,80,,54,48,42,36,31,0
+2026,Jan,WEC12,Unit 2: Macroeconomic Performance and Policy,80,,54,49,44,40,36,0
+2026,Jan,WEC12,Unit 2A: Macroeconomic Performance and Policy,80,,57,51,45,39,34,0
+2026,Jan,WEC13,Unit 3: Business Behaviour,80,60,55,50,45,40,35,0
+2026,Jan,WEC13,Unit 3A: Business Behaviour,80,61,55,49,44,39,34,0
+2026,Jan,WEC14,Unit 4: Developments in the Global Economy,80,57,52,47,42,37,33,0
+2026,Jan,WEC14,Unit 4A: Developments in the Global Economy,80,59,53,47,41,36,31,0
+2026,Jan,WEN01,Unit 1: Language: Context and Identity,50,,32,28,24,21,18,0
+2026,Jan,WEN01,Unit 1C: Language: Context and Identity,50,,32,28,24,21,18,0
+2026,Jan,WEN02,Unit 2: Language in Transition,50,,36,31,26,22,18,0
+2026,Jan,WEN02,Unit 2C: Language in Transition,50,,36,31,26,22,18,0
+2026,Jan,WEN03,Unit 3: Crafting Language (Writing),50,37,33,29,25,22,19,0
+2026,Jan,WEN03,Unit 3C: Crafting Language (Writing),50,37,33,29,25,22,19,0
+2026,Jan,WEN04,Unit 4: Investigating Language,50,36,31,26,21,17,13,0
+2026,Jan,WEN04,Unit 4C: Investigating Language,50,36,31,26,21,17,13,0
+2026,Jan,WET01,Unit 1: Post-2000 Poetry and Prose,50,,34,30,26,22,18,0
+2026,Jan,WET01,Unit 1C: Post-2000 Poetry and Prose,50,,34,30,26,22,18,0
+2026,Jan,WET02,Unit 2: Drama,50,,32,28,24,20,17,0
+2026,Jan,WET02,Unit 2C: Drama,50,,32,28,24,20,17,0
+2026,Jan,WET03,Unit 3: Poetry and Prose,50,38,34,30,26,22,19,0
+2026,Jan,WET03,Unit 3C: Poetry and Prose,50,38,34,30,26,22,19,0
+2026,Jan,WET04,Unit 4: Shakespeare and Pre-1900 Poetry,50,43,38,33,28,23,18,0
+2026,Jan,WET04,Unit 4C: Shakespeare and Pre-1900 Poetry,50,43,38,33,28,23,18,0
+2026,Jan,WFM01,Unit 1: Further Pure Mathematics 1,75,,63,56,49,43,37,0
+2026,Jan,WFM01,Unit 1A: Further Pure Mathematics 1,75,,66,60,54,48,42,0
+2026,Jan,WFM02,Unit 2: Further Pure Mathematics 2,75,70,66,58,50,43,36,0
+2026,Jan,WFM02,Unit 2A: Further Pure Mathematics 2,75,72,70,62,54,46,39,0
+2026,Jan,WFM03,Unit 3: Further Pure Mathematics 3,75,69,63,56,49,42,36,0
+2026,Jan,WFM03,Unit 3A: Further Pure Mathematics 3,75,69,63,56,49,42,36,0
+2026,Jan,WFR01,Unit 1: Spoken Expression and Response,40,,30,26,22,19,16,0
+2026,Jan,WFR02,Unit 2: Understanding and Written Response,90,,71,65,59,53,48,0
+2026,Jan,WFR03,Unit 3: Understanding and Spoken Response,40,35,31,27,23,19,16,0
+2026,Jan,WFR04,"Unit 4: Research, Understanding and Written Response",90,81,72,62,53,44,35,0
+2026,Jan,WGE01,Unit 1: Global Challenges,90,,56,51,46,42,38,0
+2026,Jan,WGE02,Unit 2: Geographical Investigations,60,,43,39,35,32,29,0
+2026,Jan,WGE03,Unit 3: Contested Planet,90,69,61,53,45,37,30,0
+2026,Jan,WGE04,Unit 4: Researching Geography,60,52,45,38,31,24,18,0
+2026,Jan,WGN01,Unit 1: Spoken Expression and Response,40,,30,26,22,19,16,0
+2026,Jan,WGN02,Unit 2: Understanding and Written Response,90,,67,59,51,43,35,0
+2026,Jan,WGN03,Unit 3: Understanding and Spoken Response,40,35,31,27,23,19,16,0
+2026,Jan,WGN04,"Unit 4: Research, Understanding and Written Response",90,74,67,60,53,46,39,0
+2026,Jan,WHI01,"Unit 1A: France in Revolution, 1774-99",50,,39,34,29,25,21,0
+2026,Jan,WHI01,"Unit 1B: Russia in Revolution, 1881-1917",50,,39,34,30,26,22,0
+2026,Jan,WHI01,"Unit 1C: Germany, 1918-45",50,,39,34,29,25,21,0
+2026,Jan,WHI01,"Unit 1D: Britain, 1964-90",50,,39,34,29,25,21,0
+2026,Jan,WHI02,"Unit 2A: India, 1857-1948: The Raj to Partition",50,,34,31,28,25,22,0
+2026,Jan,WHI02,"Unit 2B: China, 1900-76",50,,35,31,28,25,22,0
+2026,Jan,WHI02,"Unit 2C: Russia, 1917-91: From Lenin to Yeltsin",50,,34,31,28,25,22,0
+2026,Jan,WHI02,"Unit 2D: South Africa, 1948-2014",50,,34,31,28,25,22,0
+2026,Jan,WHI03,"Unit 3A: The USA, Independence to Civil War, 1763-1865",50,39,35,31,27,24,21,0
+2026,Jan,WHI03,"Unit 3B: The British Experience of Warfare, 1803-1945",50,39,35,31,27,24,21,0
+2026,Jan,WHI03,"Unit 3C: Germany: United, Divided and Reunited,1 870−1990",50,39,35,31,27,24,21,0
+2026,Jan,WHI03,"Unit 3D: Civil Rights and Race Relations in the USA, 1865−2009",50,39,35,31,27,24,21,0
+2026,Jan,WHI04,"Unit 4A: The Making of Modern Europe, 1805-71",50,38,34,30,27,24,21,0
+2026,Jan,WHI04,"Unit 4B: The World in Crisis, 1879-1945",50,39,35,31,27,23,19,0
+2026,Jan,WHI04,"Unit 4C: The World Divided: Superpower Relations, 1 943−90",50,39,35,31,27,23,20,0
+2026,Jan,WHI04,"Unit 4D: The Cold War and Hot War in Asia, 1945-90",50,37,33,29,26,23,20,0
+2026,Jan,WMA11,Unit 1: Pure Mathematics 1,75,,56,49,42,35,29,0
+2026,Jan,WMA11,Unit 1A: Pure Mathematics 1,75,,60,53,46,39,33,0
+2026,Jan,WMA12,Unit 2: Pure Mathematics 2,75,,51,45,39,33,28,0
+2026,Jan,WMA12,Unit 2A: Pure Mathematics 2,75,,51,45,39,33,28,0
+2026,Jan,WMA13,Unit 3: Pure Mathematics 3,75,66,59,52,46,40,34,0
+2026,Jan,WMA13,Unit 3A: Pure Mathematics 3,75,64,57,50,44,38,32,0
+2026,Jan,WMA14,Unit 4: Pure Mathematics 4,75,65,57,49,41,34,27,0
+2026,Jan,WMA14,Unit 4A: Pure Mathematics 4,75,62,55,48,41,34,27,0
+2026,Jan,WME01,Unit 1: Mechanics 1,75,,60,51,43,35,27,0
+2026,Jan,WME01,Unit 1A: Mechanics 1,75,,61,52,43,35,27,0
+2026,Jan,WME02,Unit 2: Mechanics 2,75,67,59,51,43,36,29,0
+2026,Jan,WME02,Unit 2A: Mechanics 2,75,69,64,56,48,41,34,0
+2026,Jan,WME03,Unit 3: Mechanics 3,75,68,62,53,45,37,29,0
+2026,Jan,WME03,Unit 3A: Mechanics 3,75,69,64,55,46,37,29,0
+2026,Jan,WPH11,Unit 1: Mechanics and Materials,80,,59,52,46,40,34,0
+2026,Jan,WPH11,Unit 1A: Mechanics and Materials,80,,59,52,46,40,34,0
+2026,Jan,WPH12,Unit 2: Waves and Electricity,80,,58,51,44,37,31,0
+2026,Jan,WPH12,Unit 2A: Waves and Electricity,80,,58,51,44,37,31,0
+2026,Jan,WPH13,Unit 3: Practical Skills in Physics I,50,,36,32,28,24,21,0
+2026,Jan,WPH13,Unit 3A: Practical Skills in Physics I,50,,36,32,28,24,21,0
+2026,Jan,WPH14,"Unit 4: Further Mechanics, Fields and Particles",90,80,71,62,54,46,38,0
+2026,Jan,WPH14,"Unit 4A: Further Mechanics, Fields and Particles",90,80,72,64,56,48,40,0
+2026,Jan,WPH15,"Unit 5: Thermodynamics, Radiation, Oscillations and Cosmology",90,79,71,63,55,47,39,0
+2026,Jan,WPH15,"Unit 5A: Thermodynamics, Radiation, Oscillations and Cosmology",90,79,71,63,55,47,39,0
+2026,Jan,WPH16,Unit 6: Practical Skills in Physics II,50,43,38,33,28,23,18,0
+2026,Jan,WPH16,Unit 6A: Practical Skills in Physics II,50,44,39,34,29,24,19,0
+2026,Jan,WPS01,Unit 1: Social and cognitive psychology,64,,32,28,24,20,17,0
+2026,Jan,WPS02,"Unit 2: Biological psychology, learning theories and development",96,,43,35,28,21,14,0
+2026,Jan,WPS03,Unit 3: Applications of psychology,64,35,31,27,23,19,15,0
+2026,Jan,WPS04,Unit 4: Clinical psychology and psychological skills,96,46,39,32,26,20,14,0
+2026,Jan,WSP01,Unit 1: Spoken Expression and Response,40,,30,26,22,19,16,0
+2026,Jan,WSP02,Unit 2: Understanding and Written Response,90,,68,60,52,44,37,0
+2026,Jan,WSP03,Unit 3: Understanding and Spoken Response,40,35,31,27,23,19,16,0
+2026,Jan,WSP04,"Unit 4: Research, Understanding and Written Response",90,79,69,59,50,41,32,0
+2026,Jan,WST01,Unit 1: Statistics 1,75,,66,56,46,36,27,0
+2026,Jan,WST01,Unit 1A: Statistics 1,75,,57,49,41,33,25,0
+2026,Jan,WST02,Unit 2: Statistics 2,75,67,60,51,42,33,25,0
+2026,Jan,WST02,Unit 2A: Statistics 2,75,66,58,49,40,32,24,0
+2026,Jan,WST03,Unit 3: Statistics 3,75,70,65,55,46,37,28,0
+2026,Jan,WST03,Unit 3A: Statistics 3,75,69,63,55,47,39,31,0
 2025,Oct,WAC11,Unit 1: The Accounting System and Costing,200,,138,118,98,79,60,0
 2025,Oct,WAC11,Unit 1A: The Accounting System and Costing,200,,126,105,84,64,44,0
 2025,Oct,WAC12,Unit 2: Corporate and Management Accounting,200,178,159,140,121,102,84,0
