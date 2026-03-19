@@ -31,7 +31,7 @@
     }
     var host  = location.hostname;
     var isLocal = host === "localhost" || host === "127.0.0.1";
-    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
 
     var base = document.createElement('base');
     base.href = myBase;
@@ -267,7 +267,7 @@
   (function(){
     var host = location.hostname;
     var isLocal = host === "localhost" || host === "127.0.0.1";
-    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
     var config = {
       csvUrl: myBase + 'CIE/CIE.csv',
       dom: {

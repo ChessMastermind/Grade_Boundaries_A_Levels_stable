@@ -238,7 +238,7 @@ function setupDashboard(data, rawCsv, config) {
         // 2. UMS Cap (Gold - AQA Only)
         if (chartConfig.showUms) {
             datasets.push({
-                label: '100 UMS',
+                label: 'UMS cap',
                 data: sessions.map(k => dataObj[k].ums ?? null),
                 borderColor: '#FFD700',
                 backgroundColor: '#FFD700',

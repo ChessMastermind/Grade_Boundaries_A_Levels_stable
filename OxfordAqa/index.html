@@ -35,7 +35,7 @@
     }
     var host = location.hostname;
     var isLocal = host === "localhost" || host === "127.0.0.1";
-    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
     var base = Object.assign(document.createElement('base'), { href: myBase });
     document.head.appendChild(base);
 
@@ -53,7 +53,7 @@
     // Inject dashboard-engine.js dynamically (only once, after CSS) and signal when ready
     (function(){
       var host=location.hostname;
-      var myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") ? "/" : "/Grade_Boundaries_A_Levels/";
+      var myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") ? "/" : "/GradeBoundaries-dev/";
       var pre=document.createElement('link');
       pre.rel='preload';
       pre.href=myBase+'dashboard-engine.js';
@@ -204,7 +204,7 @@
   (function(){
     var host = location.hostname;
     var isLocal = host === "localhost" || host === "127.0.0.1";
-    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
     var config = {
       csvUrl: myBase + 'OxfordAqa/OxfordAqa.csv',
       dom: {
@@ -221,7 +221,7 @@
         year: 'year',
         session: 'session',
         maxMark: 'max_mark',
-        ums: 'UMS_100'
+        ums: 'UMS_CAP'
       },
       chart: { title: 'OxfordAQA Grade Boundaries', showUms: true }
     };
@@ -236,6 +236,6 @@
   })();
 </script>
 
-<!-- Note: This page includes data about the '100UMS' column in the CSV files. -->
+<!-- Note: This page includes data about the 'UMSCAP' column in the CSV files. -->
 </body>
 </html>
