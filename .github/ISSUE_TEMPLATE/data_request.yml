@@ -1,0 +1,62 @@
+name: 📊 Missing Data Request
+description: Report missing grade boundaries for a specific board, year, or session
+title: "[Data]: "
+labels: ["data-needed", "help wanted"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to flag missing grade boundary data. Please check the existing CSV file first to avoid duplicates.
+
+  - type: dropdown
+    id: board
+    attributes:
+      label: Exam Board
+      options:
+        - Edexcel IAL
+        - CIE / Cambridge
+        - Oxford AQA
+        - OCR
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year(s)
+      placeholder: "e.g. 2025"
+    validations:
+      required: true
+
+  - type: input
+    id: session
+    attributes:
+      label: Session / Series
+      description: "Edexcel/Oxford AQA: Jan, Jun, Oct — CIE: june-2025, november-2025 — OCR: June, November"
+      placeholder: "e.g. Jun / june-2025 / June"
+    validations:
+      required: true
+
+  - type: input
+    id: subject
+    attributes:
+      label: Subject / Unit Code (if specific)
+      placeholder: "e.g. WPH14, 9702, CH01 — or leave blank for all subjects in that session"
+
+  - type: input
+    id: source
+    attributes:
+      label: Official Source URL
+      description: Link to the official exam board PDF or grade boundary page — speeds up verification significantly
+      placeholder: "https://qualifications.pearson.com/..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked the existing CSV and confirmed this data is missing
+          required: true
+        - label: I can confirm this data exists in an official publication
+          required: true
