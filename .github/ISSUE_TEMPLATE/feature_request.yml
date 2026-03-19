@@ -1,0 +1,55 @@
+name: ✨ Feature Request
+description: Suggest a new feature or UI improvement for the site
+title: "[Feature]: "
+labels: ["enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? We'd love to hear it. Check open issues first to avoid duplicates.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of Improvement
+      options:
+        - New site feature
+        - UI / design improvement
+        - New exam board coverage
+        - Data visualisation
+        - Performance
+        - Accessibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: "e.g. It's hard to compare the A boundary across multiple years for the same unit"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe your idea
+      placeholder: "e.g. A toggle to overlay multiple unit codes on the same chart"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Any other approaches you thought of?
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Are you willing to implement this?
+      options:
+        - label: Yes, I'd like to open a PR for this
+        - label: No, just suggesting
