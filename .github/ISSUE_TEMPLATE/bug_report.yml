@@ -1,0 +1,61 @@
+name: 🐛 Bug Report
+description: Report a broken page, wrong data, or display issue
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. The more specific you are, the faster we can fix it.
+
+  - type: dropdown
+    id: bug_type
+    attributes:
+      label: Bug Type
+      options:
+        - Wrong grade boundary data
+        - Broken page or layout
+        - Chart not rendering correctly
+        - Search / filter not working
+        - CSV download broken
+        - Dark mode issue
+        - Mobile display issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: board
+    attributes:
+      label: Affected board (if applicable)
+      placeholder: "e.g. Edexcel, CIE, Oxford AQA, OCR"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      placeholder: "Describe what you saw vs. what you expected."
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page / URL
+      placeholder: "e.g. https://gradeboundaries.com/Edexcel — or the unit code / filter you used"
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Device
+      placeholder: "e.g. Chrome 124 on Windows 11 / Safari on iPhone 15"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to ...
+        2. Search for unit code ...
+        3. See error
