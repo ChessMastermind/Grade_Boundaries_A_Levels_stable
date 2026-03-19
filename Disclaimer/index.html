@@ -15,7 +15,7 @@
 
   const host = location.hostname;
   var isLocal = host === "localhost" || host === "127.0.0.1";
-  var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+  var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
 
   const baseEl = document.createElement('base'); baseEl.href = myBase; document.head.appendChild(baseEl);
 

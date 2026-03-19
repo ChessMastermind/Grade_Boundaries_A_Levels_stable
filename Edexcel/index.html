@@ -27,7 +27,7 @@
     }
     var host = location.hostname;
     var isLocal = host === "localhost" || host === "127.0.0.1";
-    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+    var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
     var base = Object.assign(document.createElement('base'), { href: myBase });
     document.head.appendChild(base);
 
@@ -44,7 +44,7 @@
     (function(){
       var host=location.hostname;
       var isLocal = host === "localhost" || host === "127.0.0.1";
-      var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/Grade_Boundaries_A_Levels/";
+      var myBase = (host === "gradeboundaries.com" || isLocal) ? "/" : "/GradeBoundaries-dev/";
       var pre=document.createElement('link');
       pre.rel='preload';
       pre.href = myBase+'dashboard-engine.js';
@@ -255,7 +255,7 @@
 <script>
   (function(){
     var host = location.hostname;
-    var myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") ? "/" : "/Grade_Boundaries_A_Levels/";
+    var myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") ? "/" : "/GradeBoundaries-dev/";
     var config = {
       csvUrl: myBase + 'Edexcel/Edexcel.csv',
       dom: {
