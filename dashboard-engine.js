@@ -10,8 +10,11 @@ const MONTH_MAP = {
     january:1, february:2, march:3, april:4, may:5, june:6, july:7, august:8, september:9, october:10, november:11, december:12 
 };
 
-const GRADE_COLORS = { 
-    'a*': '#2ECC71', a: '#F4A261', b: '#E9C46A', c: '#E63946', d: '#264653', e: '#6D597A', u: '#999999' 
+const GRADE_COLORS = {
+    'a*': '#2ECC71', a: '#F4A261', b: '#E9C46A', c: '#E63946', d: '#264653', e: '#6D597A', u: '#999999',
+    // GCSE 9-1 grades
+    '9': '#1a9641', '8': '#2ECC71', '7': '#77c35a', '6': '#c4e687',
+    '5': '#ffffbf', '4': '#fed790', '3': '#f0a500', '2': '#d7191c', '1': '#8b0000'
 };
 
 // Custom DataTable Sorter for "Year Month" strings
@@ -139,8 +142,8 @@ function setupDashboard(data, rawCsv, config) {
         const entry = chartData[subj][comp][sessionKey];
 
         // 5. Extract Values
-        ['a*','a','b','c','d','e','u'].forEach(g => {
-            // Try lowercase key first, then uppercase
+        const gradeKeys = config.columns.grades || ['a*','a','b','c','d','e','u'];
+        gradeKeys.forEach(g => {
             const val = parseFloat(row[g] ?? row[g.toUpperCase()]);
             if (!isNaN(val)) entry[g] = val;
         });
@@ -217,9 +220,12 @@ function setupDashboard(data, rawCsv, config) {
         const dataObj = chartData[s][c];
         const sessions = Object.keys(dataObj).sort(sessionSorter);
         
-        // Check if A* exists in this dataset (to hide it if unused)
+        // Build grades list from config or default A-level set
+        const allGrades = config.columns.grades || ['a*','a','b','c','d','e','u'];
+        const displayGrades = allGrades.filter(g => g !== 'u'); // exclude 'u' from chart lines
+        // For A-level: hide A* if unused; for GCSE always show all
         const hasAStar = sessions.some(k => dataObj[k]['a*'] !== undefined);
-        const gradesToShow = ['a*','a','b','c','d','e'].filter(g => g !== 'a*' || hasAStar);
+        const gradesToShow = displayGrades.filter(g => g !== 'a*' || hasAStar);
 
         // Build Datasets
         const datasets = [];
