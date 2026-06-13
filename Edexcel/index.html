@@ -155,22 +155,23 @@
                   href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"></noscript>
 </head>
   <body class="text-gray-800 flex flex-col min-h-screen">
-    <header class="text-white text-center py-6 shadow-lg">
+    <header class="text-white text-center py-6 shadow-lg relative">
       <h1 class="page-title">Edexcel Grade Boundaries</h1>
-        <button id="theme-toggle" class="absolute top-4 right-4" aria-label="Toggle dark / light mode"></button>
+      <button id="theme-toggle" class="absolute top-4 right-4" aria-label="Toggle dark / light mode"></button>
       <nav class="mt-4 flex flex-col md:flex-row items-center justify-center gap-2">
         <a href="" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition">Home</a>
         <a href="CIE" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition">CIE</a>
         <a href="OxfordAqa" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition">Oxford&nbsp;AQA</a>
         <a href="OCR" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition">OCR</a>
       </nav>
-      <div class="qual-tabs">
-        <a href="Edexcel" class="qual-tab active">A-Level</a>
-        <a href="EdexcelIGCSE" class="qual-tab">IGCSE</a>
-        <a href="EdexcelGCSE" class="qual-tab">GCSE</a>
-      </div>
-    </header><main class="flex-1 w-full px-4">
-  <section class="bg-white rounded-lg shadow-md p-6 w-full max-w-7xl mx-auto">
+    </header>
+    <main class="flex-1 w-full px-4">
+  <section class="bg-white rounded-lg shadow-md p-6 w-full max-w-7xl mx-auto mt-6">
+    <div class="qual-tabs-inline">
+      <a href="Edexcel"      class="qual-tab active">A-Level</a>
+      <a href="EdexcelIGCSE" class="qual-tab">IGCSE</a>
+      <a href="EdexcelGCSE"  class="qual-tab">GCSE</a>
+    </div>
     <h2 class="text-2xl font-semibold mb-4">Edexcel Grade Boundaries</h2>
 
     <div class="table-wrapper mb-6">
