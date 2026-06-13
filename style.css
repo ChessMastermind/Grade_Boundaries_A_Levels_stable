@@ -128,7 +128,39 @@ header{border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow
 
 nav a {
   text-decoration: none;
-  border-bottom: 2px solid var(--border-default); /* if you still want a bottom border “line” */
+  border-bottom: 2px solid var(--border-default);
+}
+
+/* ── Qualification tab-strip (Edexcel A-Level / IGCSE / GCSE) ── */
+.qual-tabs {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  padding: .75rem 1rem 0;
+}
+
+.qual-tab {
+  padding: .35rem 1.1rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text-link);
+  background: rgba(255,255,255,.15);
+  border: 2px solid rgba(255,255,255,.25);
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+
+.qual-tab:hover {
+  background: rgba(255,255,255,.28);
+  color: #fff;
+}
+
+.qual-tab.active {
+  background: #fff;
+  color: var(--brand-600);
+  border-color: #fff;
 }
 
 /* On hover, swap in the underline (or change the border-bottom color, if you want that style instead) */

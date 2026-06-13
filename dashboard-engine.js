@@ -49,8 +49,8 @@ async function initExamDashboard(config) {
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: (results) => {
-                // Initialize Table and Chart with parsed data
-                setupDashboard(results.data, csvText, config);
+                // Pass meta.fields so column order matches the CSV header exactly
+                setupDashboard(results.data, csvText, config, results.meta.fields);
             }
         });
     } catch (err) {
@@ -60,12 +60,14 @@ async function initExamDashboard(config) {
     }
 }
 
-function setupDashboard(data, rawCsv, config) {
+function setupDashboard(data, rawCsv, config, csvFields) {
     const { dom, columns, chart: chartConfig } = config;
     const $table = $(dom.table);
 
     // --- A. Setup DataTable ---
-    const headers = Object.keys(data[0] || {});
+    // Use csvFields (PapaParse meta.fields) to preserve CSV column order.
+    // Object.keys() on parsed rows hoists numeric-looking keys (grades 9,8,7…) first.
+    const headers = csvFields || Object.keys(data[0] || {});
     // Filter out columns if needed (e.g., hiding internal codes), currently showing all
     const dtColumns = headers.map(h => ({ data: h, title: h }));
     
@@ -83,16 +85,17 @@ function setupDashboard(data, rawCsv, config) {
         autoWidth: false
     });
 
-    // Inject "Component" Filter into Table Controls (Only if component col exists)
+    // Inject component filter into Table Controls (Only if component col exists)
     if (columns.component) {
         const compColIdx = headers.indexOf(columns.component);
         if (compColIdx > -1) {
             const uniqueComps = new Set(data.map(r => r[columns.component]).filter(Boolean));
             const filterId = `dt-filter-${Math.random().toString(36).substr(2,5)}`;
-            
+            const compLabel = columns.componentLabel || 'Component';
+
             // Append generic filter input to DataTables wrapper
             $(dom.table + '_filter').append(`
-                <label class="ml-4 font-semibold text-sm">Component: 
+                <label class="ml-4 font-semibold text-sm">${compLabel}:
                     <input id="${filterId}" list="${filterId}-list" class="border rounded px-2 py-1 ml-1 w-24 sm:w-32 bg-gray-50 dark:bg-gray-700 dark:border-gray-600" placeholder="Filter">
                 </label>
                 <datalist id="${filterId}-list"></datalist>
