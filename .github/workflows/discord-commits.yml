@@ -8,11 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send commit to Discord
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          ACTOR: ${{ github.actor }}
+          BRANCH: ${{ github.ref_name }}
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          echo '{
-            "content": "**New commit pushed by '${{ github.actor }}'**\nBranch: `${{ github.ref_name }}`\nCommit: [${{ github.event.head_commit.id }}](${{ github.event.head_commit.url }})\nMessage: ${{ github.event.head_commit.message }}"
-          }' > payload.json
-          curl -H "Content-Type: application/json" \
-               -X POST \
-               -d @payload.json \
-               ${{ secrets.DISCORD_WEBHOOK_URL }}
+          jq -n --arg msg "$COMMIT_MSG" --arg actor "$ACTOR" --arg branch "$BRANCH" \
+            '{content: ("**New commit by " + $actor + "** on `" + $branch + "`\n" + $msg)}' \
+            > payload.json
+          curl -H "Content-Type: application/json" -X POST -d @payload.json "$WEBHOOK"
