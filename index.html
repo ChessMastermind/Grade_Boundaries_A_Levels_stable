@@ -30,7 +30,7 @@
     document.head.appendChild(linkEl);
     const linkEle = document.createElement("link");
     linkEle.rel   = "stylesheet";
-    linkEle.href  = "style.css?v=3";
+    linkEle.href  = "style.css?v=4";
     linkEle.onload = uncloak;
     document.head.appendChild(linkEle);
   </script>
@@ -128,36 +128,41 @@
     </nav>
   </header>
 
-  <!-- Announcement card -->
-  <div class="announce-wrapper">
-    <div class="announce-card" id="announce-bar" role="status" aria-live="polite">
-      <span class="announce-emoji" aria-hidden="true">🎉</span>
-      <span class="announce-text">
-        <strong>GCSE &amp; IGCSE are now live</strong> —
-        <a href="EdexcelIGCSE">Edexcel IGCSE</a> and <a href="EdexcelGCSE">Edexcel GCSE</a> grade boundaries are now available!
-      </span>
-      <button class="announce-close" id="announce-close" aria-label="Dismiss">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-          <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-
   <!-- Main content -->
-  <main class="flex-1 max-w-6xl mx-auto px-6 pt-10 pb-6" id="main-content">
+  <main class="flex-1 max-w-6xl mx-auto p-6" id="main-content">
 
-    <h2 class="text-3xl font-semibold mb-3">Grade boundaries, all in one place.</h2>
-    <p class="text-lg mb-4">
-      We cover <strong>A-Level, GCSE and IGCSE</strong> grade boundaries for Edexcel, CIE, Oxford AQA
-      and OCR — going all the way back to 2015. Search by subject, spot trends with charts,
-      and download the data as a CSV. Built by students, for students. Free, always.
-    </p>
-    <p class="text-sm mb-10 opacity-60">
-      Found it helpful? Sharing it with classmates really does make a difference — thank you 🙏
-    </p>
+    <!-- Hero text — constrained width so it reads comfortably -->
+    
+    <h2 class="text-3xl font-semibold mb-4">Welcome to Grade-Boundary Explorer</h2>
+    <p class="text-lg mb-4">We cover <strong>A-Level, GCSE and IGCSE</strong> grade boundaries for Edexcel, CIE,
+        Oxford AQA and OCR — going back to 2015. Searchable tables, trend charts,
+        and free CSV downloads. </p>
+    
+    <div class="terminal">
+    <span id="out"></span><span class="cursor"></span>
+  </div>
+ 
+  <script>
+    const text = "Found it helpful? Sharing it with classmates really does make a difference — thank you 🙏";
+    const out = document.getElementById('out');
+    const speed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--typing-speed')) || 70;
+ 
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        out.textContent += text[i];
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  </script>
 
-    <h2 class="text-xl font-semibold mb-4">Exam boards</h2>
+    <h2 id="datasets-heading" class="sr-only">Available datasets</h2>
+    </div>
+
+    <!-- Board cards -->
+    <h2 class="text-sm font-semibold uppercase tracking-widest opacity-50 mb-5"> </h2>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
 
       <!-- Edexcel -->
@@ -180,10 +185,10 @@
         <meta itemprop="name" content="CIE A-Level Grade Boundaries 2021-2025" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">CIE</h3>
         <p class="text-sm mb-3" itemprop="description">
-          Cambridge International AS &amp; A-Level grade thresholds, covering all available subjects from 2021 to 2025.
+          Cambridge International AS &amp; A-Level grade thresholds for all available subjects from 2021 to 2025.
         </p>
         <div class="qual-links mb-4">
-          <span class="qual-link qual-link--static">A-Level</span>
+          <a href="CIE"  class="qual-link">A-Level</a>
         </div>
         <a href="CIE" class="class-button inline-block mt-auto px-4 py-2 rounded text-center" itemprop="url">View CIE</a>
       </article>
@@ -196,7 +201,7 @@
           A-Level grade boundaries for Oxford AQA subjects from 2018 to 2026, including UMS cap data.
         </p>
         <div class="qual-links mb-4">
-          <span class="qual-link qual-link--static">A-Level</span>
+          <a  href="OxfordAqa" class="qual-link">A-Level</a>
         </div>
         <a href="OxfordAqa" class="class-button inline-block mt-auto px-4 py-2 rounded text-center" itemprop="url">View Oxford AQA</a>
       </article>
@@ -209,17 +214,20 @@
           OCR A-Level grade boundaries for all major subjects, from 2015 through to 2025.
         </p>
         <div class="qual-links mb-4">
-          <span class="qual-link qual-link--static">A-Level</span>
+          <a  href="OCR" class="qual-link">A-Level</a>
         </div>
         <a href="OCR" class="class-button inline-block mt-auto px-4 py-2 rounded text-center" itemprop="url">View OCR</a>
       </article>
 
     </div>
 
+    <!-- About -->
     <section id="about-project" class="mt-12 p-6 rounded-lg text-center donate-section shadow-md">
       <h2 class="text-2xl font-semibold mb-4">About this project</h2>
       <p class="text-lg mb-6">
-        This little site was built by two A‑Level students as a fun project to visualise and compare A‑Level grade boundaries. We’re both studying A‑Levels ourselves, so we know how useful it can be to see trends across exam boards. Enjoy!
+        We're two A‑Level students who built this to scratch our own itch — it was impossible to
+        easily compare grade boundaries across boards, so we made a site that does exactly that.
+        Hope it helps!
       </p>
       <p class="text-sm text-gray-600 dark:text-gray-400">
         ☕ If you'd like to support us, you can <a href="https://ko-fi.com/gradeboundariescom" target="_blank" rel="noopener noreferrer" class="underline transition">buy us a coffee</a> — it means a lot.
@@ -286,8 +294,24 @@
     <p class="text-center p-4 bg-yellow-200">JavaScript is disabled. Charts and interactive tables will not function, but you can still download data in CSV format.</p>
   </noscript>
 
+  <!-- Toast notification — fixed overlay, slides in from the right -->
+  <div class="toast" id="announce-toast" role="status" aria-live="polite">
+    <span class="toast-emoji" aria-hidden="true">🎉</span>
+    <div class="toast-body">
+      <strong>GCSE &amp; IGCSE are now live</strong>
+      <a href="EdexcelIGCSE">Edexcel IGCSE</a> and <a href="EdexcelGCSE">Edexcel GCSE</a>
+      grade boundaries are now available!
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Dismiss">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
   <script>
     (function () {
+      // Theme toggle
       const btn  = document.getElementById('theme-toggle');
       const root = document.documentElement;
       btn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
@@ -297,11 +321,13 @@
         btn.textContent = dark ? '☀️' : '🌙';
       });
 
-      const closeBtn = document.getElementById('announce-close');
-      const bar      = document.getElementById('announce-bar');
-      if (closeBtn && bar) {
+      // Toast dismiss — slides out then removes itself (no layout shift, it's fixed)
+      const toast    = document.getElementById('announce-toast');
+      const closeBtn = document.getElementById('toast-close');
+      if (toast && closeBtn) {
         closeBtn.addEventListener('click', () => {
-          bar.closest('.announce-wrapper').style.visibility = 'hidden';
+          toast.classList.add('hiding');
+          toast.addEventListener('animationend', () => toast.remove(), { once: true });
         });
       }
     })();

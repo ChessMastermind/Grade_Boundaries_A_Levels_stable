@@ -441,45 +441,55 @@ footer{
   color: var(--text-heading); /* slate-100 or a custom token */
 }
 /* ============================================================
-   12  ANNOUNCEMENT CARD (floating, dismissible)
+   12  TOAST NOTIFICATION (fixed overlay, slides in from side)
    ============================================================ */
-.announce-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 1.25rem 1rem 0;
+@keyframes toast-in  {
+  from { transform: translateX(calc(100% + 2rem)); opacity: 0; }
+  to   { transform: translateX(0);                 opacity: 1; }
 }
-.announce-card {
-  display: flex;
-  align-items: center;
-  gap: .85rem;
-  padding: .75rem 1rem .75rem 1.1rem;
-  border-radius: .75rem;
+@keyframes toast-out {
+  to   { transform: translateX(calc(100% + 2rem)); opacity: 0; }
+}
+
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 900;
+  max-width: 340px;
+  width: calc(100vw - 3rem);
   background: var(--bg-card);
   border: 1.5px solid rgba(58,175,169,.35);
-  box-shadow: 0 2px 10px rgba(58,175,169,.1);
-  max-width: 600px;
-  width: 100%;
-  font-size: .875rem;
-  transition: box-shadow .2s;
+  border-radius: .85rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,.1), 0 2px 6px rgba(58,175,169,.08);
+  padding: .95rem 1rem .95rem 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  animation: toast-in .4s cubic-bezier(.2,.9,.2,1) .5s both;
 }
-.dark .announce-card {
+.dark .toast {
   border-color: rgba(45,139,135,.45);
-  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
 }
-.announce-emoji { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
-.announce-text  { flex: 1; color: var(--text-body); margin: 0; }
-.announce-text strong { color: var(--text-heading); }
-.announce-text a { color: var(--brand-600); text-decoration: underline; font-weight: 600; }
-.dark .announce-text a { color: #5dd8d3; }
-.announce-text a:hover { color: var(--brand-500); }
-.announce-close {
+.toast.hiding { animation: toast-out .28s ease forwards; }
+
+.toast-emoji { font-size: 1.1rem; flex-shrink: 0; margin-top: .1rem; line-height: 1; }
+.toast-body  { flex: 1; font-size: .875rem; color: var(--text-body); }
+.toast-body strong { color: var(--text-heading); display: block; margin-bottom: .25rem; font-size: .9rem; }
+.toast-body a { color: var(--brand-600); text-decoration: underline; font-weight: 600; }
+.dark .toast-body a { color: #5dd8d3; }
+.toast-body a:hover { color: var(--brand-500); }
+
+.toast-close {
   flex-shrink: 0;
+  margin-top: .1rem;
   background: transparent !important;
   border: none;
   color: var(--text-body);
-  opacity: .4;
+  opacity: .35;
   cursor: pointer;
-  padding: .3rem !important;
+  padding: .25rem !important;
   width: auto !important;
   height: auto !important;
   box-shadow: none !important;
@@ -490,13 +500,17 @@ footer{
   transition: opacity .15s, background .15s;
   transform: none !important;
 }
-.announce-close:hover {
+.toast-close:hover {
   opacity: 1;
-  background: rgba(0,0,0,.06) !important;
+  background: rgba(0,0,0,.07) !important;
   box-shadow: none !important;
   transform: none !important;
 }
-.dark .announce-close:hover { background: rgba(255,255,255,.08) !important; }
+.dark .toast-close:hover { background: rgba(255,255,255,.1) !important; }
+
+@media (max-width: 480px) {
+  .toast { right: .75rem; bottom: .75rem; width: calc(100vw - 1.5rem); max-width: none; }
+}
 
 /* ============================================================
    13  QUALIFICATION LINK CHIPS (home page board cards)
@@ -593,4 +607,30 @@ footer{
 .dark #about-project a:hover {
   /* very light on hover */
   color:            #38bdf8;   /* ↔ sky-300 */
+}
+
+.terminal {
+  background: var(--bg-color);
+  border-radius: 8px;
+  border: 0px solid #333;
+  padding: 1rem 1.25rem;
+  font-family: "Courier New", monospace;
+  font-size: var(--font-size);
+  color: var(--text-color);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #2b7a78;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
 }
