@@ -10,8 +10,11 @@ const MONTH_MAP = {
     january:1, february:2, march:3, april:4, may:5, june:6, july:7, august:8, september:9, october:10, november:11, december:12 
 };
 
-const GRADE_COLORS = { 
-    'a*': '#2ECC71', a: '#F4A261', b: '#E9C46A', c: '#E63946', d: '#264653', e: '#6D597A', u: '#999999' 
+const GRADE_COLORS = {
+    'a*': '#2ECC71', a: '#F4A261', b: '#E9C46A', c: '#E63946', d: '#264653', e: '#6D597A', u: '#999999',
+    // GCSE 9-1 grades
+    '9': '#1a9641', '8': '#2ECC71', '7': '#77c35a', '6': '#c4e687',
+    '5': '#ffffbf', '4': '#fed790', '3': '#f0a500', '2': '#d7191c', '1': '#8b0000'
 };
 
 // Custom DataTable Sorter for "Year Month" strings
@@ -46,8 +49,8 @@ async function initExamDashboard(config) {
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: (results) => {
-                // Initialize Table and Chart with parsed data
-                setupDashboard(results.data, csvText, config);
+                // Pass meta.fields so column order matches the CSV header exactly
+                setupDashboard(results.data, csvText, config, results.meta.fields);
             }
         });
     } catch (err) {
@@ -57,12 +60,14 @@ async function initExamDashboard(config) {
     }
 }
 
-function setupDashboard(data, rawCsv, config) {
+function setupDashboard(data, rawCsv, config, csvFields) {
     const { dom, columns, chart: chartConfig } = config;
     const $table = $(dom.table);
 
     // --- A. Setup DataTable ---
-    const headers = Object.keys(data[0] || {});
+    // Use csvFields (PapaParse meta.fields) to preserve CSV column order.
+    // Object.keys() on parsed rows hoists numeric-looking keys (grades 9,8,7…) first.
+    const headers = csvFields || Object.keys(data[0] || {});
     // Filter out columns if needed (e.g., hiding internal codes), currently showing all
     const dtColumns = headers.map(h => ({ data: h, title: h }));
     
@@ -80,16 +85,17 @@ function setupDashboard(data, rawCsv, config) {
         autoWidth: false
     });
 
-    // Inject "Component" Filter into Table Controls (Only if component col exists)
+    // Inject component filter into Table Controls (Only if component col exists)
     if (columns.component) {
         const compColIdx = headers.indexOf(columns.component);
         if (compColIdx > -1) {
             const uniqueComps = new Set(data.map(r => r[columns.component]).filter(Boolean));
             const filterId = `dt-filter-${Math.random().toString(36).substr(2,5)}`;
-            
+            const compLabel = columns.componentLabel || 'Component';
+
             // Append generic filter input to DataTables wrapper
             $(dom.table + '_filter').append(`
-                <label class="ml-4 font-semibold text-sm">Component: 
+                <label class="ml-4 font-semibold text-sm">${compLabel}:
                     <input id="${filterId}" list="${filterId}-list" class="border rounded px-2 py-1 ml-1 w-24 sm:w-32 bg-gray-50 dark:bg-gray-700 dark:border-gray-600" placeholder="Filter">
                 </label>
                 <datalist id="${filterId}-list"></datalist>
@@ -139,8 +145,8 @@ function setupDashboard(data, rawCsv, config) {
         const entry = chartData[subj][comp][sessionKey];
 
         // 5. Extract Values
-        ['a*','a','b','c','d','e','u'].forEach(g => {
-            // Try lowercase key first, then uppercase
+        const gradeKeys = config.columns.grades || ['a*','a','b','c','d','e','u'];
+        gradeKeys.forEach(g => {
             const val = parseFloat(row[g] ?? row[g.toUpperCase()]);
             if (!isNaN(val)) entry[g] = val;
         });
@@ -217,9 +223,12 @@ function setupDashboard(data, rawCsv, config) {
         const dataObj = chartData[s][c];
         const sessions = Object.keys(dataObj).sort(sessionSorter);
         
-        // Check if A* exists in this dataset (to hide it if unused)
+        // Build grades list from config or default A-level set
+        const allGrades = config.columns.grades || ['a*','a','b','c','d','e','u'];
+        const displayGrades = allGrades.filter(g => g !== 'u'); // exclude 'u' from chart lines
+        // For A-level: hide A* if unused; for GCSE always show all
         const hasAStar = sessions.some(k => dataObj[k]['a*'] !== undefined);
-        const gradesToShow = ['a*','a','b','c','d','e'].filter(g => g !== 'a*' || hasAStar);
+        const gradesToShow = displayGrades.filter(g => g !== 'a*' || hasAStar);
 
         // Build Datasets
         const datasets = [];

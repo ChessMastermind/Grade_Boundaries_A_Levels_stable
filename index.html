@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
 <head>
-  <!-- ✨ SEO & performance enhancements (no functional changes) ✨ -->
   <style id="css-cloak">
     html:not(.css-loaded) body > * { display: none; }
   </style>
-  
-  <!-- Preconnect to third‑party origins for quicker handshake -->
-  
+
   <link rel="preconnect" href="https://gc.zgo.at">
   <link rel="preconnect" href="https://unpkg.com">
 
-  <!-- Lightweight, privacy‑friendly analytics (kept) -->
-  
-<script data-goatcounter="https://gradeboundaries.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+  <script data-goatcounter="https://gradeboundaries.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 
-  <!-- Base‑href, Tailwind & custom CSS injection (unchanged) -->
   <script>
     function uncloak() {
       document.documentElement.classList.add("css-loaded");
@@ -25,9 +18,8 @@
       if (cloak) cloak.remove();
     }
     const host   = location.hostname;
-    // Add "localhost" or "127.0.0.1" to the root path condition
-    const myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1") 
-                   ? "/" 
+    const myBase = (host === "gradeboundaries.com" || host === "localhost" || host === "127.0.0.1")
+                   ? "/"
                    : "/GradeBoundaries-dev/";
     const baseEl = document.createElement("base");
     baseEl.href  = myBase;
@@ -38,51 +30,47 @@
     document.head.appendChild(linkEl);
     const linkEle = document.createElement("link");
     linkEle.rel   = "stylesheet";
-    linkEle.href  = "style.css";
+    linkEle.href  = "style.css?v=1";
     linkEle.onload = uncloak;
     document.head.appendChild(linkEle);
   </script>
 
-  <!-- Primary meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A‑Level Grade Boundaries 2015‑2026 | Edexcel · CIE · Oxford AQA · OCR</title>
-  <meta name="description" content="All A-Level grade boundaries in one place – instantly compare Edexcel, Cambridge (CIE), Oxford AQA & OCR thresholds from 2015 to 2026 with free interactive tables, charts & CSV downloads.">
-  <meta name="keywords" content="A Level grade boundaries, Edexcel grade thresholds, CIE grade boundaries, Oxford AQA, OCR grade boundaries, exam results, UK A‑Levels, 2026">
+  <title>Grade Boundaries 2015‑2026 | A‑Level, GCSE &amp; IGCSE | Edexcel · CIE · Oxford AQA · OCR</title>
+  <meta name="description" content="All grade boundaries in one place – instantly compare Edexcel, Cambridge (CIE), Oxford AQA &amp; OCR thresholds for A-Level, GCSE and IGCSE from 2015 to 2026. Free interactive tables, charts &amp; CSV downloads. IGCSE fully supported.">
+  <meta name="keywords" content="A Level grade boundaries, GCSE grade boundaries, IGCSE grade boundaries, Edexcel grade thresholds, CIE grade boundaries, Oxford AQA, OCR grade boundaries, Edexcel IGCSE, Edexcel GCSE, Cambridge IGCSE, exam results, UK A‑Levels, 2026">
   <meta name="author" content="Fire‑Frog‑Fuel">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#111827">
 
-  <!-- Canonical & hreflang (domain normalised to non‑www) -->
   <link rel="canonical" href="https://gradeboundaries.com/">
   <link rel="alternate" hreflang="en‑gb" href="https://gradeboundaries.com/">
   <link rel="alternate" hreflang="x‑default" href="https://gradeboundaries.com/">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Grade‑Boundary Explorer">
   <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://gradeboundaries.com/">
-  <meta property="og:title" content="A‑Level Grade Boundaries 2015‑2026 | Edexcel · CIE · Oxford AQA · OCR">
-  <meta property="og:description" content="Compare free interactive grade‑boundary data for Edexcel, CIE, Oxford AQA & OCR between 2015‑2026.">
+  <meta property="og:title" content="Grade Boundaries 2015‑2026 | A‑Level, GCSE &amp; IGCSE | Edexcel · CIE · Oxford AQA · OCR">
+  <meta property="og:description" content="Free interactive grade‑boundary data for A-Level, GCSE &amp; IGCSE — Edexcel, CIE, Oxford AQA &amp; OCR from 2015‑2026. IGCSE supported.">
   <meta property="og:image" content="https://gradeboundaries.com/preview.png">
   <meta property="og:image:alt" content="Screenshot of Grade‑Boundary Explorer homepage">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://gradeboundaries.com/">
-  <meta name="twitter:title" content="A‑Level Grade Boundaries 2015‑2026">
-  <meta name="twitter:description" content="Interactive tables and charts covering Edexcel, CIE, Oxford AQA & OCR A‑Level grade thresholds.">
+  <meta name="twitter:title" content="Grade Boundaries 2015‑2026 | A‑Level, GCSE &amp; IGCSE">
+  <meta name="twitter:description" content="Interactive tables and charts for Edexcel, CIE, Oxford AQA &amp; OCR grade boundaries — A-Level, GCSE &amp; IGCSE. Free CSV downloads.">
   <meta name="twitter:image" content="https://gradeboundaries.com/preview.png">
 
-  <!-- Schema.org structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Grade‑Boundary Explorer",
-    "url": "https://gradeboundaries.com/"
+    "url": "https://gradeboundaries.com/",
+    "description": "Free interactive grade boundaries for A-Level, GCSE and IGCSE across Edexcel, CIE, Oxford AQA and OCR."
   }
   </script>
   <script type="application/ld+json">
@@ -90,11 +78,13 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gradeboundaries.com/"},
-      {"@type": "ListItem", "position": 2, "name": "Edexcel", "item": "https://gradeboundaries.com/Edexcel"},
-      {"@type": "ListItem", "position": 3, "name": "CIE", "item": "https://gradeboundaries.com/CIE"},
-      {"@type": "ListItem", "position": 4, "name": "Oxford AQA", "item": "https://gradeboundaries.com/OxfordAqa"},
-      {"@type": "ListItem", "position": 5, "name": "OCR", "item": "https://gradeboundaries.com/OCR"}
+      {"@type": "ListItem", "position": 1, "name": "Home",          "item": "https://gradeboundaries.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Edexcel",       "item": "https://gradeboundaries.com/Edexcel"},
+      {"@type": "ListItem", "position": 3, "name": "Edexcel IGCSE", "item": "https://gradeboundaries.com/EdexcelIGCSE"},
+      {"@type": "ListItem", "position": 4, "name": "Edexcel GCSE",  "item": "https://gradeboundaries.com/EdexcelGCSE"},
+      {"@type": "ListItem", "position": 5, "name": "CIE",           "item": "https://gradeboundaries.com/CIE"},
+      {"@type": "ListItem", "position": 6, "name": "Oxford AQA",    "item": "https://gradeboundaries.com/OxfordAqa"},
+      {"@type": "ListItem", "position": 7, "name": "OCR",           "item": "https://gradeboundaries.com/OCR"}
     ]
   }
   </script>
@@ -111,7 +101,6 @@
   }
   </script>
 
-  <!-- Instant‑load theme (kept) -->
   <script>
     (() => {
       const saved = localStorage.getItem('theme');
@@ -121,7 +110,6 @@
     })();
   </script>
 
-  <!-- Defer non‑critical JS for better LCP (unchanged) -->
   <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin defer></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin defer></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js" defer></script>
@@ -129,235 +117,237 @@
 
 <body>
   <!-- Header -->
-  <header class="text-white text-center py-6 shadow-lg">
-    <h1 class="page-title">A-Level Grade Boundaries</h1>
+  <header class="text-white text-center py-6 shadow-lg relative">
+    <h1 class="page-title">Grade Boundaries</h1>
+    <button id="theme-toggle" class="absolute top-4 right-4" aria-label="Toggle dark / light mode"></button>
     <nav class="mt-4 flex flex-col md:flex-row items-center justify-center gap-2" aria-label="Primary">
-      <a href="Edexcel" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Edexcel A-Level grade boundaries 2015-2026">Edexcel</a>
-      <a href="CIE" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="CIE (Cambridge International) A-Level grade boundaries">CIE</a>
-      <a href="OxfordAqa" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Oxford AQA A-Level grade boundaries 2020-2026">Oxford AQA</a>
-      <a href="OCR" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="OCR A-Level grade boundaries 2015-2025">OCR</a>
+      <a href="Edexcel"   class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Edexcel grade boundaries">Edexcel</a>
+      <a href="CIE"       class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="CIE A-Level grade boundaries">CIE</a>
+      <a href="OxfordAqa" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Oxford AQA grade boundaries">Oxford AQA</a>
+      <a href="OCR"       class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="OCR A-Level grade boundaries">OCR</a>
     </nav>
   </header>
 
   <!-- Main content -->
   <main class="flex-1 max-w-6xl mx-auto p-6" id="main-content">
+
+    <!-- Hero text — constrained width so it reads comfortably -->
+    
     <h2 class="text-3xl font-semibold mb-4">Welcome to Grade-Boundary Explorer</h2>
-    <p class="text-lg mb-4">This site offers a <strong>free</strong>, open-access way to analyse and compare A-Level grade boundaries for Edexcel, CIE, Oxford AQA, and OCR. Access tables, download CSVs and visualise trends with interactive charts.</p>
-    <div class="p-4 rounded text-lg mb-4 font-semibold">
-  📢 If you found this website helpful, please consider sharing it — your support would mean a lot!
-    </div>
+    <p class="text-lg mb-4">We cover <strong>A-Level, GCSE and IGCSE</strong> grade boundaries for Edexcel, CIE,
+        Oxford AQA and OCR — going back to 2015. Searchable tables, trend charts,
+        and free CSV downloads. </p>
+    
+    <div class="terminal">
+    <span id="out"></span><span class="cursor"></span>
+  </div>
+ 
+  <script>
+    const text = "Found it helpful? Sharing it with classmates really does make a difference — thank you!!! :D";
+    const out = document.getElementById('out');
+    const speed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--typing-speed')) || 70;
+ 
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        out.textContent += text[i];
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  </script>
+
     <h2 id="datasets-heading" class="sr-only">Available datasets</h2>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col h-70" itemscope itemtype="https://schema.org/Dataset">
-        <meta itemprop="name" content="Edexcel A-Level Grade Boundaries 2015-2026" />
+    </div>
+
+    <!-- Board cards -->
+    <h2 class="text-sm font-semibold uppercase tracking-widest opacity-50 mb-5"> </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+
+      <!-- Edexcel -->
+      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
+        <meta itemprop="name" content="Edexcel Grade Boundaries 2015-2026" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">Edexcel</h3>
-        <p class="text-sm mb-4" itemprop="description">Over 800 units covering Maths, Sciences, Economics and more (2015-2026).</p>
-        <a href="Edexcel" class="class-button inline-block mt-auto mb-0 px-4 py-2 rounded text-center" itemprop="url">View Edexcel grade boundaries</a>
+        <p class="text-sm mb-3" itemprop="description">
+          800+ A-Level units plus IGCSE &amp; GCSE — the biggest dataset on the site, running from 2015 to 2026. 
+        </p>
+        <div class="qual-links mb-4 mt-auto">
+          <a href="Edexcel"      class="qual-link" itemprop="url">A-Level</a>
+          <a href="EdexcelIGCSE" class="qual-link">IGCSE</a>
+          <a href="EdexcelGCSE"  class="qual-link">GCSE</a>
+        </div>
+        <a href="Edexcel" class="class-button inline-block px-4 py-2 rounded text-center">View Edexcel</a>
       </article>
 
-      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col h-70" itemscope itemtype="https://schema.org/Dataset">
+      <!-- CIE -->
+      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
         <meta itemprop="name" content="CIE A-Level Grade Boundaries 2021-2025" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">CIE</h3>
-        <p class="text-sm mb-4" itemprop="description">Grade thresholds for AS/A-Level Cambridge International examinations (2021-2025).</p>
-        <a href="CIE" class="class-button inline-block mt-auto mb-0 px-4 py-2 rounded text-center" itemprop="url">View CIE grade boundaries</a>
+        <p class="text-sm mb-3" itemprop="description">
+          Cambridge International AS &amp; A-Level grade thresholds for all available subjects from 2021 to 2025.
+        </p>
+        <div class="qual-links mb-4 mt-auto">
+          <a href="CIE"  class="qual-link">A-Level</a>
+        </div>
+        <a href="CIE" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View CIE</a>
       </article>
 
-      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col h-70" itemscope itemtype="https://schema.org/Dataset">
+      <!-- Oxford AQA -->
+      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
         <meta itemprop="name" content="Oxford AQA A-Level Grade Boundaries 2018-2026" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">Oxford AQA</h3>
-        <p class="text-sm mb-4" itemprop="description">Oxford AQA subjects from 2018-2026 with all grade-boundary data.</p>
-        <a href="OxfordAqa" class="class-button inline-block mt-auto mb-0 px-4 py-2 rounded text-center" itemprop="url">View Oxford AQA grade boundaries</a>
+        <p class="text-sm mb-3" itemprop="description">
+          A-Level grade boundaries for Oxford AQA subjects from 2018 to 2026, including UMS cap data.
+        </p>
+        <div class="qual-links mb-4 mt-auto">
+          <a  href="OxfordAqa" class="qual-link">A-Level</a>
+        </div>
+        <a href="OxfordAqa" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View Oxford AQA</a>
       </article>
 
-      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col h-70" itemscope itemtype="https://schema.org/Dataset">
-        <meta itemprop="name" content="OCR A-Level Grade Boundaries 2021-2025" />
+      <!-- OCR -->
+      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
+        <meta itemprop="name" content="OCR A-Level Grade Boundaries 2015-2025" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">OCR</h3>
-        <p class="text-sm mb-4" itemprop="description">Comprehensive OCR A-Level grade boundaries from 2015-2025, including all major subjects.</p>
-        <a href="OCR" class="class-button inline-block mt-auto mb-0 px-4 py-2 rounded text-center" itemprop="url">View OCR grade boundaries</a>
+        <p class="text-sm mb-3" itemprop="description">
+          OCR A-Level grade boundaries for all major subjects, from 2015 through to 2025.
+        </p>
+        <div class="qual-links mb-4 mt-auto">
+          <a  href="OCR" class="qual-link">A-Level</a>
+        </div>
+        <a href="OCR" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View OCR</a>
       </article>
+
     </div>
-<section id="about-project" class="mt-12 p-6 rounded-lg text-center donate-section shadow-md">
-      <h2 class="text-2xl font-semibold mb-4">About This Project</h2>
-      <p class="text-lg mb-6">This little site was built by two A‑Level students as a fun project to visualise and compare A‑Level grade boundaries. We’re both studying A‑Levels ourselves, so we know how useful it can be to see trends across exam boards. Enjoy!</p>
-      <p class="text-sm text-gray-600 dark:text-gray-400">☕ If you’ve found this useful, you can <a href="https://ko-fi.com/gradeboundariescom" target="_blank" rel="noopener noreferrer" class="underline transition">buy us a coffee</a> — every donation counts!</p>
-      <p class="text-sm text-gray-600 dark:text-gray-400"> or become part of the gradeboundaries.com team by joining our <a href="https://discord.gg/ta9sneWWDQ" target="_blank" rel="noopener noreferrer" class="underline transition"> discord </a> </p>
 
+    <!-- About -->
+    <section id="about-project" class="mt-12 p-6 rounded-lg text-center donate-section shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">About this project</h2>
+      <p class="text-lg mb-6">
+        This little site was built by two A‑Level students as a fun project to visualise and compare A‑Level grade boundaries. We’re both studying A‑Levels ourselves, so we know how useful it can be to see trends across exam boards. Enjoy!
+      </p>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+        ☕ If you'd like to support us, you can <a href="https://ko-fi.com/gradeboundariescom" target="_blank" rel="noopener noreferrer" class="underline transition">buy us a coffee</a> — it means a lot.
+      </p>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+        Or come say hi on our <a href="https://discord.gg/ta9sneWWDQ" target="_blank" rel="noopener noreferrer" class="underline transition">Discord</a>.
+      </p>
     </section>
-<style>
-    :root {
-      /* badge container */
-      --badge-bg: rgba(255, 255, 255, 0.7);
-      --badge-border: rgba(45, 212, 191, 0.7);
-      --badge-ring: rgba(45, 212, 191, 0.4);
-      --badge-shadow: rgba(167, 243, 208, 0.8);
 
-      /* comet accent */
-      --badge-accent: rgba(45, 212, 191, 0.7);
+    <style>
+      :root {
+        --badge-bg: rgba(255,255,255,0.7);
+        --badge-border: rgba(45,212,191,0.7);
+        --badge-ring: rgba(45,212,191,0.4);
+        --badge-shadow: rgba(167,243,208,0.8);
+        --badge-text: #0f766e;
+        --badge-text-strong: #0f766e;
+      }
+      .dark {
+        --badge-bg: rgba(45,212,191,0.1);
+        --badge-border: rgba(22,78,64,0.6);
+        --badge-ring: rgba(0,0,0,0.4);
+        --badge-shadow: rgba(0,0,0,0.4);
+        --badge-text: #f0fdf4;
+        --badge-text-strong: #f0fdf0;
+      }
+    </style>
 
-      /* text */
-      --badge-text: #0f766e;         /* teal-900 */
-      --badge-text-strong: #0f766e;  /* teal-900 (light mode strong) */
-    }
-
-    .dark {
-      --badge-bg: rgba(45, 212, 191, 0.1);    /* teal-500/10 */
-      --badge-border: rgba(22, 78, 64, 0.6);  /* teal-600/60 */
-      --badge-ring: rgba(0, 0, 0, 0.4);
-      --badge-shadow: rgba(0, 0, 0, 0.4);
-
-      --badge-accent: rgba(45, 212, 191, 0.7);
-
-      --badge-text: #f0fdf4;           /* teal-100 */
-      --badge-text-strong: #f0fdf0;    /* teal-50 */
-    }
-  </style>
-<div class="mx-auto mt-12 w-max">
-    <div
-      class="
-        relative flex items-center gap-3 px-5 py-2 rounded-full
+    <div class="mx-auto mt-12 w-max">
+      <div class="relative flex items-center gap-3 px-5 py-2 rounded-full
         bg-[var(--badge-bg)] backdrop-blur-sm
         border border-[var(--badge-border)]
         ring-1 ring-inset ring-[var(--badge-ring)]
-        shadow-md shadow-[var(--badge-shadow)]
-      ">
-
-      <!-- comet accent -->
-      
-
-      <span
-        class="
-          text-sm font-medium
-          text-[var(--badge-text)]
-        "
-      >
-        Site visits so far:
-      </span>
-
-      <span
-        id="total-visits"
-        class="
-          font-mono font-semibold tabular-nums text-base tracking-tight
-          text-[var(--badge-text-strong)]
-        "
-      >
-        …
-      </span>
+        shadow-md shadow-[var(--badge-shadow)]">
+        <span class="text-sm font-medium text-[var(--badge-text)]">Site visits so far:</span>
+        <span id="total-visits" class="font-mono font-semibold tabular-nums text-base tracking-tight text-[var(--badge-text-strong)]">…</span>
+      </div>
     </div>
-  </div>
+
   </main>
 
   <!-- Footer -->
   <footer class="mt-12" role="contentinfo">
     <div class="container mx-auto flex flex-col items-center py-6 px-4">
-    <p class="text-lg">Created by</p>
-    <nav aria-label="Created by">
-      <ul class="flex space-x-4 text-lg">
-        <li>
-          <a href="https://github.com/Fire-Frog-Fuel/"
-             class="underline">
-            Fire-Frog-Fuel
-          </a>
-        </li>
-        <li>
-          <span>&nbsp;and&nbsp;</span>
-        </li>
-        <li>
-          <a href="https://github.com/ChessMastermind"
-             class="underline">
-            ChessMastermind
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <p class="text-lg">Created by</p>
+      <nav aria-label="Created by">
+        <ul class="flex space-x-4 text-lg">
+          <li><a href="https://github.com/Fire-Frog-Fuel/" class="underline">Fire-Frog-Fuel</a></li>
+          <li><span>&nbsp;and&nbsp;</span></li>
+          <li><a href="https://github.com/ChessMastermind" class="underline">ChessMastermind</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer links">
+        <ul class="flex space-x-4 text-lg">
+          <li><a href="Contact" class="underline">Contact us</a></li>
+          <li><span>&nbsp;|&nbsp;</span></li>
+          <li><a href="Privacy" class="underline">Privacy Notice</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
-    <!-- Utility links -->
-    <nav aria-label="Footer links">
-      <ul class="flex space-x-4 text-lg">
-        <li>
-          <a href="Contact"
-             class="underline">
-            Contact us
-          </a>
-        </li>
-        <li>
-          <span>&nbsp;|&nbsp;</span>
-        </li>
-        <li>
-          <a href="Privacy"
-             class="underline">
-            Privacy Notice
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-
-  <!-- Noscript fallback -->
   <noscript>
     <p class="text-center p-4 bg-yellow-200">JavaScript is disabled. Charts and interactive tables will not function, but you can still download data in CSV format.</p>
   </noscript>
 
-  <button id="theme-toggle" aria-label="Toggle dark / light mode"></button>
+  <!-- Toast notification — fixed overlay, slides in from the right -->
+  <div class="toast" id="announce-toast" role="status" aria-live="polite">
+    <span class="toast-emoji" aria-hidden="true">🎉</span>
+    <div class="toast-body">
+      <strong>GCSE &amp; IGCSE are now live</strong>
+      <a href="EdexcelIGCSE">Edexcel IGCSE</a> and <a href="EdexcelGCSE">Edexcel GCSE</a>
+      grade boundaries are now available!
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Dismiss">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
 
   <script>
-    const btn  = document.getElementById('theme-toggle');
-    const root = document.documentElement;
+    (function () {
+      // Theme toggle
+      const btn  = document.getElementById('theme-toggle');
+      const root = document.documentElement;
+      btn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
+      btn.addEventListener('click', () => {
+        const dark = root.classList.toggle('dark');
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+        btn.textContent = dark ? '☀️' : '🌙';
+      });
 
-    /*  swap icon to match current state  */
-    btn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
-
-    btn.addEventListener('click', () => {
-      const dark = root.classList.toggle('dark');
-      localStorage.setItem('theme', dark ? 'dark' : 'light');
-      btn.textContent = dark ? '☀️' : '🌙';
-    });
+      // Toast dismiss — slides out then removes itself (no layout shift, it's fixed)
+      const toast    = document.getElementById('announce-toast');
+      const closeBtn = document.getElementById('toast-close');
+      if (toast && closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          toast.classList.add('hiding');
+          toast.addEventListener('animationend', () => toast.remove(), { once: true });
+        });
+      }
+    })();
   </script>
 
-  <!-- 🐐 Visitor counter logic -->
-<script>
-(async () => {
-  /* hit GoatCounter without using any cache */
-  const url   = `https://gradeboundaries.goatcounter.com/counter/TOTAL.json?ts=${Date.now()}`;
-  const res   = await fetch(url, { cache: 'no-store' });
-  if (!res.ok) return console.error('visit-counter failed', res.status);
-
-  /* strip spaces / NBSP & co -> pure number */
-  const visits = + (await res.json()).count.replace(/[^\d]/g, '');
-  const el     = document.getElementById('total-visits');
-
-  /* smooth count-up (300 ms) */
-  const frames = 20, inc = visits / frames;
-  let cur = 0, i = 0;
-  const step = () => {
-    i++;
-    cur = i < frames ? Math.round(inc * i) : visits;
-    el.textContent = cur;
-    if (i < frames) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-})();
-
-  (function(){
-    try{
-      // Always show on each homepage visit (no persistent dismissal)
-      setTimeout(()=>{
-        const el = document.getElementById('subscribe-popup');
-        if (!el) return;
-        el.style.display='block';
-        el.classList.add('show');
-      }, 1200);
-
-      // Dismiss only for current view (no localStorage write)
-      const btn = document.getElementById('subscribe-snooze');
-      if (btn) btn.addEventListener('click', function(){
-        const el = document.getElementById('subscribe-popup');
-        if (!el) return;
-        el.style.display='none';
-        el.classList.remove('show');
-      });
-    }catch(e){}
+  <script>
+  (async () => {
+    const url   = `https://gradeboundaries.goatcounter.com/counter/TOTAL.json?ts=${Date.now()}`;
+    const res   = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) return console.error('visit-counter failed', res.status);
+    const visits = + (await res.json()).count.replace(/[^\d]/g, '');
+    const el     = document.getElementById('total-visits');
+    const frames = 20, inc = visits / frames;
+    let cur = 0, i = 0;
+    const step = () => {
+      i++;
+      cur = i < frames ? Math.round(inc * i) : visits;
+      el.textContent = cur;
+      if (i < frames) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
   })();
-</script>
+  </script>
 </body>
 </html>

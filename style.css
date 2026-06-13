@@ -128,7 +128,39 @@ header{border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow
 
 nav a {
   text-decoration: none;
-  border-bottom: 2px solid var(--border-default); /* if you still want a bottom border “line” */
+  border-bottom: 2px solid var(--border-default);
+}
+
+/* ── Qualification tab-strip (Edexcel A-Level / IGCSE / GCSE) ── */
+.qual-tabs {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  padding: .75rem 1rem 0;
+}
+
+.qual-tab {
+  padding: .35rem 1.1rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text-link);
+  background: rgba(255,255,255,.15);
+  border: 2px solid rgba(255,255,255,.25);
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+
+.qual-tab:hover {
+  background: rgba(255,255,255,.28);
+  color: #fff;
+}
+
+.qual-tab.active {
+  background: #fff;
+  color: var(--brand-600);
+  border-color: #fff;
 }
 
 /* On hover, swap in the underline (or change the border-bottom color, if you want that style instead) */
@@ -408,6 +440,134 @@ footer{
   /* For instance, keep it “near white” if your header is still teal in dark mode: */
   color: var(--text-heading); /* slate-100 or a custom token */
 }
+/* ============================================================
+   12  TOAST NOTIFICATION (fixed overlay, slides in from side)
+   ============================================================ */
+@keyframes toast-in  {
+  from { transform: translateX(calc(100% + 2rem)); opacity: 0; }
+  to   { transform: translateX(0);                 opacity: 1; }
+}
+@keyframes toast-out {
+  to   { transform: translateX(calc(100% + 2rem)); opacity: 0; }
+}
+
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 900;
+  max-width: 340px;
+  width: calc(100vw - 3rem);
+  background: var(--bg-card);
+  border: 1.5px solid rgba(58,175,169,.35);
+  border-radius: .85rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,.1), 0 2px 6px rgba(58,175,169,.08);
+  padding: .95rem 1rem .95rem 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  animation: toast-in .4s cubic-bezier(.2,.9,.2,1) .5s both;
+}
+.dark .toast {
+  border-color: rgba(45,139,135,.45);
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+.toast.hiding { animation: toast-out .28s ease forwards; }
+
+.toast-emoji { font-size: 1.1rem; flex-shrink: 0; margin-top: .1rem; line-height: 1; }
+.toast-body  { flex: 1; font-size: .875rem; color: var(--text-body); }
+.toast-body strong { color: var(--text-heading); display: block; margin-bottom: .25rem; font-size: .9rem; }
+.toast-body a { color: var(--brand-600); text-decoration: underline; font-weight: 600; }
+.dark .toast-body a { color: #5dd8d3; }
+.toast-body a:hover { color: var(--brand-500); }
+
+.toast-close {
+  flex-shrink: 0;
+  margin-top: .1rem;
+  background: transparent !important;
+  border: none;
+  color: var(--text-body);
+  opacity: .35;
+  cursor: pointer;
+  padding: .25rem !important;
+  width: auto !important;
+  height: auto !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .15s, background .15s;
+  transform: none !important;
+}
+.toast-close:hover {
+  opacity: 1;
+  background: rgba(0,0,0,.07) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.dark .toast-close:hover { background: rgba(255,255,255,.1) !important; }
+
+@media (max-width: 480px) {
+  .toast { right: .75rem; bottom: .75rem; width: calc(100vw - 1.5rem); max-width: none; }
+}
+
+/* ============================================================
+   13  QUALIFICATION LINK CHIPS (home page board cards)
+   ============================================================ */
+.qual-links { display: flex; gap: .35rem; flex-wrap: wrap; }
+.qual-link {
+  display: inline-block;
+  padding: .2rem .65rem;
+  border-radius: 999px;
+  font-size: .76rem;
+  font-weight: 600;
+  background: rgba(58,175,169,.1);
+  color: var(--brand-600);
+  border: 1px solid rgba(58,175,169,.25);
+  text-decoration: none;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.dark .qual-link {
+  background: rgba(45,139,135,.18);
+  color: #5dd8d3;
+  border-color: rgba(45,139,135,.35);
+}
+.qual-link:hover {
+  background: var(--brand-500);
+  color: #fff !important;
+  border-color: var(--brand-500);
+}
+.qual-link--static {
+  cursor: default;
+  pointer-events: none;
+  opacity: .8;
+}
+
+/* ============================================================
+   14  QUAL TABS — INLINE (inside main section, Edexcel sub-pages)
+   ============================================================ */
+.qual-tabs-inline {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.qual-tabs-inline .qual-tab {
+  background: rgba(58,175,169,.1);
+  color: var(--brand-600);
+  border-color: rgba(58,175,169,.3);
+}
+.dark .qual-tabs-inline .qual-tab {
+  background: rgba(45,139,135,.15);
+  color: #5dd8d3;
+  border-color: rgba(45,139,135,.35);
+}
+.qual-tabs-inline .qual-tab:hover { background: rgba(58,175,169,.2); color: var(--brand-600); }
+.dark .qual-tabs-inline .qual-tab:hover { background: rgba(45,139,135,.25); }
+.qual-tabs-inline .qual-tab.active { background: var(--brand-500); color: #fff; border-color: var(--brand-500); }
+.dark .qual-tabs-inline .qual-tab.active { background: var(--brand-500); color: #fff; border-color: var(--brand-500); }
+
 .link-in-privacy {
   color: var(--link-in-privacy);
 }
@@ -447,4 +607,30 @@ footer{
 .dark #about-project a:hover {
   /* very light on hover */
   color:            #38bdf8;   /* ↔ sky-300 */
+}
+
+.terminal {
+  background: var(--bg-color);
+  border-radius: 8px;
+  border: 0px solid #333;
+  padding: 1rem 1.25rem;
+  font-family: "Courier New", monospace;
+  font-size: var(--font-size);
+  color: var(--text-color);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #ffffff00;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
 }
