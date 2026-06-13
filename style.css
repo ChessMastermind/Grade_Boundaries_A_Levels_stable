@@ -626,7 +626,7 @@ footer{
   display: inline-block;
   width: 8px;
   height: 16px;
-  background: #2b7a78;
+  background: #ffffff00;
   margin-left: 2px;
   animation: blink 1s step-end infinite;
 }
