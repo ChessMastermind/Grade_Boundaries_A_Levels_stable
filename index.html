@@ -78,13 +78,15 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home",          "item": "https://gradeboundaries.com/"},
-      {"@type": "ListItem", "position": 2, "name": "Edexcel",       "item": "https://gradeboundaries.com/Edexcel"},
-      {"@type": "ListItem", "position": 3, "name": "Edexcel IGCSE", "item": "https://gradeboundaries.com/EdexcelIGCSE"},
-      {"@type": "ListItem", "position": 4, "name": "Edexcel GCSE",  "item": "https://gradeboundaries.com/EdexcelGCSE"},
-      {"@type": "ListItem", "position": 5, "name": "CIE",           "item": "https://gradeboundaries.com/CIE"},
-      {"@type": "ListItem", "position": 6, "name": "Oxford AQA",    "item": "https://gradeboundaries.com/OxfordAqa"},
-      {"@type": "ListItem", "position": 7, "name": "OCR",           "item": "https://gradeboundaries.com/OCR"}
+      {"@type": "ListItem", "position": 1, "name": "Home",               "item": "https://gradeboundaries.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Edexcel",            "item": "https://gradeboundaries.com/Edexcel"},
+      {"@type": "ListItem", "position": 3, "name": "Edexcel IGCSE",      "item": "https://gradeboundaries.com/EdexcelIGCSE"},
+      {"@type": "ListItem", "position": 4, "name": "Edexcel GCSE",       "item": "https://gradeboundaries.com/EdexcelGCSE"},
+      {"@type": "ListItem", "position": 5, "name": "CIE",                "item": "https://gradeboundaries.com/CIE"},
+      {"@type": "ListItem", "position": 6, "name": "Oxford AQA",         "item": "https://gradeboundaries.com/OxfordAqa"},
+      {"@type": "ListItem", "position": 7, "name": "Oxford AQA GCSE",    "item": "https://gradeboundaries.com/OxfordAqaGCSE"},
+      {"@type": "ListItem", "position": 8, "name": "AQA GCSE",           "item": "https://gradeboundaries.com/AqaGCSE"},
+      {"@type": "ListItem", "position": 9, "name": "OCR",                "item": "https://gradeboundaries.com/OCR"}
     ]
   }
   </script>
@@ -120,12 +122,13 @@
   <header class="text-white text-center py-6 shadow-lg relative">
     <h1 class="page-title">Grade Boundaries</h1>
     <button id="theme-toggle" class="absolute top-4 right-4" aria-label="Toggle dark / light mode"></button>
-    <nav class="mt-4 flex flex-col md:flex-row items-center justify-center gap-2" aria-label="Primary">
-      <a href="Edexcel"   class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Edexcel grade boundaries">Edexcel</a>
-      <a href="CIE"       class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="CIE A-Level grade boundaries">CIE</a>
-      <a href="OxfordAqa" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Oxford AQA grade boundaries">Oxford AQA</a>
-      <a href="OCR"       class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="OCR A-Level grade boundaries">OCR</a>
-    </nav>
+      <nav class="mt-4 flex flex-col md:flex-row items-center justify-center gap-2" aria-label="Primary">
+        <a href="Edexcel"   class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Edexcel grade boundaries">Edexcel</a>
+        <a href="CIE"       class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="CIE A-Level grade boundaries">CIE</a>
+        <a href="OxfordAqa" class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="Oxford AQA A-Level grade boundaries">Oxford AQA</a>
+        <a href="AqaGCSE"   class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="AQA GCSE grade boundaries">AQA</a>
+        <a href="OCR"       class="nav-link mx-4 text-base sm:text-lg hover:text-white transition" title="OCR A-Level grade boundaries">OCR</a>
+      </nav>
   </header>
 
   <!-- Main content -->
@@ -193,19 +196,6 @@
         <a href="CIE" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View CIE</a>
       </article>
 
-      <!-- Oxford AQA -->
-      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
-        <meta itemprop="name" content="Oxford AQA A-Level Grade Boundaries 2018-2026" />
-        <h3 class="text-xl font-bold mb-2" itemprop="name">Oxford AQA</h3>
-        <p class="text-sm mb-3" itemprop="description">
-          A-Level grade boundaries for Oxford AQA subjects from 2018 to 2026, including UMS cap data.
-        </p>
-        <div class="qual-links mb-4 mt-auto">
-          <a  href="OxfordAqa" class="qual-link">A-Level</a>
-        </div>
-        <a href="OxfordAqa" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View Oxford AQA</a>
-      </article>
-
       <!-- OCR -->
       <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
         <meta itemprop="name" content="OCR A-Level Grade Boundaries 2015-2025" />
@@ -217,6 +207,33 @@
           <a  href="OCR" class="qual-link">A-Level</a>
         </div>
         <a href="OCR" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View OCR</a>
+      </article>
+
+      <!-- AQA -->
+      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
+        <meta itemprop="name" content="AQA GCSE Grade Boundaries" />
+        <h3 class="text-xl font-bold mb-2" itemprop="name">AQA</h3>
+        <p class="text-sm mb-3" itemprop="description">
+          AQA GCSE grade boundaries for all major subjects — comprehensive database with individual paper data.
+        </p>
+        <div class="qual-links mb-4 mt-auto">
+          <a href="AqaGCSE"  class="qual-link">GCSE</a>
+        </div>
+        <a href="AqaGCSE" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View AQA</a>
+      </article>
+
+      <!-- Oxford AQA with QCSE -->
+      <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
+        <meta itemprop="name" content="Oxford AQA A-Level &amp; GCSE Grade Boundaries" />
+        <h3 class="text-xl font-bold mb-2" itemprop="name">Oxford&nbsp;AQA</h3>
+        <p class="text-sm mb-3" itemprop="description">
+          Oxford AQA A-Level and GCSE grade boundaries — including UMS cap data for A-Level qualifications.
+        </p>
+        <div class="qual-links mb-4 mt-auto">
+          <a href="OxfordAqa"      class="qual-link">A-Level</a>
+          <a href="OxfordAqaGCSE"  class="qual-link">GCSE</a>
+        </div>
+        <a href="OxfordAqa" class="class-button inline-block px-4 py-2 rounded text-center" itemprop="url">View Oxford AQA</a>
       </article>
 
     </div>
@@ -296,8 +313,9 @@
   <div class="toast" id="announce-toast" role="status" aria-live="polite">
     <span class="toast-emoji" aria-hidden="true">🎉</span>
     <div class="toast-body">
-      <strong>GCSE &amp; IGCSE are now live</strong>
-      <a href="EdexcelIGCSE">Edexcel IGCSE</a> and <a href="EdexcelGCSE">Edexcel GCSE</a>
+      <strong>Multiple GCSE boards now live!</strong>
+      <a href="EdexcelIGCSE">Edexcel IGCSE</a>, <a href="EdexcelGCSE">Edexcel GCSE</a>,
+      <a href="AqaGCSE">AQA GCSE</a> and <a href="OxfordAqaGCSE">Oxford AQA GCSE</a>
       grade boundaries are now available!
     </div>
     <button class="toast-close" id="toast-close" aria-label="Dismiss">
