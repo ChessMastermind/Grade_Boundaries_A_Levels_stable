@@ -8,7 +8,7 @@
 
 ---
 
-![gradeboundaries.com screenshot](https://image.thum.io/get/width/1200/crop/630/https://gradeboundaries.com)
+![gradeboundaries.com screenshot](https://image.thum.io/get/width/1280/crop/900/https://gradeboundaries.com)
 
 ---
 
