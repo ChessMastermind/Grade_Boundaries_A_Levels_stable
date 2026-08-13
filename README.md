@@ -33,7 +33,7 @@
 | Exam Board | Coverage | Highlights |
 |---|---|---|
 | **Edexcel** | 2015 – 2026 | 800+ units across Maths, Sciences, Economics & more |
-| **CIE** | 2021 – 2025 | AS & A-Level Cambridge International thresholds |
+| **CIE** | 2021 – 2026 | AS & A-Level Cambridge International thresholds |
 | **Oxford AQA** | 2018 – 2026 | Full grade boundary data across all subjects |
 | **OCR** | 2015 – 2025 | Comprehensive coverage of all major subjects |
 
