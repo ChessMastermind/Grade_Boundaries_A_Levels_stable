@@ -161,7 +161,6 @@
     <!-- Board cards -->
     <h2 class="text-sm font-semibold uppercase tracking-widest opacity-50 mb-5"> </h2>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-
       <!-- Edexcel -->
       <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
         <meta itemprop="name" content="Edexcel Grade Boundaries 2015-2026" />
@@ -179,10 +178,10 @@
 
       <!-- CIE -->
       <article class="bg-white shadow-md rounded-lg p-6 flex flex-col" itemscope itemtype="https://schema.org/Dataset">
-        <meta itemprop="name" content="CIE A-Level Grade Boundaries 2021-2025" />
+        <meta itemprop="name" content="CIE A-Level Grade Boundaries 2021-2026" />
         <h3 class="text-xl font-bold mb-2" itemprop="name">CIE</h3>
         <p class="text-sm mb-3" itemprop="description">
-          Cambridge International AS &amp; A-Level grade thresholds for all available subjects from 2021 to 2025.
+          Cambridge International AS &amp; A-Level grade thresholds for all available subjects from 2021 to 2026.
         </p>
         <div class="qual-links mb-4 mt-auto">
           <a href="CIE"  class="qual-link">A-Level</a>
@@ -263,7 +262,7 @@
         --badge-text: #f0fdf4;
         --badge-text-strong: #f0fdf0;
       }
-      /* ── GitHub CTA — single-button, on-brand ── */
+ /* ── GitHub CTA — gold star button ── */
 .gh-cta-wrap {
   display: flex;
   justify-content: center;
@@ -275,15 +274,15 @@
   text-align: center;
   padding: 1.6rem 2rem 1.4rem;
   background: var(--bg-card);
-  border: 1px solid rgba(58,175,169,.22);
+  border: 1px solid rgba(245,158,11,.25);
   border-radius: 1rem;
-  box-shadow: 0 8px 30px rgba(58,175,169,.08), 0 2px 6px rgba(0,0,0,.04);
+  box-shadow: 0 8px 30px rgba(245,158,11,.1), 0 2px 6px rgba(0,0,0,.04);
   max-width: 460px;
   width: 100%;
 }
 .dark .gh-cta-card {
-  border-color: rgba(45,139,135,.35);
-  box-shadow: 0 8px 30px rgba(0,0,0,.3);
+  border-color: rgba(251,191,36,.3);
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
 }
 
 .gh-cta-text {
@@ -299,60 +298,71 @@
   gap: .5rem;
   padding: .7rem 1.6rem;
   border-radius: 999px;
-  background: var(--brand-500);
-  color: #fff;
+  background: linear-gradient(135deg, #f59e0b, #eab308);
+  color: #1a1a1a;
   font-weight: 700;
   font-size: .95rem;
   letter-spacing: .02em;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(58,175,169,.35);
+  box-shadow: 0 4px 16px rgba(234,179,8,.4), 0 1px 3px rgba(0,0,0,.08);
   transform: translateY(0);
-  transition: background-color .2s, transform .15s, box-shadow .15s;
+  transition: transform .15s, box-shadow .15s, filter .15s;
 }
 .gh-cta-btn:hover {
-  background: var(--brand-600);
-  color: #fff;
+  color: #1a1a1a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(58,175,169,.45);
+  filter: brightness(1.08);
+  box-shadow: 0 6px 22px rgba(234,179,8,.5), 0 2px 6px rgba(0,0,0,.1);
 }
 .gh-cta-btn:active {
   transform: translateY(0);
-  box-shadow: 0 3px 10px rgba(58,175,169,.3);
+  box-shadow: 0 3px 10px rgba(234,179,8,.35);
+}
+
+.dark .gh-cta-btn {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #0f172a;
+  box-shadow: 0 4px 18px rgba(251,191,36,.35), 0 1px 3px rgba(0,0,0,.1);
+}
+.dark .gh-cta-btn:hover {
+  color: #0f172a;
+  filter: brightness(1.1);
+  box-shadow: 0 6px 24px rgba(251,191,36,.45), 0 2px 6px rgba(0,0,0,.12);
 }
 
 .gh-cta-icon {
   flex-shrink: 0;
 }
 
-      .gh-cta-sub {
-        margin: .85rem 0 0;
-        font-size: .8rem;
-        color: var(--text-body);
-        opacity: .7;
-      }
-      .gh-cta-sub a {
-        color: var(--brand-600);
-        font-weight: 600;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-        text-decoration-color: rgba(58,175,169,.4);
-      }
-      .gh-cta-sub a:hover {
-        color: var(--brand-500);
-        text-decoration-color: var(--brand-500);
-      }
-      .dark .gh-cta-sub a {
-        color: #5dd8d3;
-        text-decoration-color: rgba(93,216,211,.4);
-      }
-      .dark .gh-cta-sub a:hover {
-        color: #7fe4df;
-      }
+.gh-cta-sub {
+  margin: .85rem 0 0;
+  font-size: .8rem;
+  color: var(--text-body);
+  opacity: .7;
+}
+.gh-cta-sub a {
+  color: var(--brand-600);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(58,175,169,.4);
+}
+.gh-cta-sub a:hover {
+  color: var(--brand-500);
+  text-decoration-color: var(--brand-500);
+}
+.dark .gh-cta-sub a {
+  color: #5dd8d3;
+  text-decoration-color: rgba(93,216,211,.4);
+}
+.dark .gh-cta-sub a:hover {
+  color: #7fe4df;
+}
 
-      @media (max-width: 640px) {
-        .gh-cta-card { padding: 1.3rem 1.2rem 1.1rem; }
-        .gh-cta-btn  { width: 100%; justify-content: center; }
-      }
+@media (max-width: 640px) {
+  .gh-cta-card { padding: 1.3rem 1.2rem 1.1rem; }
+  .gh-cta-btn  { width: 100%; justify-content: center; }
+}
     </style>
 
     <div class="mx-auto mt-12 w-max">
